@@ -1,37 +1,50 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/DMEDLogo.png">
     <PageHeader/>
-    <Bands/>
     <PageFooter/>
   </div>
 </template>
 
 <script>
 import PageHeader from './components/layout/PageHeader.vue'
-import Bands from './components/Bands.vue'
-import PageHeader from './components/layout/PageFooter.vue'
+import PageFooter from './components/layout/PageFooter.vue'
 
 export default {
   name: 'app',
   components: {
     PageHeader,
-    Bands,
     PageFooter
   }
 }
 </script>
 
 <style>
+@font-face {
+    font-family: 'Subway Haze';
+    src: url('') format('woff2'),
+        url('') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+:root {
+  --first: #e9e5e0;
+  --first-darken: darken(#e9e5e0, 50%);
+  --second: #9a6d46;
+  --background: #171717;
+  --gold: #ab784b; /*Typo / DMED-Logo*/
+  --mittelgrau: #57514a; /*Typo / Bandlogos*/
+  --beige: #9d8c7c; /*Hintergrundmotiv*/
+  --elfenbein: #e9e6e2; /*Hintergrund*/
+}
+
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: 'Metal Mania', cursive;
   text-align: center;
   margin-top: 60px;
-  background-image: -moz-element()
-}
-body{
-  background-color: black
+  content: '';
+  background-color: var(--background);
+  color: var(--elfenbein);
+  font-family: 'Metal Mania', cursive;
 }
 </style>
