@@ -3,18 +3,21 @@
     <img alt="Vue logo" src="./assets/DMEDLogo.png">
     <PageHeader/>
     <Bands/>
+    <PageFooter/>
   </div>
 </template>
 
 <script>
-import Bands from './components/Bands.vue'
 import PageHeader from './components/layout/PageHeader.vue'
+import Bands from './components/Bands.vue'
+import PageHeader from './components/layout/PageFooter.vue'
 
 export default {
   name: 'app',
   components: {
+    PageHeader,
     Bands,
-    PageHeader
+    PageFooter
   }
 }
 </script>
