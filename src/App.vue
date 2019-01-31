@@ -1,17 +1,20 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <img alt="Vue logo" src="./assets/DMEDLogo.png">
+    <PageHeader/>
+    <Bands/>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Bands from './components/Bands.vue'
+import PageHeader from './components/layout/PageHeader.vue'
 
 export default {
   name: 'app',
   components: {
-    HelloWorld
+    Bands,
+    PageHeader
   }
 }
 </script>
@@ -22,7 +25,10 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
   margin-top: 60px;
+  background-image: -moz-element()
+}
+body{
+  background-color: black
 }
 </style>
