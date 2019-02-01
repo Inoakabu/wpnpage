@@ -18,17 +18,10 @@
         <a href="#" class="social-item facebook">F</a>
         <a href="#" class="social-item twitter">T</a>
         <a href="#" class="social-item instagram">I</a>
-        <a href="#" class="social-item youtube">y</a>
+        <a href="#" class="social-item youtube">Y</a>
       </nav>
     </div>
   </header>
-  <section class="intro">
-    <div class="count">
-      <h3>Festival-Countdown</h3>
-      <h1>{{days}} : {{hours}} : {{minutes}} : {{seconds}}</h1>
-      <p>Days : Hrs : Min : Sec</p>
-    </div>
-  </section>
 </body>
 </template>
 <script>
@@ -38,40 +31,27 @@ export default {
 </script>
 
 <style>
-@import url("https://fonts.googleapis.com/css?family=Metal+Mania");
-
-
-/* :root {
-  --first: #e9e5e0;
-  --first-darken: darken(#e9e5e0, 50%);
-  --second: #9a6d46;
-  --background: #171717;
-} */
-
 .body {
   max-width: 1600px;
   margin: 0 auto;
-  background-color: var(--background);
-  color: var(--first);
-  font-family: 'Metal Mania', cursive;
-  font-size: 16px;
+  background-color: var(--elfenbein);
 }
 
 .header {
   display: flex;
   padding-top: 5rem;
+  padding-left: 15%
 }
 
 .logo {
   width: 150px;
   align-self: center;
-  filter: invert(100%)
 }
 
 .header-wrapper {
   display: flex;
   justify-content: space-between;
-  width: 100%;
+  width: 75%;
 }
 
 .nav-bar {
@@ -83,12 +63,13 @@ export default {
 
 .nav-wrapper {
   align-self: center;
+  flex-wrap: nowrap;
 }
 
 .nav-item {
   margin: 1rem;
   line-height: 1rem;
-  color: var(--main);
+  color: var(--beige);
   text-decoration: none;
   transition: color 200ms ease-in-out;
 }
@@ -113,15 +94,15 @@ export default {
   margin: 0 1rem;
   min-width: 1rem;
   border-radius: 100%;
-  background-color: var(--first);
-  color: var(--background);
+  background-color: var(--beige);
+  color: var(--elfenbein);
   font-weight: bold;
   text-decoration: none;
   transition: all 200ms ease-in-out;
 }
 
 .social-item:hover {
-  background-color: var(--second);
+  background-color: var(--gold);
 }
 
 .social-item.facebook:hover {
@@ -149,23 +130,36 @@ export default {
 }
 
 .intro:before {
-  content: "";
+  content: '';
+  background-image: url('../../assets/images/dmed2019_web_bg_blank.jpg');
   display: block;
   max-width: 1600px;
   width: 100%;
+  background-size: 100%;
+  background-position-y: 90%;
+  background-repeat: no-repeat;
   position: absolute;
   height: 750px;
   top: 0;
   z-index: -1;
-  opacity: 0.25;
+  opacity: 0.15;
 }
 
 .count {
   text-align: center;
 }
 
+.count h1 {
+  color: var(--gold);
+  font-size: 2.25rem;
+}
+
+.count h3 {
+  text-transform: uppercase
+}
+
 .count p {
-  color: var(--first-darken);
+  color: var(--beige);
   text-transform: uppercase;
 }
 

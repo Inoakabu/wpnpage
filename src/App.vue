@@ -1,30 +1,37 @@
 <template>
   <div id="app">
     <PageHeader/>
+    <PageIntro/>
+    <PageBands/>
     <PageFooter/>
   </div>
 </template>
 
 <script>
 import PageHeader from './components/layout/PageHeader.vue'
+import PageIntro from './components/layout/PageIntro.vue'
+import PageBands from './components/layout/PageBands.vue'
 import PageFooter from './components/layout/PageFooter.vue'
 
 export default {
   name: 'app',
   components: {
     PageHeader,
+    PageIntro,
+    PageBands,
     PageFooter
   }
 }
 </script>
 
 <style>
+@import url("https://fonts.googleapis.com/css?family=Metal+Mania");
 @font-face {
-    font-family: 'Subway Haze';
-    src: url('') format('woff2'),
-        url('') format('woff');
+    font-family: "Haze";
+    src:  url('../src/assets/font/Subway_Haze.ttf') format("ttf"),
+          url('../src/assets/font/Subway_Haze.woff') format("woff"),
+          url('../src/assets/font/Subway_Haze.woff2') format("woff2");
     font-weight: normal;
-    font-style: normal;
 }
 
 :root {
@@ -32,19 +39,18 @@ export default {
   --first-darken: darken(#e9e5e0, 50%);
   --second: #9a6d46;
   --background: #171717;
-  --gold: #ab784b; /*Typo / DMED-Logo*/
-  --mittelgrau: #57514a; /*Typo / Bandlogos*/
-  --beige: #9d8c7c; /*Hintergrundmotiv*/
-  --elfenbein: #e9e6e2; /*Hintergrund*/
+  --gold: #ab784b; /*Typo / DMED-Logo* -- main */
+  --mittelgrau: #57514a; /*Typo / Bandlogos -- typo */
+  --beige: #9d8c7c; /*Hintergrundmotiv -- motiv */
+  --elfenbein: #e9e6e2; /*Hintergrund -- background */
 }
 
 #app {
-  font-family: 'Metal Mania', cursive;
+  font-family: "Haze";
+  font-size: 16px;
+  color: var(--mittelgrau);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  margin-top: 60px;
-  content: '';
-  background-color: var(--background);
-  color: var(--elfenbein);
-  font-family: 'Metal Mania', cursive;
 }
 </style>
