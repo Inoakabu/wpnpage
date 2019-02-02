@@ -1,28 +1,42 @@
 <template>
-  <div class = "bands">
+  <div id ="app" class = "bands">
     <h2>Bands</h2>
+    <router-link to="/band">Band</router-link>
     <ul class = "band-list">
       <li class = "band">
         <h3 class = "band-name">arroganz</h3>
-        <img class = "band-image" src="../../assets/BandLogos/BandLogosWBackground/dmed2019_web_announce_band_arroganz.jpg">
+        <a href=""><img class = "band-image" src="../../assets/BandLogos/BandLogosWBackground/dmed2019_web_announce_band_arroganz.jpg"></a>
       </li>
       <li class = "band">
         <h3 class = "band-name">ascension</h3>
-        <img class = "band-image" src="../../assets/BandLogos/BandLogosWBackground/dmed2019_web_announce_band_ascension.jpg">
+        <a href=""><img class = "band-image" src="../../assets/BandLogos/BandLogosWBackground/dmed2019_web_announce_band_ascension.jpg"></a>
       </li>
       <li class = "band">
         <h3 class = "band-name">membaris</h3>
-        <img class = "band-image" src="../../assets/BandLogos/BandLogosWBackground/dmed2019_web_announce_band_membaris.jpg">
+        <a href=""><img class = "band-image" src="../../assets/BandLogos/BandLogosWBackground/dmed2019_web_announce_band_membaris.jpg"></a>
       </li>
       <li class = "band">
         <h3 class = "band-name">sinmara</h3>
-        <img class = "band-image" src="../../assets/BandLogos/BandLogosWBackground/dmed2019_web_announce_band_sinmara.jpg">
+        <a href=""><img class = "band-image" src="../../assets/BandLogos/BandLogosWBackground/dmed2019_web_announce_band_sinmara.jpg"></a>
       </li>
     </ul>
   </div>
 </template>
+<script>
+
+</script>
 
 <style>
+.body {
+  max-width: 1600px;
+  margin: 0 auto;
+  background-color: var(--elfenbein);
+}
+.header {
+  display: flex;
+  padding-top: 5rem;
+  padding-left: 15%
+}
 .bands {
   text-align: center;
   padding: 2rem;

@@ -129,40 +129,6 @@ export default {
   align-items: center;
 }
 
-.intro:before {
-  content: '';
-  background-image: url('../../assets/images/dmed2019_web_bg_blank.jpg');
-  display: block;
-  max-width: 1600px;
-  width: 100%;
-  background-size: 100%;
-  background-position-y: 90%;
-  background-repeat: no-repeat;
-  position: absolute;
-  height: 750px;
-  top: 0;
-  z-index: -1;
-  opacity: 0.15;
-}
-
-.count {
-  text-align: center;
-}
-
-.count h1 {
-  color: var(--gold);
-  font-size: 2.25rem;
-}
-
-.count h3 {
-  text-transform: uppercase
-}
-
-.count p {
-  color: var(--beige);
-  text-transform: uppercase;
-}
-
 .footer {
   height: 500px;
 }

@@ -38,7 +38,7 @@ export default {
 </script>
 
 <style>
-/* .intro {
+.intro {
   margin-top: 150px;
   height: 250px;
   display: flex;
@@ -78,5 +78,5 @@ export default {
 .count p {
   color: var(--beige);
   text-transform: uppercase;
-} */
+}
 </style>
