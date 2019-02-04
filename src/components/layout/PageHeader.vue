@@ -20,6 +20,7 @@
         <a href="#" class="social-item instagram">I</a>
         <a href="#" class="social-item youtube">Y</a>
       </nav>
+      <router-link to="/band">Band</router-link>
     </div>
   </header>
 </body>
