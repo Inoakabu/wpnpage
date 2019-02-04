@@ -1,26 +1,15 @@
 <template>
   <div id="app">
-    <PageHeader/>
-    <PageIntro/>
-    <PageBands/>
-    <PageFooter/>
+   <headerComp />
+   <router-view></router-view>
   </div>
 </template>
 
 <script>
-import PageHeader from './components/layout/PageHeader.vue'
-import PageIntro from './components/layout/PageIntro.vue'
-import PageBands from './components/layout/PageBands.vue'
-import PageFooter from './components/layout/PageFooter.vue'
-
+import headerComp from '@/components/header/comp.header'
 export default {
   name: 'app',
-  components: {
-    PageHeader,
-    PageIntro,
-    PageBands,
-    PageFooter
-  }
+  components: { headerComp }
 }
 </script>
 

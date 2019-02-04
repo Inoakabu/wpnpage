@@ -1,12 +1,13 @@
 import Vue from 'vue'
-import router from 'vue-router'
 import App from './App.vue'
+import router from './routes'
 
 Vue.config.productionTip = false
 
-Vue.use(router)
-
+// eslint-disable-next-line no-new
 new Vue({
+  el: '#app',
   router,
-  render: h => h(App)
-}).$mount('#app')
+  components: { App },
+  template: '<App/>'
+})
