@@ -1,18 +1,19 @@
 <template>
    <div class="nav-wrapper">
     <nav class="nav-bar">
-      <router-link
-        :to="`/${item.name}`"
-        v-for="item in navigation"
-        :key="item.name"
+      <div v-for="item in navigation" :key="item.name">
+        <router-link :to="`/${item.name}`"
         class="nav-item"
         :class="{ 'nav-item--big': item.big }"
-        v-if="!item.url"
-        >{{ item.name }}
-      </router-link>
-      <a v-else :href="item.url" class="nav-item" :class="{ 'nav-item--big': item.big }" target="_blank" :key="item.name">{{
-        item.name
-      }}</a>
+        v-if="!item.url">{{ item.name }}
+        </router-link>
+        <a v-else
+        :href="item.url"
+        class="nav-item"
+        :class="{ 'nav-item--big': item.big }"
+        target="_blank">{{ item.name  }}
+        </a>
+    </div>
     </nav>
     <nav class="social-bar">
       <a :href="item.url" class="social-item" v-for="item in socials" :class="item.name" :key="item.name" target="_blank">{{

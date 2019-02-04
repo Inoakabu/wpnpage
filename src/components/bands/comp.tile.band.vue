@@ -10,7 +10,7 @@ export default {
   name: 'BandTile',
   props: {
     name: String,
-    name: String
+    image: String
   },
   computed: {
     imageSrc() {
