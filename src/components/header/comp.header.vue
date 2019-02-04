@@ -45,7 +45,7 @@ export default {
 }
 .header::before {
   content: '';
-  background-image: '';
+  background-image: url('../../assets/images/dmed2019_web_bg_blank.jpg');
   display: block;
   max-width: 1600px;
   width: 100%;

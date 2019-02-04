@@ -13,7 +13,7 @@ export default {
     image: String
   },
   computed: {
-    imageSrc() {
+    imageSrc () {
       return `./bands/${this.image}`
     }
   }
@@ -45,7 +45,7 @@ export default {
 }
 .band::before {
   content: '';
-  background-image: '';
+  background-image: '../../assets/images/dmed2019_web_bg_blank.jpg';
   width: 95%;
   background-size: 350%;
   background-position: center;
