@@ -6,6 +6,7 @@
 </template>
 
 <script>
+
 export default {
   name: 'BandTile',
   props: {
@@ -14,7 +15,7 @@ export default {
   },
   computed: {
     imageSrc () {
-      return `./bands/${this.image}`
+      return require(`../../assets/BandLogos/${this.image}`)
     }
   }
 }
@@ -45,7 +46,7 @@ export default {
 }
 .band::before {
   content: '';
-  background-image: '../../assets/images/dmed2019_web_bg_blank.jpg';
+  background-image: url('../../assets/images/dmed2019_web_bg_blank.jpg');
   width: 95%;
   background-size: 350%;
   background-position: center;

@@ -1,7 +1,7 @@
 <template>
   <main>
     <introComp /> <bandsComp /> <instaComp />
-    <router-link to="/Bands">Bands</router-link>
+    <!-- <router-link to="/Bands">Bands</router-link> -->
   </main>
 </template>
 
@@ -13,9 +13,9 @@ import instaComp from '../components/social/comp.instagram'
 export default {
   name: 'MainPage',
   components: { introComp,
-                bandsComp,
-                instaComp
-              }
+    bandsComp,
+    instaComp
+  }
 }
 </script>
 

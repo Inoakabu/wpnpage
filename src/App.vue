@@ -8,7 +8,7 @@
 <script>
 import headerComp from './components/header/comp.header'
 export default {
-  name: "app",
+  name: 'app',
   components: { headerComp }
 }
 </script>

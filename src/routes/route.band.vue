@@ -7,7 +7,7 @@
 <script>
 export default {
   name: 'Band',
-  data() {
+  data () {
     return {
       id: this.$route.params.id
     }

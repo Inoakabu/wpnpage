@@ -27,7 +27,7 @@ export default {
     },
     minutes () {
       let minutes = Math.floor((this.currentDate / 1000 / 60) % 60)
-      return minutes > 9 ? minutes : `0${minutes}`;
+      return minutes > 9 ? minutes : `0${minutes}`
     },
     seconds () {
       let seconds = Math.floor((this.currentDate / 1000) % 60)
@@ -40,10 +40,10 @@ export default {
     }
   },
   created () {
-    this.setCurrentDate ()
+    this.setCurrentDate()
     setInterval(this.setCurrentDate, 1000)
   }
-};
+}
 </script>
 
 <style>

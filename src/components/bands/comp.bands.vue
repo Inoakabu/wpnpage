@@ -2,7 +2,7 @@
   <section class = "bands">
     <h2>Bands</h2>
     <ul class="bands-list">
-      <BandTile 
+      <BandTile
         v-for="band in bands"
         :key="band.name"
         :name="band.name"
@@ -16,26 +16,26 @@
 import BandTile from './comp.tile.band'
 
 export default {
-  name: 'Bands'  ,
+  name: 'Bands',
   components: { BandTile },
-  data() {
+  data () {
     return {
       bands: [
         {
           name: 'arroganz',
-          image: ''
+          image: 'dmed2019_web_announce_band_arroganz_transp.png'
         },
         {
           name: 'ascension',
-          image: ''
+          image: 'dmed2019_web_announce_band_ascension_transp.png'
         },
         {
           name: 'membaris',
-          image: ''
+          image: 'dmed2019_web_announce_band_membaris_transp.png'
         },
         {
           name: 'sinmara',
-          image: ''
+          image: 'dmed2019_web_announce_band_sinmara_transp.png'
         }
       ]
     }
