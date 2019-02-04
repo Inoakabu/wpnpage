@@ -1,5 +1,5 @@
 <template>
-  <div class="nav-wrapper">
+   <div class="nav-wrapper">
     <nav class="nav-bar">
       <router-link
         :to="`/${item.name}`"

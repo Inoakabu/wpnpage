@@ -6,7 +6,7 @@
 </template>
 
 <script>
-import headerComp from '@/components/header/comp.header'
+import headerComp from './components/header/comp.header'
 export default {
   name: 'app',
   components: { headerComp }
