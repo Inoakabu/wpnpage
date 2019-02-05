@@ -1,7 +1,7 @@
 <template>
   <li class="band">
     <h3 class="band-name">{{ name }}</h3>
-    <img class="band-image" :src="imageSrc" />
+    <img @click="goToSingle(bId, name)" class="band-image" :src="imageSrc" />
   </li>
 </template>
 
@@ -10,12 +10,18 @@
 export default {
   name: 'BandTile',
   props: {
+    bId: Number,
     name: String,
     image: String
   },
   computed: {
     imageSrc () {
       return require(`../../assets/BandLogos/${this.image}`)
+    }
+  },
+  methods: {
+    goToSingle (bId, name) {
+      this.$router.push({ name: 'BandSinglePage', params: { bId, name } })
     }
   }
 }

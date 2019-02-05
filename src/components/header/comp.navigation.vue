@@ -13,7 +13,7 @@
         :class="{ 'nav-item--big': item.big }"
         target="_blank">{{ item.name  }}
         </a>
-    </div>
+      </div>
     </nav>
     <nav class="social-bar">
       <a :href="item.url" class="social-item" v-for="item in socials" :class="item.name" :key="item.name" target="_blank">{{

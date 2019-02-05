@@ -4,7 +4,8 @@
     <ul class="bands-list">
       <BandTile
         v-for="band in bands"
-        :key="band.name"
+        :key="band.bId"
+        :bId="band.bId"
         :name="band.name"
         :image="band.image"
       />
@@ -22,18 +23,22 @@ export default {
     return {
       bands: [
         {
+          bId: 1,
           name: 'arroganz',
           image: 'dmed2019_web_announce_band_arroganz_transp.png'
         },
         {
+          bId: 2,
           name: 'ascension',
           image: 'dmed2019_web_announce_band_ascension_transp.png'
         },
         {
+          bId: 3,
           name: 'membaris',
           image: 'dmed2019_web_announce_band_membaris_transp.png'
         },
         {
+          bId: 4,
           name: 'sinmara',
           image: 'dmed2019_web_announce_band_sinmara_transp.png'
         }

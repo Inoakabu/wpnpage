@@ -1,0 +1,64 @@
+{
+  "bands": [
+    {
+      "bId": 1,
+      "name": "arroganz",
+      "image": "dmed2019_web_announce_band_arroganz_transp.png",
+      "text": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.",
+      "links":
+      {
+        "facebook": "https://www.facebook.com/arroganzgermany/",
+        "instagram": "",
+        "website": "",
+        "shop": "",
+        "label": "",
+        "youtube": ""
+      }
+    },
+    {
+      "bId": 2,
+      "name": "ascension",
+      "image": "dmed2019_web_announce_band_ascension_transp.png",
+      "text": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.",
+      "links":
+      {
+        "facebook": "https://www.facebook.com/Ascension.Germany/",
+        "instagram": "",
+        "website": "",
+        "shop": "",
+        "label": "",
+        "youtube": ""
+      }
+    },
+    {
+      "bId": 3,
+      "name": "membaris",
+      "image": "dmed2019_web_announce_band_membaris_transp.png",
+      "text": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.",
+      "links":
+      {
+        "facebook": "https://www.facebook.com/membarisofficial/",
+        "instagram": "",
+        "website": "",
+        "shop": "",
+        "label": "",
+        "youtube": ""
+      }
+    },
+    {
+      "bId": 4,
+      "name": "sinmara",
+      "image": "dmed2019_web_announce_band_sinmara_transp.png",
+      "text": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.",
+      "links":
+      {
+        "facebook": "https://www.facebook.com/sinmaraofficial/",
+        "instagram": "",
+        "website": "",
+        "shop": "",
+        "label": "",
+        "youtube": ""
+      }
+    }
+  ]
+}
