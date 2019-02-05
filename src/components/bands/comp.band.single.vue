@@ -1,12 +1,11 @@
 <template>
   <section class="band-single">
     <div class = "band-wrapper" v-for="band in bands" :key="band.bId">
-      <div class = "band" v-if="bId == band.bands[bId-1].bId">
-        <div> {{ band.bands[bId-1] }} </div>
+      <div class = "band-inner-single" v-if="bId == band.bands[index].bId">
+        <h1> {{ band.bands[index].name }} </h1>
+        <div> {{ band.bands[index].text }} </div>
       </div>
-      <!-- <div> {{ band.bands.bId }}</div> -->
     </div>
-    <div> {{ bId }}</div>
   </section>
 </template>
 
@@ -17,6 +16,7 @@ export default {
   data () {
     return {
       bId: this.$route.params.bId,
+      index: this.$route.params.bId - 1,
       name: this.$route.params.name,
       bands: [bandJson]
     }
