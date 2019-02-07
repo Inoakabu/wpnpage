@@ -1,7 +1,7 @@
 <template>
-  <li class="news">
+  <li class="new">
     <h3 class="news-title">{{ title }}</h3>
-    <img class="news-image" :src="imageSrc">
+    <img @click="goToSingle(nId, title)" class="news-image" :src="imageSrc">
   </li>
 </template>
 
@@ -15,25 +15,25 @@ export default {
   },
   computed: {
     imageSrc () {
-      return require(`../../assets/BandLogos/${this.image}`)
+      return require(`../../assets/NewsImage/${this.image}`)
     }
   },
   methods: {
-    goToSingle (nId, name) {
-      this.$route.push({ name: 'NewsSinglePage', params: { nId, name } })
+    goToSingle (nId, title) {
+      this.$router.push({ name: 'NewsSinglePage', params: { nId, title } })
     }
   }
 }
 </script>
 
 <style>
-.news {
+.new {
   position: relative;
   border: 2px solid var(--beige);
   padding: 1rem;
   transition: all 200ms ease-in-out;
 }
-.news::after {
+.new::after {
   content: '';
   width: 100%;
   position: absolute;
@@ -45,11 +45,11 @@ export default {
   background-color: transparent;
   transition: all 200ms ease-in-out;
 }
-.news:hover::after {
+.new:hover::after {
   background-color: var(--beige);
   opacity: 0.2;
 }
-.news::before {
+.new::before {
   content: '';
   background-image: url('../../assets/images/dmed2019_web_bg_blank.jpg');
   width: 95%;
