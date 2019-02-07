@@ -3,6 +3,7 @@ import Router from 'vue-router'
 import MainPage from './routes/route.Main'
 import BandPage from './routes/route.band'
 import BandSinglePage from './routes/route.band.single'
+import NewsSinglePage from './routes/route.news.single'
 
 Vue.use(Router)
 
@@ -33,6 +34,11 @@ export default new Router({
       path: '/News',
       name: 'NewsPage',
       component: BandPage // placeholder NewsPage
+    },
+    {
+      path: '/News/:id',
+      name: 'NewsSinglePage',
+      component: NewsSinglePage // placeholder NewsPage
     },
     {
       path: '/FAQ',

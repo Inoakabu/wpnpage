@@ -15,34 +15,14 @@
 
 <script>
 import BandTile from './comp.tile.band'
+import bandJson from '../../assets/bandSinglePageJson/bands.json'
 
 export default {
   name: 'Bands',
   components: { BandTile },
   data () {
     return {
-      bands: [
-        {
-          bId: 1,
-          name: 'arroganz',
-          image: 'dmed2019_web_announce_band_arroganz_transp.png'
-        },
-        {
-          bId: 2,
-          name: 'ascension',
-          image: 'dmed2019_web_announce_band_ascension_transp.png'
-        },
-        {
-          bId: 3,
-          name: 'membaris',
-          image: 'dmed2019_web_announce_band_membaris_transp.png'
-        },
-        {
-          bId: 4,
-          name: 'sinmara',
-          image: 'dmed2019_web_announce_band_sinmara_transp.png'
-        }
-      ]
+      bands: bandJson.bands
     }
   }
 }
