@@ -37,6 +37,7 @@ export default {
           url: 'https://www.folter666shop.de/de/umsonst-gratis/'
         },
         { name: 'News', big: false },
+        { name: 'History', big: false },
         { name: 'FAQ', big: false }
       ],
       socials: [

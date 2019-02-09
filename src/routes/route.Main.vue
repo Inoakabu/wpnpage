@@ -1,6 +1,6 @@
 <template>
   <main>
-    <introComp /> <bandsComp /> <newsComp /> <instaComp />
+    <introComp /> <bandsComp /> <newsComp /> <instaComp /> <history />
     <!-- <router-link to="/Bands">Bands</router-link> -->
   </main>
 </template>
@@ -10,13 +10,15 @@ import introComp from '../components/intro/comp.intro'
 import bandsComp from '../components/bands/comp.bands'
 import newsComp from '../components/news/comp.news'
 import instaComp from '../components/social/comp.instagram'
+import history from '../components/history/comp.history'
 
 export default {
   name: 'MainPage',
   components: { introComp,
     bandsComp,
     newsComp,
-    instaComp
+    instaComp,
+    history
   }
 }
 </script>
