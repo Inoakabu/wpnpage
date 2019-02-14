@@ -1,6 +1,6 @@
 <template>
   <main>
-    <introComp /> <bandsComp /> <newsComp /> <instaComp /> <history /> <foot />
+    <introComp /> <bandsComp /> <newsComp /> <instaComp /> <history />
   </main>
 </template>
 
@@ -10,7 +10,6 @@ import bandsComp from '../components/bands/comp.bands'
 import newsComp from '../components/news/comp.news'
 import instaComp from '../components/social/comp.instagram'
 import history from '../components/history/comp.history'
-import foot from '../components/footer/comp.footer'
 
 export default {
   name: 'MainPage',
@@ -19,8 +18,7 @@ export default {
     bandsComp,
     newsComp,
     instaComp,
-    history,
-    foot
+    history
   }
 }
 </script>

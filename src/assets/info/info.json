@@ -1,0 +1,20 @@
+{
+  "info": {
+    "contact": {
+        "name": "Triple Six Concerts",
+        "name_2": "Joerg Schroeder",
+        "strasse": "Rudolf Schwarz Str. 26a",
+        "plz": "10407",
+        "ort": "Berlin",
+        "land": "Germany",
+        "tel": "+49 (0) 30 / 63967700",
+        "email": "info@utbs-festival.de",
+        "email_2": "info@folter666.de"
+    }
+  },
+  "impressum": {
+    "umsatzsteuerID": "DE280888578",
+    "steuerNR": "31/520/00474 ",
+    "FA": "FA Berlin/Prenzlauer Berg"
+  }
+}

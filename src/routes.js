@@ -4,6 +4,7 @@ import MainPage from './routes/route.Main'
 import BandPage from './routes/route.band'
 import NewsPage from './routes/route.news'
 import InfoPage from './routes/route.info'
+import ImpressumPage from './routes/route.impressum'
 import BandSinglePage from './routes/route.band.single'
 import NewsSinglePage from './routes/route.news.single'
 
@@ -45,6 +46,11 @@ export default new Router({
       path: '/Info',
       name: 'InfoPage',
       component: InfoPage
+    },
+    {
+      path: '/Impressum',
+      name: 'ImpressumPage',
+      component: ImpressumPage
     }
   ]
 })

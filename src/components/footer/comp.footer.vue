@@ -1,7 +1,12 @@
 <template>
   <section class="footer">
-    <div class="sponsors">
-      <Sponsors />
+    <div class="content">
+      <div class="sponsors">
+        <Sponsors />
+      </div>
+      <div class="impressum">
+        <a class="imp-link" href="/Impressum">Impressum</a>
+      </div>
     </div>
   </section>
 </template>
@@ -37,7 +42,7 @@ export default {
   background-position-y: 5%;
   background-repeat: no-repeat;
   position: absolute;
-  min-height: 320px;
+  min-height: 450px;
   top: 0;
   left: 0;
   z-index: -1;
@@ -51,8 +56,33 @@ export default {
     min-width: 1000px;
   }
 }
+.content {
+  display: grid;
+  padding-top: 1rem;
+  padding-left: 10rem;
+  padding-right: 3rem;
+  position: relative;
+}
 .sponsors {
   display: flex;
   margin: auto;
+}
+.impressum {
+  display: flex;
+  margin: auto;
+}
+.imp-link {
+  background-color: var(--beige);
+  color: var(--mittelgrau);
+  text-align: center;
+  padding: 10px 20px;
+  display: inline-block;
+  text-decoration: none;
+  border-radius: 5px
+}
+.imp-link:hover,
+.imp-link:active {
+  background-color: var(--gold);
+  transition: all 250ms ease-in-out
 }
 </style>
