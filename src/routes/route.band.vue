@@ -1,12 +1,14 @@
 <template>
   <main>
     <h1>{{ id }}</h1>
-    <router-link to="/">Home</router-link>
+    <bandComp />
   </main>
 </template>
 <script>
+import bandComp from '../components/bands/comp.bands'
 export default {
   name: 'Band',
+  components: { bandComp },
   data () {
     return {
       id: this.$route.params.id

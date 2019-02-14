@@ -1,13 +1,7 @@
 <template>
   <section class="history">
     <h2>History</h2>
-    <ul class="history-list">
-      <HistorySub
-        v-for="history in history"
-        :key="history.yId"
-        :image="history.image"
-      />
-    </ul>
+      <HistorySub />
   </section>
 </template>
 
@@ -30,12 +24,5 @@ export default {
 .history {
   text-align: center;
   padding: 2rem;
-}
-.history-list {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 2rem;
-  list-style: none;
-  padding: 0;
 }
 </style>

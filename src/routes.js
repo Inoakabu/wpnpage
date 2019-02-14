@@ -18,8 +18,7 @@ export default new Router({
     },
     {
       path: '/Tickets',
-      name: 'TicketPage',
-      component: BandPage // placeholder TicketPage
+      name: 'TicketPage'
     },
     {
       path: '/Bands',
@@ -42,9 +41,8 @@ export default new Router({
       component: NewsSinglePage
     },
     {
-      path: '/FAQ',
-      name: 'FAQPage',
-      component: BandPage // placeholder FAQPage
+      path: '/Info',
+      name: 'InfoPage'
     }
   ]
 })
