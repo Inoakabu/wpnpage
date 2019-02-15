@@ -1,10 +1,10 @@
 <template>
-  <section>
+  <section class="contact">
     <h3>Contact</h3><br>
     <h4>{{ info.name }}</h4><br>
         <div>
           {{ info.strasse }}<br>
-          {{ info.plz }}<br>
+          {{ info.plz }}
           {{ info.ort }}<br>
           {{ info.land }}<br>
         </div><br>

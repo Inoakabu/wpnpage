@@ -66,6 +66,7 @@ export default {
   display: flex;
   padding: 1rem;
   flex-wrap: nowrap;
+  align-items: center
 }
 
 .nav-item {
@@ -133,6 +134,7 @@ export default {
   display: flex;
   justify-content: space-between;
   width: 100%;
+  align-items: center
 }
 @media (max-width: 960px) {
   .nav-bar,

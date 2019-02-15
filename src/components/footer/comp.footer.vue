@@ -21,10 +21,9 @@ export default {
 <style>
 .footer {
   display: flex;
-  padding-top: 1rem;
-  padding-left: 2rem;
-  padding-right: 2rem;
   position: relative;
+  padding-top: 4rem;
+  justify-content: center
 }
 @media (max-width: 960px) {
   .footer {
@@ -58,9 +57,6 @@ export default {
 }
 .content {
   display: grid;
-  padding-top: 1rem;
-  padding-left: 10rem;
-  padding-right: 3rem;
   position: relative;
 }
 .sponsors {

@@ -22,6 +22,7 @@ export default {
   padding-left: 2rem;
   padding-right: 2rem;
   position: relative;
+  align-items: center;
 }
 .header-logo {
   align-self: center;

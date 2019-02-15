@@ -15,6 +15,7 @@
 </template>
 
 <script>
+// array init
 import historyJson from '../../assets/history/history.json'
 export default {
   data () {
@@ -71,8 +72,8 @@ export default {
   margin: 0 .5rem;
   min-width: 1rem;
   max-height: 2rem;
-  border-radius: 100%;
-  border: 2px solid var(--beige);
+  border-radius: 15%;
+  border: 1px solid var(--beige);
   background-color: transparent;
   color: var(--mittelgrau);
   font-weight: bold;
@@ -104,6 +105,7 @@ export default {
 .image-slider {
   display: grid;
   grid-template-columns: .4fr .7fr .4fr;
+  grid-template-rows: 1fr;
   grid-gap: 1rem;
   padding: 0;
   list-style: none;

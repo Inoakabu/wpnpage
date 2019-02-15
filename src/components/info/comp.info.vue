@@ -17,5 +17,8 @@ export default {
 </script>
 
 <style>
-
+.info {
+  text-align: center;
+  padding: 2rem;
+}
 </style>

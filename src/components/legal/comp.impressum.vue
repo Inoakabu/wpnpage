@@ -2,18 +2,18 @@
   <section class="impressum">
     <div>
       <h3>Impressum</h3> <br>
-      <h4>{{ info.name }}</h4> <br>
+      <h4>{{ impressum.name }}</h4> <br>
         <div>
           {{ info.strasse }} <br>
           {{ info.plz }} <br>
           {{ info.ort }} <br>
           {{ info.land }} <br>
-          Vertreten durch: {{ info.name_2 }} <br>
+          Vertreten durch: {{ impressum.name_CO }} <br>
         </div><br>
       <h4>Phone</h4>
         {{ info.tel }}<br><br>
       <h4>E-Mail</h4>
-        {{ info.email }}<br><br>
+        {{ impressum.email }}<br><br>
       Umsatzsteuer-ID {{ impressum.umsatzsteuerID }} <br>
       Steuer Nr {{ impressum.steuerNR }}<br><br>
       {{ impressum.FA }}<br><br>
@@ -57,5 +57,8 @@ export default {
 </script>
 
 <style>
-
+.impressum {
+  text-align: center;
+  padding: 2rem;
+}
 </style>
