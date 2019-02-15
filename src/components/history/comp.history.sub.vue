@@ -1,11 +1,9 @@
 <template>
   <section class="history-slider">
-    <div class="slider-navigation">
-      <button class="button-left" @click="prev">Prev</button>
-      <button class="button-right" @click="next">Next</button>
-    </div>
       <transition-group name="slide-fade">
         <div class="image-slider" v-for="number in [activeImage]" :key="number">
+          <button class="button-left" @click="prev">Prev</button>
+          <button class="button-right" @click="next">Next</button>
           <img class="image-left" :src="leftImageSrc">
           <img class="image-active" v-on:click="goTo()" :src="activeImageSrc">
           <img class="image-right" :src="rightImageSrc">
@@ -59,7 +57,84 @@ export default {
 </script>
 
 <style>
+.history-slider {
+  text-align: center;
+  padding: 2rem;
+}
+.image-slider {
+  display: grid;
+  grid-template-columns: .4fr .1fr .7fr .1fr .4fr;
+  grid-template-rows: auto;
+  grid-template-areas: "img-left btn-left img-active btn-right img-right";
+  grid-gap: 1rem;
+}
+.button-left {
+  grid-area: btn-left;
+  align-self: center;
+}
+.button-right {
+  grid-area: btn-right;
+  align-self: center;
+}
+.image-left {
+  grid-area: img-left;
+  align-self: baseline
+}
+.image-active {
+  grid-area: img-active;
+  align-self: baseline
+}
+.image-right {
+  grid-area: img-right;
+  align-self: baseline
+}
+.image-left,
+.image-active,
+.image-right{
+  width: 100%;
+  max-height: 600px
+}
+.image-active {
+  cursor: pointer;
+}
+.button-left,
+.button-right {
+  display: inline-block;
+  text-align: center;
+  padding: .5rem;
+  min-width: 1rem;
+  max-height: 2rem;
+  border-radius: 15%;
+  border: 1px solid var(--beige);
+  background-color: transparent;
+  color: var(--mittelgrau);
+  font-weight: bold;
+  text-decoration: none;
+  transition: all 200ms ease-in-out;
+  text-transform: uppercase;
+}
+.button-left:hover,
+.button-right:hover {
+  color: var(--background);
+  border-color: transparent;
+  background-color: var(--gold);
+  cursor: pointer;
+}
 .slider-navigation {
+  align-items: center;
+}
+.slide-fade-enter-active {
+  transition: all .10s ease;
+}
+.slide-fade-leave-active {
+  transition: all .100ms cubic-bezier(1, 0.5, 0.8, 1)
+}
+.slide-fade-enter,
+.slide-fade-leave-to{
+  transform: translateX(10px);
+  opacity: 0;
+}
+/* .slider-navigation {
   display:flex;
   justify-content: center;
   padding: 0;
@@ -119,5 +194,5 @@ export default {
 }
 .image-active {
   cursor: pointer;
-}
+} */
 </style>
