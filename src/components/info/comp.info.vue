@@ -3,6 +3,7 @@
     <infoContact />
     <infoHotel />
     <infoMap />
+    <infoGTC />
   </section>
 </template>
 
@@ -10,9 +11,10 @@
 import infoMap from './comp.info.map'
 import infoHotel from './comp.info.hotel'
 import infoContact from './comp.info.contact'
+import infoGTC from './comp.gtc'
 export default {
   name: 'Info',
-  components: { infoMap, infoHotel, infoContact }
+  components: { infoMap, infoHotel, infoContact, infoGTC }
 }
 </script>
 
