@@ -37,7 +37,6 @@ export default {
           url: 'https://www.folter666shop.de/de/'
         },
         { name: 'News', big: false },
-        { name: 'History', big: false },
         { name: 'Info', big: false }
       ],
       socials: [
