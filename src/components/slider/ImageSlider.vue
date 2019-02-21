@@ -10,7 +10,7 @@
           :key="slide.image"
           class="ImageSlider__slide"
         >
-        <div>{{ slide }}</div>
+          <div>{{ slide }}</div>
           <img
             :src="slide.image"
             :alt="slide.headline"
@@ -67,48 +67,48 @@ export default {
 </script>
 
 <style>
-.ImageSlider {
-  position: relative;
-}
+  .ImageSlider {
+    position: relative;
+  }
 
-.ImageSlider__headline,
-.ImageSlider__direction {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-}
+  .ImageSlider__headline,
+  .ImageSlider__direction {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
 
-.ImageSlider__direction--prev {
-  left: 0.5em;
-}
+  .ImageSlider__direction--prev {
+    left: 0.5em;
+  }
 
-.ImageSlider__direction--next {
-  right: 0.5em;
-}
+  .ImageSlider__direction--next {
+    right: 0.5em;
+  }
 
-.ImageSlider__slide,
-.ImageSlider__image {
-  width: 100%;
-}
+  .ImageSlider__slide,
+  .ImageSlider__image {
+    width: 100%;
+  }
 
-.ImageSlider__headline {
-  width: 100%;
-  text-align: center;
-  font-size: 2.5em;
-  color: #fff;
-  text-shadow: 0 0 0.75em rgba(#000, 0.4);
-}
+  .ImageSlider__headline {
+    width: 100%;
+    text-align: center;
+    font-size: 2.5em;
+    color: #fff;
+    text-shadow: 0 0 0.75em rgba(#000, 0.4);
+  }
 
-.ImageSlider__image {
-  vertical-align: middle;
-}
+  .ImageSlider__image {
+    vertical-align: middle;
+  }
 
-.ImageSlider__dots {
-  position: absolute;
-  right: 0;
-  bottom: 0.5em;
-  left: 0;
-  display: flex;
-  justify-content: center;
-}
+  .ImageSlider__dots {
+    position: absolute;
+    right: 0;
+    bottom: 0.5em;
+    left: 0;
+    display: flex;
+    justify-content: center;
+  }
 </style>

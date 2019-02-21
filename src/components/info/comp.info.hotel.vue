@@ -7,7 +7,8 @@
       <h4>Metropol Hostel</h4>
       <p>Mehringdamm 32</p>
       <p>10961 Berlin</p>
-      <img class="hotel-link" src="http://neu.metropolhostel-berlin.de/wp-content/uploads/2016/06/metropolhostel-berlin.png" @click="goTo"><br>
+      <img class="hotel-link"
+           src="http://neu.metropolhostel-berlin.de/wp-content/uploads/2016/06/metropolhostel-berlin.png" @click="goTo"><br>
       <small>(see the map below to get the location)</small>
     </div>
   </section>
@@ -24,7 +25,7 @@ export default {
 </script>
 
 <style>
-.hotel-link:hover {
-  cursor: pointer;
-}
+  .hotel-link:hover {
+    cursor: pointer;
+  }
 </style>

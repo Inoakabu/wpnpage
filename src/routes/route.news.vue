@@ -1,12 +1,13 @@
 <template>
   <main>
     <h1>{{ id }}</h1>
-    <newsComp />
+    <newsComp/>
   </main>
 </template>
 
 <script>
 import newsComp from '../components/news/comp.news'
+
 export default {
   name: 'News',
   components: { newsComp },

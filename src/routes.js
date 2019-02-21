@@ -19,36 +19,36 @@ export default new Router({
       component: MainPage
     },
     {
-      path: '/Tickets',
+      path: '/tickets',
       name: 'TicketPage'
     },
     {
-      path: '/Bands',
+      path: '/bands',
       name: 'BandPage',
       component: BandPage
     },
     {
-      path: '/Bands/:bId?:name',
+      path: '/bands/:name',
       name: 'BandSinglePage',
       component: BandSinglePage
     },
     {
-      path: '/News',
+      path: '/news',
       name: 'NewsPage',
       component: NewsPage
     },
     {
-      path: '/News/:id?:title',
+      path: '/news/:id?:title',
       name: 'NewsSinglePage',
       component: NewsSinglePage
     },
     {
-      path: '/Info',
+      path: '/info',
       name: 'InfoPage',
       component: InfoPage
     },
     {
-      path: '/Impressum',
+      path: '/impressum',
       name: 'ImpressumPage',
       component: ImpressumPage
     }

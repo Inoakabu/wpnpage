@@ -1,9 +1,9 @@
 <template>
-  <div class="count">
+  <section class="count">
     <h3>Festival-Countdown</h3>
     <h1>{{ days }} : {{ hours }} : {{ minutes }} : {{ seconds }}</h1>
     <p>Days : Hrs : Min : Sec</p>
-  </div>
+  </section>
 </template>
 
 <script>
@@ -47,33 +47,35 @@ export default {
 </script>
 
 <style>
-.count {
-  padding: 10rem 0;
-  text-align: center;
-}
-
-.count h1 {
-  color: var(--main);
-  font-size: 3rem;
-}
-@media (max-width: 768px) {
   .count {
-    padding: 2.5rem 0;
+    padding: 10rem 0;
+    text-align: center;
   }
-}
-@media (max-width: 560px) {
+
   .count h1 {
     color: var(--main);
-    font-size: 12vw;
+    font-size: 3rem;
   }
-}
 
-.count h3 {
-  text-transform: uppercase;
-}
+  @media (max-width: 768px) {
+    .count {
+      padding: 2.5rem 0;
+    }
+  }
 
-.count p {
-  color: var(--motiv);
-  text-transform: uppercase;
-}
+  @media (max-width: 560px) {
+    .count h1 {
+      color: var(--main);
+      font-size: 12vw;
+    }
+  }
+
+  .count h3 {
+    text-transform: uppercase;
+  }
+
+  .count p {
+    color: var(--motiv);
+    text-transform: uppercase;
+  }
 </style>

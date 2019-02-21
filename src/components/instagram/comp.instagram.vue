@@ -42,28 +42,29 @@ export default {
 </script>
 
 <style>
-.Instagram {
-  text-align: center;
-  padding: 2rem;
-}
-.instagram-list {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 1rem;
-  list-style: none;
-  padding: 0;
-  margin-bottom: 3rem;
-}
-
-@media (max-width: 960px) {
-  .instagram-list {
-    grid-template-columns: 1fr 1fr;
+  .Instagram {
+    text-align: center;
+    padding: 2rem;
   }
-}
 
-@media (max-width: 560px) {
   .instagram-list {
-    grid-template-columns: 1fr;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 1rem;
+    list-style: none;
+    padding: 0;
+    margin-bottom: 3rem;
   }
-}
+
+  @media (max-width: 960px) {
+    .instagram-list {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+
+  @media (max-width: 560px) {
+    .instagram-list {
+      grid-template-columns: 1fr;
+    }
+  }
 </style>

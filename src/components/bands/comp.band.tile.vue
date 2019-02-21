@@ -1,40 +1,35 @@
 <template>
-  <li class="new">
-    <h3 class="news-title">{{ title }}</h3>
-    <img @click="goToSingle(nId, title)" class="news-image" :src="imageSrc">
-  </li>
+  <router-link :to="{ name: 'BandSinglePage', params: { name } }" class="band">
+    <h3 class="band-name">{{ name }}</h3>
+    <img class="band-image" :src="imageSrc"/>
+  </router-link>
 </template>
 
 <script>
+
 export default {
-  name: 'NewsTile',
+  name: 'BandTile',
   props: {
-    nId: Number,
-    title: String,
+    name: String,
     image: String
   },
   computed: {
     imageSrc () {
-      return require(`@/assets/images/icons/news/${this.image}`)
-    }
-  },
-  methods: {
-    goToSingle (nId, title) {
-      this.$router.push({ name: 'NewsSinglePage', params: { nId, title } })
+      return require(`@/assets/images/logo/bands/${this.image}`)
     }
   }
 }
 </script>
 
 <style>
-  .new {
+  .band {
     position: relative;
     border: 2px solid var(--motiv);
     padding: 1rem;
     transition: all 200ms ease-in-out;
   }
 
-  .new::after {
+  .band::after {
     content: '';
     width: 100%;
     position: absolute;
@@ -42,17 +37,17 @@ export default {
     z-index: -1;
     left: 2%;
     top: 2%;
-    border: 2px solid var(--gold);
+    border: 2px solid var(--main);
     background-color: transparent;
     transition: all 200ms ease-in-out;
   }
 
-  .new:hover::after {
-    background-color: var(--beige);
+  .band:hover::after {
+    background-color: var(--motiv);
     opacity: 0.2;
   }
 
-  .new::before {
+  .band::before {
     content: '';
     background-image: url('../../assets/images/background/bg.jpg');
     width: 95%;
@@ -66,23 +61,23 @@ export default {
     opacity: 0.2;
   }
 
-  .news-title {
+  .band-name {
     position: absolute;
     bottom: 3rem;
     right: 3rem;
-    color: var(--gold);
+    color: var(--main);
   }
 
-  .news-title::before {
+  .band-name::before {
     content: '[';
 
   }
 
-  .news-title::after {
+  .band-name::after {
     content: ']';
   }
 
-  .news-image {
+  .band-image {
     width: 100%;
   }
 </style>

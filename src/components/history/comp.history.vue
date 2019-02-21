@@ -1,13 +1,13 @@
 <template>
   <section class="history">
     <h2>History</h2>
-      <HistorySub />
+    <HistorySub/>
   </section>
 </template>
 
 <script>
 import HistorySub from './comp.history.sub'
-import historyJson from '../../assets/history/history.json'
+import historyJson from '@/assets/json/history.json'
 
 export default {
   name: 'History',
@@ -21,8 +21,8 @@ export default {
 </script>
 
 <style>
-.history {
-  text-align: center;
-  padding: 2rem;
-}
+  .history {
+    text-align: center;
+    padding: 2rem;
+  }
 </style>

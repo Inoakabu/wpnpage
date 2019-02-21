@@ -1,7 +1,7 @@
 <template>
   <transition :name="transition">
     <div v-show="active" class="SliderSlide">
-      <slot />
+      <slot/>
     </div>
   </transition>
 </template>
@@ -28,7 +28,7 @@ export default {
 </script>
 
 <style>
-.SliderSlides {
-  position: relative;
-}
+  .SliderSlides {
+    position: relative;
+  }
 </style>

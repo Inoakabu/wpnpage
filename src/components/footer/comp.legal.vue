@@ -1,13 +1,11 @@
 <template>
   <li class="legal">
-    
+
   </li>
 </template>
 
 <script>
-export default {
-
-}
+export default {}
 </script>
 
 <style>

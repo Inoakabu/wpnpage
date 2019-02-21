@@ -1,6 +1,6 @@
 <template>
   <main>
-    <newsSingleComp />
+    <newsSingleComp/>
   </main>
 </template>
 

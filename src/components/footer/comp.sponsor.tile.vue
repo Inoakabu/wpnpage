@@ -15,7 +15,7 @@ export default {
   },
   computed: {
     imageSrc () {
-      return require(`../../assets/sponsor/${this.logo}`)
+      return require(`@/assets/images/logo/sponsor/${this.logo}`)
     }
   },
   methods: {
@@ -27,21 +27,23 @@ export default {
 </script>
 
 <style>
-.sponsor {
-  position: relative;
-  padding: 1rem;
-  transition: all 200ms ease-in-out;
-}
-.sponsor::after {
-  content: '';
-  width: 100%;
-  position: absolute;
-  height: 100%;
-  z-index: -1;
-  left: 2%;
-  top: 2%;
-}
-.sponsor-image:hover {
-  cursor: pointer;
-}
+  .sponsor {
+    position: relative;
+    padding: 1rem;
+    transition: all 200ms ease-in-out;
+  }
+
+  .sponsor::after {
+    content: '';
+    width: 100%;
+    position: absolute;
+    height: 100%;
+    z-index: -1;
+    left: 2%;
+    top: 2%;
+  }
+
+  .sponsor-image:hover {
+    cursor: pointer;
+  }
 </style>

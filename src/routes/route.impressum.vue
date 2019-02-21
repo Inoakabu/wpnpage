@@ -1,11 +1,12 @@
 <template>
   <main>
     <h1>{{ id }}</h1>
-    <impressumComp />
+    <impressumComp/>
   </main>
 </template>
 <script>
 import impressumComp from '../components/legal/comp.impressum'
+
 export default {
   name: 'Info',
   components: { impressumComp },

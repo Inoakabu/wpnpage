@@ -1,11 +1,12 @@
 <template>
   <main>
-    <bandSingleComp />
+    <bandSingleComp/>
   </main>
 </template>
 
 <script>
 import bandSingleComp from '../components/bands/comp.band.single'
+
 export default {
   name: 'BandSinglePage',
   components: { bandSingleComp },

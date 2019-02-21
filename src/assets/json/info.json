@@ -1,14 +1,14 @@
 {
   "info": {
     "contact": {
-        "name": "Triple Six Concerts",
-        "strasse": "Rudolf Schwarz Str. 26a",
-        "plz": "10407",
-        "ort": "Berlin",
-        "land": "Germany",
-        "tel": "+49 (0) 30 / 63967700",
-        "email": "info@dmed-festival.de",
-        "email_2": "info@folter666.de"
+      "name": "Triple Six Concerts",
+      "strasse": "Rudolf Schwarz Str. 26a",
+      "plz": "10407",
+      "ort": "Berlin",
+      "land": "Germany",
+      "tel": "+49 (0) 30 / 63967700",
+      "email": "info@dmed-festival.de",
+      "email_2": "info@folter666.de"
     }
   },
   "impressum": {
@@ -21,7 +21,6 @@
   },
   "hotel": [
     {
-      
     }
   ]
 }
