@@ -1,5 +1,5 @@
 <template>
-  <router-link :to="{ name: 'BandSinglePage', params: { name } }" class="band">
+  <router-link :to="{ name: 'BandPage', params: { name } }" class="band">
     <h3 class="band-name">{{ name }}</h3>
     <img class="band-image" :src="imageSrc"/>
   </router-link>

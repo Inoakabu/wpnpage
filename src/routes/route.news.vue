@@ -1,22 +1,30 @@
 <template>
-  <main>
-    <h1>{{ id }}</h1>
-    <newsComp/>
-  </main>
+  <section class="news-single">
+      <div class="news-inner-single" v-if="news">
+        <h1> {{ news.title }}</h1>
+        <div> {{ news.text }}</div>
+        <img :src="imageSrc"/>
+      </div>
+  </section>
 </template>
 
 <script>
-import newsComp from '../components/news/comp.news'
+  import newsJson from '@/assets/json/news.json'
 
-export default {
-  name: 'News',
-  components: { newsComp },
-  data () {
-    return {
-      id: this.$route.params.id
+  export default {
+    name: 'News',
+    computed: {
+      id() {
+        return Number(this.$route.params.id)
+      },
+      news () {
+        return newsJson.filter(b => b.id === this.id)[0]
+      },
+      imageSrc() {
+        return require(`@/assets/images/news/${this.news.image}`)
+      }
     }
   }
-}
 </script>
 
 <style>

@@ -1,12 +1,18 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import MainPage from './routes/route.Main'
+
+// Mainpage
+import MainPage from './routes/route.main'
+
+// Overview
+import BandOverview from './routes/route.overview.bands'
+import NewsOverview from './routes/route.overview.news'
+import InfoOverview from './routes/route.info'
+import ImpressumOverview from './routes/route.impressum'
+
+// Singlepages
 import BandPage from './routes/route.band'
 import NewsPage from './routes/route.news'
-import InfoPage from './routes/route.info'
-import ImpressumPage from './routes/route.impressum'
-import BandSinglePage from './routes/route.band.single'
-import NewsSinglePage from './routes/route.news.single'
 
 Vue.use(Router)
 
@@ -24,33 +30,33 @@ export default new Router({
     },
     {
       path: '/bands',
+      name: 'BandOverview',
+      component: BandOverview
+    },
+    {
+      path: '/band/:name',
       name: 'BandPage',
       component: BandPage
     },
     {
-      path: '/bands/:name',
-      name: 'BandSinglePage',
-      component: BandSinglePage
+      path: '/news',
+      name: 'NewsOverview',
+      component: NewsOverview
     },
     {
-      path: '/news',
+      path: '/news/:id',
       name: 'NewsPage',
       component: NewsPage
     },
     {
-      path: '/news/:id?:title',
-      name: 'NewsSinglePage',
-      component: NewsSinglePage
-    },
-    {
       path: '/info',
-      name: 'InfoPage',
-      component: InfoPage
+      name: 'InfoOverview',
+      component: InfoOverview
     },
     {
       path: '/impressum',
-      name: 'ImpressumPage',
-      component: ImpressumPage
+      name: 'ImpressumOverview',
+      component: ImpressumOverview
     }
   ]
 })

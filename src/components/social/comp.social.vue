@@ -1,5 +1,6 @@
 <template>
-  <a :href="url" class="social-item" :class="getType" :key="name" target="_blank" :alt="`Weiter zu ${name.toUpperCase()}`" :title="`Weiter zu ${name.toUpperCase()}`">
+  <a :href="url" class="social-item" :class="getType" :key="name" target="_blank"
+     :alt="`Weiter zu ${name.toUpperCase()}`" :title="`Weiter zu ${name.toUpperCase()}`">
     {{firstLetterOfName}}
   </a>
 </template>
@@ -15,7 +16,12 @@
       getType () {
         /* eslint no-useless-escape: "error" */
         const regex = /^(?:https?:\/\/)?(?:[^@\/\n]+@)?(?:www\.)?([^:\/?\n]+)/gim
-        return regex.exec(this.url)[1].replace(/\.com|\.de/gi, '')
+        let data = regex.exec(this.url) || null
+        if (data) {
+          return data[1].replace(/\.com|\.de/gi, '')
+        } else {
+          return undefined
+        }
       },
       firstLetterOfName () {
         return this.name[0]

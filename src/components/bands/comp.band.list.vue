@@ -2,9 +2,9 @@
   <section class="bands">
     <h2>Bands</h2>
     <ul class="bands-list">
-      <BandTile v-for="(band,idx) in bands" :key="idx" :name="band.name" :image="band.image"/>
+      <BandTile v-for="(band,idx) in bands" :key="idx" :test="band.count" :name="band.name" :image="band.image"/>
     </ul>
-    <router-link class="button" :to="'bands'" >Mehr Bands anzeigen</router-link>
+    <router-link class="button" :to="'bands'">Mehr Bands anzeigen</router-link>
   </section>
 </template>
 
@@ -16,8 +16,17 @@
     name: 'Bands',
     components: { BandTile },
     computed: {
-      bands() {
-        return bandsJson.slice(0,4);
+      bands () {
+        let band = bandsJson.sort((a, b) => {
+          if (a.count > b.count) {
+            return -1
+          }
+          if (a.count < b.count) {
+            return 1
+          }
+          return 0
+        })
+        return band.slice(0, 4)
       }
     }
   }
