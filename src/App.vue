@@ -79,6 +79,9 @@ export default {
   .button {
     color: var(--main);
     font-weight: bold;
+    font-family: 'Haze', serif;
+    font-size: 1rem;
+    line-height: 1rem;
     text-decoration: none;
     text-transform: uppercase;
     border: 2px solid var(--main);
@@ -87,6 +90,7 @@ export default {
     padding: 1rem;
     position: relative;
     transition: all 250ms ease-in-out;
+    cursor: pointer;
   }
 
   .button::after {
@@ -119,5 +123,6 @@ export default {
 
   section {
     margin: 2rem 0;
+    padding: 2rem;
   }
 </style>

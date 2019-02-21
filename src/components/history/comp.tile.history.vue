@@ -9,6 +9,19 @@
     <button @click="previous">◀︎ previous</button>
     <button @click="next">next ▶</button>
   </div>
+
+  <div class="history-list-item" @click="previous">
+    <button class="button prev" @click="previous">previous</button>
+    <img :src="require(`@/assets/images/history/${firstItem.image}`)"/>
+  </div>
+  <a href="secondItem">
+    <img class="history-list-item-big"
+         :src="require(`@/assets/images/history/${secondItem.image}`)"/>
+  </a>
+  <div class="history-list-item" @click="next">
+    <button class="button next" @click="next">next</button>
+    <img :src="require(`@/assets/images/history/${thirdItem.image}`)"/>
+  </div>
 </template>
 
 <script>

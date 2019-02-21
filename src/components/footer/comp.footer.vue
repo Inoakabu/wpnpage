@@ -1,5 +1,5 @@
 <template>
-  <section class="footer">
+  <footer class="footer">
     <div class="content">
       <div class="sponsors">
         <Sponsors/>
@@ -8,7 +8,7 @@
         <a class="imp-link" href="/Impressum">Impressum</a>
       </div>
     </div>
-  </section>
+  </footer>
 </template>
 
 <script>
