@@ -7,7 +7,7 @@
 <script>
 import impressumComp from '../components/legal/comp.impressum'
 export default {
-  name: 'Info',
+  name: 'Impressum',
   components: { impressumComp },
   data () {
     return {
