@@ -14,7 +14,7 @@
 
 <script>
   import { navigation, socials } from '@/assets/json/header.json'
-  import social from '@/components/social/tags/comp.social-tag'
+  import social from '@/components/social/comp.social-tag'
 
   export default {
     name: 'Navigation',

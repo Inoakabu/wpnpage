@@ -1,12 +1,12 @@
 <template>
   <section class="history">
     <h2>Vergangene Festivals</h2>
-    <ul class="history-list">
-      <li v-for="(entry,idx) in CuttedArray" :key="entry.image" class="history-list-item" :class="{big: idx===1}">
-        <img :src="require(`@/assets/images/history/${entry.image}`)"/>
-      </li>
-    </ul>
-    <div>
+    <div class="list">
+      <Tile v-for="(item, idx) in CuttedArray" :key="idx" :route="item.link" :name="item.year" :image="item.image"
+            imagePath="history"
+            external shadow/>
+    </div>
+    <div class="history-controls">
       <button @click="previous" class="button">◀ Zurueck</button>
       <button @click="next" class="button">Vorwaerts ▶</button>
     </div>
@@ -18,9 +18,11 @@
   // TODO: HISTORY Styling
 
   import history from '@/assets/json/history.json'
+  import Tile from '@/components/tile/comp.tile'
 
   export default {
     name: 'history',
+    components: { Tile },
     data () {
       return {
         arr: history
@@ -50,50 +52,4 @@
     flex-direction: column;
     align-items: center;
   }
-
-  .history-list {
-    height: 600px;
-    max-width: 960px;
-    display: flex;
-    grid-gap: 1rem;
-    padding: 0;
-  }
-
-  .history-list-item {
-    cursor: pointer;
-    position: relative;
-    display: inline-block;
-    opacity: .5;
-  }
-
-
-  .history-list-item.big {
-    width: 100%;
-    opacity: 1;
-  }
-
-  .history-list-item button {
-    z-index: 2;
-  }
-
-  .history-list-item .next {
-    position: absolute;
-    right: -2rem;
-  }
-
-  .history-list-item .prev {
-    position: absolute;
-    left: -2rem;
-  }
-
-  .history-list-item img {
-    width: 100%;
-  }
-
-  /*
-  Animations einstellungen fuer <transition-group>
-  die Zustaende werden von VUE vorgegeben
-*/
-
-
 </style>

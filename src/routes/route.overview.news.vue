@@ -6,7 +6,7 @@
 </template>
 
 <script>
-import newsComp from '../components/news/comp.news'
+import newsComp from '../components/news/comp.news.list'
 
 export default {
   name: 'News',

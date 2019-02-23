@@ -1,49 +1,41 @@
 [
   {
-  "id": 1,
-  "year": "2015",
-  "image": "dmed2015_flyer_final_web_900pix.jpg",
-  "link": "https://www.metal.de/konzertberichte/de-mortem-et-diabolum-der-grosse-festivalbericht-2015-63439/"
-},
-  {
-    "id": 2,
-    "year": "2016",
-    "image": "dmed2016_flyer_final_web_900pix.jpg",
-    "link": "https://www.metal.de/konzertberichte/de-mortem-et-diabolum-2016-242434/"
-  },
-  {
-    "id": 3,
-    "year": "2017",
-    "image": "dmed2017_flyer_final_web_900pix.jpg",
-    "link": "https://www.metal.de/konzertberichte/de-mortem-et-diabolum-2017-306986/"
-  },
-  {
-    "id": 4,
-    "year": "2018",
-    "image": "dmed2018_flyer_final_web_900pix.jpg",
-    "link": "https://www.metal.de/konzertberichte/de-mortem-et-diabolum-2018-364093/"
-  },
-  {
-    "id": 5,
     "year": "2015",
     "image": "dmed2015_flyer_final_web_900pix.jpg",
     "link": "https://www.metal.de/konzertberichte/de-mortem-et-diabolum-der-grosse-festivalbericht-2015-63439/"
   },
   {
-    "id": 7,
     "year": "2016",
     "image": "dmed2016_flyer_final_web_900pix.jpg",
     "link": "https://www.metal.de/konzertberichte/de-mortem-et-diabolum-2016-242434/"
   },
   {
-    "id": 8,
     "year": "2017",
     "image": "dmed2017_flyer_final_web_900pix.jpg",
     "link": "https://www.metal.de/konzertberichte/de-mortem-et-diabolum-2017-306986/"
   },
   {
-    "id": 9,
     "year": "2018",
+    "image": "dmed2018_flyer_final_web_900pix.jpg",
+    "link": "https://www.metal.de/konzertberichte/de-mortem-et-diabolum-2018-364093/"
+  },
+  {
+    "year": "IDK WHATS TIZ",
+    "image": "dmed2015_flyer_final_web_900pix.jpg",
+    "link": "https://www.metal.de/konzertberichte/de-mortem-et-diabolum-der-grosse-festivalbericht-2015-63439/"
+  },
+  {
+    "year": "IDK WHATS TIZ",
+    "image": "dmed2016_flyer_final_web_900pix.jpg",
+    "link": "https://www.metal.de/konzertberichte/de-mortem-et-diabolum-2016-242434/"
+  },
+  {
+    "year": "IDK WHATS TIZ",
+    "image": "dmed2017_flyer_final_web_900pix.jpg",
+    "link": "https://www.metal.de/konzertberichte/de-mortem-et-diabolum-2017-306986/"
+  },
+  {
+    "year": "IDK WHATS TIZ",
     "image": "dmed2018_flyer_final_web_900pix.jpg",
     "link": "https://www.metal.de/konzertberichte/de-mortem-et-diabolum-2018-364093/"
   }

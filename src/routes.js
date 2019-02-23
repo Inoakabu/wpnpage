@@ -44,7 +44,7 @@ export default new Router({
       component: BandOverview
     },
     {
-      path: '/band/:name',
+      path: '/band/:id',
       name: 'BandPage',
       component: BandPage
     },

@@ -1,32 +1,39 @@
 <template>
   <footer class="footer">
-    <div class="content">
-      <div class="sponsors">
-        <Sponsors/>
-      </div>
-      <div class="impressum">
-        <a class="imp-link" href="/Impressum">Impressum</a>
-      </div>
+    <div class="sponsors">
+      <span v-for="(sponsor,idx) in sponsors" :key="idx">{{sponsor.name}}</span>
     </div>
+    <nav class="impressum">
+      <router-link :to="link.route" v-for="(link,idx) in links" :key="idx" :alt="link.alt" :title="link.alt">
+        {{link.name}}
+      </router-link>
+    </nav>
   </footer>
 </template>
 
 <script>
-import Sponsors from '../sponsors/comp.sponsor'
+  import { links, sponsors } from '@/assets/json/footer.json'
 
-// TODO: Footer cleanup
-
-export default {
-  components: { Sponsors }
-}
+  export default {
+    data () {
+      return {
+        links,
+        sponsors
+      }
+    }
+  }
 </script>
 
 <style>
   .footer {
     display: flex;
+    padding-top: 5rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
     position: relative;
-    padding-top: 4rem;
-    justify-content: center
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
   }
 
   @media (max-width: 960px) {
@@ -36,60 +43,49 @@ export default {
     }
   }
 
-  .footer::before {
+  .footer:before {
+    /*filter: invert(100%); !* Invert *!*/
     content: '';
     background-image: url('../../assets/images/background/bg.jpg');
     display: block;
     max-width: 1600px;
     width: 100%;
     background-size: 100%;
-    background-position-y: 5%;
+    background-position-y: 0;
     background-repeat: no-repeat;
     position: absolute;
-    min-height: 450px;
+    min-height: 100%;
     top: 0;
     left: 0;
     z-index: -1;
+
     opacity: 0.15;
   }
 
   @media (max-width: 960px) {
     .footer:before {
       background-size: 120%;
-      background-position-y: 100%;
+      /*background-position-y: 100%;*/
       background-position-x: 50%;
-      min-width: 1000px;
+      /*min-height: 1000px;*/
     }
   }
 
-  .content {
-    display: grid;
-    position: relative;
+  @media (max-width: 700px) {
+    .footer:before {
+      background-size: 275%;
+    }
   }
 
-  .sponsors {
-    display: flex;
-    margin: auto;
+  @media (max-width: 425px) {
+    .footer:before {
+      background-size: 235%;
+    }
   }
 
-  .impressum {
-    display: flex;
-    margin: auto;
-  }
-
-  .imp-link {
-    background-color: var(--beige);
-    color: var(--mittelgrau);
-    text-align: center;
-    padding: 10px 20px;
-    display: inline-block;
-    text-decoration: none;
-    border-radius: 5px
-  }
-
-  .imp-link:hover,
-  .imp-link:active {
-    background-color: var(--gold);
-    transition: all 250ms ease-in-out
+  @media (max-width: 320px) {
+    .footer:before {
+      background-size: 275%;
+    }
   }
 </style>

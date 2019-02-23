@@ -10,8 +10,8 @@
 </template>
 
 <script>
-  import youtube from '@/components/social/youtube/comp.youtube'
-  import social from '@/components/social/tags/comp.social-tag'
+  import youtube from '@/components/social/comp.youtube-embedded'
+  import social from '@/components/social/comp.social-tag'
   import bandJson from '@/assets/json/bands.json'
 
   export default {
@@ -19,7 +19,7 @@
     components: { youtube, social },
     computed: {
       name () {
-        return this.$route.params.name
+        return this.$route.params.id
       },
       band () {
         return bandJson.filter(b => b.name.toLowerCase() === this.name.toLowerCase())[0]

@@ -7,13 +7,13 @@
 </template>
 
 <script>
-import headerComp from './components/header/comp.header'
-import foot from './components/footer/comp.footer'
+  import headerComp from './components/header/comp.header'
+  import foot from './components/footer/comp.footer'
 
-export default {
-  name: 'app',
-  components: { headerComp, foot }
-}
+  export default {
+    name: 'app',
+    components: { headerComp, foot }
+  }
 </script>
 
 <style>
@@ -75,16 +75,20 @@ export default {
     font-size: 2.5rem;
     line-height: 2.5rem;
   }
+  a {
+    color: var(--main);
+    text-decoration: none;
+  }
 
   .button {
-    color: var(--main);
+    color: var(--typo);
     font-weight: bold;
     font-family: 'Haze', serif;
     font-size: 1rem;
     line-height: 1rem;
     text-decoration: none;
     text-transform: uppercase;
-    border: 2px solid var(--main);
+    border: 2px solid var(--typo);
     background-color: transparent;
     margin: 1rem;
     padding: 1rem;
@@ -101,7 +105,7 @@ export default {
     z-index: -1;
     left: 2%;
     top: 8%;
-    border: 2px solid var(--motiv);
+    border: 2px solid var(--main);
     background-color: transparent;
     transition: all 200ms ease-in-out;
     opacity: 0.6;
@@ -115,6 +119,7 @@ export default {
   .button:hover {
     color: var(--background);
     background-color: var(--main);
+    border-color: var(--main);
   }
 
   section > h2 {
@@ -124,5 +129,28 @@ export default {
   section {
     margin: 2rem 0;
     padding: 2rem;
+  }
+
+  .list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 2rem;
+    margin-bottom: 3rem;
+  }
+
+  .list.four {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+
+  @media (max-width: 960px) {
+    .list {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+
+  @media (max-width: 560px) {
+    .list {
+      grid-template-columns: 1fr;
+    }
   }
 </style>
