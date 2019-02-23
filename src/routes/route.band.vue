@@ -10,8 +10,8 @@
 </template>
 
 <script>
-  import youtube from '@/components/youtube/comp.youtube'
-  import social from '@/components/social/comp.social'
+  import youtube from '@/components/social/youtube/comp.youtube'
+  import social from '@/components/social/tags/comp.social-tag'
   import bandJson from '@/assets/json/bands.json'
 
   export default {

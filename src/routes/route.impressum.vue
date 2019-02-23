@@ -5,7 +5,7 @@
   </main>
 </template>
 <script>
-import impressumComp from '../components/legal/comp.impressum'
+import impressumComp from '../components/impressum/comp.impressum'
 
 export default {
   name: 'Info',

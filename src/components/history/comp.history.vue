@@ -14,6 +14,9 @@
 </template>
 
 <script>
+  // TODO: HISTORY fixing
+  // TODO: HISTORY Styling
+
   import history from '@/assets/json/history.json'
 
   export default {
@@ -40,7 +43,6 @@
     }
   }
 </script>
-
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style>
   .history {

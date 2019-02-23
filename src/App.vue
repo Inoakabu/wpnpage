@@ -1,5 +1,5 @@
 <template>
-  <div id="app">
+  <div id="website">
     <headerComp/>
     <router-view></router-view>
     <foot/>
@@ -118,7 +118,7 @@ export default {
   }
 
   section > h2 {
-    margin: 5rem 0;
+    margin: 3rem 0;
   }
 
   section {

@@ -1,24 +1,20 @@
 <template>
-  <div class="nav-wrapper">
-    <nav class="nav-bar">
-      <li v-for="item in navigation" :key="item.name" class="nav-item" :class="{ 'nav-item--big': item.big }">
-        <router-link :to="`/${item.route}`" v-if="!item.url" class="nav-item-link" :alt="`zu ${item.name.toUpperCase()}`" :title="`zu ${item.name.toUpperCase()}`">
-          {{item.name }}
-        </router-link>
-        <a v-else :href="item.url" target="_blank" class="nav-item-link" :alt="`Weiter zu ${item.name.toUpperCase()}`" :title="`Weiter zu ${item.name.toUpperCase()}`">
-          {{ item.name}}
-        </a>
-      </li>
-    </nav>
-    <nav class="social-bar">
+  <nav class="nav-wrapper">
+    <div class="nav-bar">
+      <router-link :to="item.route" class="nav-item" :alt="item.alt" :title="item.alt" v-for="item in navigation"
+                   :key="item.name" :class="{ 'nav-item--big': item.big }">
+        {{item.name }}
+      </router-link>
+    </div>
+    <div class="social-bar">
       <social v-for="item in socials" :key="item.name" :url="item.url" :name="item.name"/>
-    </nav>
-  </div>
+    </div>
+  </nav>
 </template>
 
 <script>
   import { navigation, socials } from '@/assets/json/header.json'
-  import social from '@/components/social/comp.social'
+  import social from '@/components/social/tags/comp.social-tag'
 
   export default {
     name: 'Navigation',
@@ -27,11 +23,6 @@
       return {
         navigation: navigation,
         socials: socials
-      }
-    },
-    methods: {
-      firstLetter (s) {
-        return s[0]
       }
     }
   }
@@ -45,26 +36,24 @@
   }
 
   .nav-item {
-    margin: 0.5rem;
+    margin: 0.5rem 0.5rem 0.3rem 0.5rem;
     line-height: 1.3rem;
     font-size: 1.3rem;
     text-transform: uppercase;
     align-self: center;
     display: inline-block;
-  }
-
-  .nav-item-link {
     color: var(--typo);
     font-weight: bold;
     text-decoration: none;
     transition: color 200ms ease-in-out;
   }
 
-  .nav-item-link:hover {
+  .nav-item:hover {
     color: var(--main);
   }
 
   .nav-item--big {
+    margin: 0.5rem;
     font-size: 1.8rem;
     line-height: 1.8rem;
   }

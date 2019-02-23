@@ -12,7 +12,9 @@
 </template>
 
 <script>
-import Sponsors from './comp.sponsor'
+import Sponsors from '../sponsors/comp.sponsor'
+
+// TODO: Footer cleanup
 
 export default {
   components: { Sponsors }

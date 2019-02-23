@@ -1,20 +1,20 @@
 <template>
   <header class="header">
-    <router-link to="/">
-      <logoComp class="header-logo"/>
+    <router-link to="/" class="header-logo" alt="De Mortem Et Diabolum">
+      <logoComp/>
     </router-link>
     <navComp/>
   </header>
 </template>
 
 <script>
-import navComp from './comp.navigation'
-import logoComp from '@/assets/images/logo/festival/logo.svg'
+  import navComp from './comp.navigation'
+  import logoComp from '@/assets/images/logo/festival/logo.svg'
 
-export default {
-  name: 'Header',
-  components: { logoComp, navComp }
-}
+  export default {
+    name: 'Header',
+    components: { logoComp, navComp }
+  }
 </script>
 
 <style>
@@ -26,7 +26,7 @@ export default {
     position: relative;
   }
 
-  .header-logo {
+  .header-logo > svg {
     align-self: center;
     height: 100px;
     width: auto;
@@ -34,7 +34,7 @@ export default {
     transition: fill 200ms ease-in-out;
   }
 
-  .header-logo:hover {
+  .header-logo:hover > svg {
     fill: var(--main);
   }
 
@@ -43,6 +43,7 @@ export default {
       justify-content: center;
       flex-direction: column;
     }
+
     .header-logo {
       justify-content: center;
       align-items: center;
@@ -50,7 +51,7 @@ export default {
   }
 
   .header:before {
-  /*filter: invert(100%); !* Invert *!*/
+    /*filter: invert(100%); !* Invert *!*/
     content: '';
     background-image: url('../../assets/images/background/bg.jpg');
     display: block;
@@ -76,6 +77,7 @@ export default {
       min-height: 1000px;
     }
   }
+
   @media (max-width: 700px) {
     .header:before {
       background-size: 275%;
@@ -87,6 +89,7 @@ export default {
       background-size: 235%;
     }
   }
+
   @media (max-width: 320px) {
     .header:before {
       background-size: 275%;
