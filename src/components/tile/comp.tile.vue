@@ -1,11 +1,11 @@
 <template>
-  <a :href="route" class="tile" v-if="external" target="_self" :class="{sepia: sepia, shadow: shadow }">
+  <a :href="route" class="tile" v-if="external" target="_blank" :class="{sepia: sepia, shadow: shadow, backgroundimg: backgroundimg, border: border }">
     <h3 class="tile-name" v-if="name">{{ name }}</h3>
     <div class="tile-image--wrapper">
       <img class="tile-image" :src="imageUrl ? imageUrl : imageSrc" :alt="`Bild von ${name}`"/>
     </div>
   </a>
-  <router-link :to="{ name: route, params:{id} }" class="tile" :class="{sepia: sepia, shadow: shadow }" v-else>
+  <router-link :to="{ name: route, params:{id} }" class="tile" :class="{sepia: sepia, shadow: shadow, backgroundimg: backgroundimg, border: border }" v-else>
     <h3 class="tile-name" v-if="name">{{ name }}</h3>
     <div class="tile-image--wrapper">
       <img class="tile-image" :src="imageUrl ? imageUrl : imageSrc" :alt="`Bild von ${name}`"/>
@@ -24,6 +24,8 @@
       imageUrl: String,
       route: { type: String },
       id: { type: String },
+      border: { type: Boolean, default: false },
+      backgroundimg: {type: Boolean, default: false},
       external: { type: Boolean, default: false },
       shadow: { type: Boolean, default: false },
       sepia: { type: Boolean, default: false }
@@ -39,9 +41,13 @@
 <style scoped>
   .tile {
     position: relative;
-    border: 2px solid var(--motiv);
+    /* border: 2px solid var(--motiv); */
     padding: 1rem;
     transition: all 200ms ease-in-out;
+  }
+
+  .border {
+    border: 2px solid var(--motiv);
   }
 
   .tile:hover {
@@ -50,7 +56,6 @@
 
   .tile::before {
     content: '';
-    background-image: url('../../assets/images/background/bg.jpg');
     width: 95%;
     background-size: 350%;
     background-position: center;
@@ -60,6 +65,9 @@
     left: 2.5%;
     top: 2.5%;
     opacity: 0.2;
+  }
+  .backgroundimg::before {
+    background-image: url('../../assets/images/background/bg.jpg')
   }
 
   .tile-name {

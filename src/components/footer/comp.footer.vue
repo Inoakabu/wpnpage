@@ -1,7 +1,8 @@
 <template>
   <footer class="footer">
-    <div class="sponsors">
-      <span v-for="(sponsor,idx) in sponsors" :key="idx">{{sponsor.name}}</span>
+    <div class="sponsor">
+      <Tile v-for="(sponsor, idx) in sponsors" :key="idx" :image="sponsor.image"
+            imagePath="logo/sponsor"/>
     </div>
     <nav class="impressum">
       <router-link :to="link.route" v-for="(link,idx) in links" :key="idx" :alt="link.alt" :title="link.alt">
@@ -13,8 +14,11 @@
 
 <script>
   import { links, sponsors } from '@/assets/json/footer.json'
+  import Tile from '@/components/tile/comp.tile'
 
   export default {
+    name: 'sponsors',
+    components: { Tile },
     data () {
       return {
         links,
@@ -87,5 +91,16 @@
     .footer:before {
       background-size: 275%;
     }
+  }
+  .sponsor {
+    display: flex;
+    padding-top: 5rem;
+    margin: auto;
+  }
+  .sponsor-item {
+    margin-right: 5px;
+  }
+  .sponsor-item:last-child {
+    margin-right: 0
   }
 </style>

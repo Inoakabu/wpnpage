@@ -1,14 +1,14 @@
 <template>
   <section class="history">
-    <h2>Vergangene Festivals</h2>
+    <h2>History</h2>
     <div class="list">
       <Tile v-for="(item, idx) in CuttedArray" :key="idx" :route="item.link" :name="item.year" :image="item.image"
             imagePath="history"
-            external shadow/>
+            external shadow backgroundimg border/>
     </div>
     <div class="history-controls">
-      <button @click="previous" class="button">◀ Zurueck</button>
-      <button @click="next" class="button">Vorwaerts ▶</button>
+      <button @click="previous" class="button">◀ Previous</button>
+      <button @click="next" class="button">Next ▶</button>
     </div>
   </section>
 </template>
