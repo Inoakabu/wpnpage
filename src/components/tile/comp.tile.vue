@@ -41,7 +41,6 @@
 <style scoped>
   .tile {
     position: relative;
-    /* border: 2px solid var(--motiv); */
     padding: 1rem;
     transition: all 200ms ease-in-out;
   }
