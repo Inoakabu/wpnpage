@@ -68,6 +68,13 @@
     }
   }
 
+  @media (max-width: 411px) {
+    .count h1 {
+      color: var(--main);
+      font-size: 10vw;
+    }
+  }
+
   .count h3 {
     text-transform: uppercase;
   }

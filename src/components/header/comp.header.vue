@@ -47,6 +47,7 @@
     .header-logo {
       justify-content: center;
       align-items: center;
+      align-self: center;
     }
   }
 

@@ -134,5 +134,26 @@
   .sepia .tile-image--wrapper {
     filter: saturate(.25) sepia(.25);
   }
+  @media (max-width: 960px) {
+    .tile-name {
+      position: absolute;
+      bottom: 1rem;
+      right: 1rem;
+      color: var(--main);
+      transition: all 200ms ease-in-out;
+      z-index: 3;
+    }
+  }
+
+  @media (max-width: 560px) {
+    .tile-name {
+      position: absolute;
+      bottom: 1rem;
+      right: 1rem;
+      color: var(--main);
+      transition: all 200ms ease-in-out;
+      z-index: 3;
+    }
+  }
 
 </style>

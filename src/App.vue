@@ -146,11 +146,33 @@
     .list {
       grid-template-columns: 1fr 1fr;
     }
+    h3 {
+      font-size: 1rem;
+    }
   }
 
   @media (max-width: 560px) {
     .list {
-      grid-template-columns: 1fr;
+      grid-template-columns: 1fr 1fr;
+    }
+    .list.four {
+      grid-template-columns: 1fr 1fr;
+    }
+    h3 {
+      font-size: 0.8rem;
     }
   }
+
+  @media (max-width: 411px) {
+    .list {
+      grid-template-columns: 1fr 1fr;
+    }
+    .list.four {
+      grid-template-columns: 1fr 1fr;
+    }
+    h3 {
+      font-size: 0.6rem;
+    }
+  }
+
 </style>

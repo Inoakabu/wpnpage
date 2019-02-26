@@ -4,7 +4,7 @@
     <div class="map">
       <l-map :zoom="zoom" :center="center">
         <l-tile-layer :url="url" :attribution="attribution"></l-tile-layer>
-        <l-marker v-for="marker in markers" :key="marker.name" :lat-lng="marker.pos" :icon="marker.icon" @click="goTo">
+        <l-marker v-for="marker in markers" :key="marker.name" :lat-lng="marker.pos" :icon="marker.icon">
           <l-tooltip :content="marker.tooltip"/>
         </l-marker>
       </l-map>
@@ -40,7 +40,7 @@
             tooltip: 'Metropol Hostel',
             icon: L.icon({
               iconUrl: '/map/sharp-hotel-24px.svg'
-              
+
             }),
             link: 'https://www.google.de/maps/place/Metropol+Hostel+Berlin/@52.4938521,13.385581,17z/data=!3m1!4b1!4m5!3m4!1s0x47a8502922fa4a61:0x9439b531e7d32206!8m2!3d52.4938489!4d13.3877697'
           },
