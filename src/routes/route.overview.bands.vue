@@ -1,22 +1,29 @@
 <template>
-  <main>
-    <h1>{{ id }}</h1>
-    <bandComp/>
-  </main>
+  <section class="bands">
+    <h2>Bands</h2>
+    <div class="list four">
+      <Tile v-for="(band,idx) in bands" :key="idx" :name="band.name" :image="band.image" :imagePath="'logo/bands'"
+            :route="'BandPage'" :id="band.name" backgroundimg border/>
+    </div>
+  </section>
 </template>
 <script>
-import bandComp from '../components/bands/comp.band.list'
+import bandsJson from '@/assets/json/bands.json'
+import Tile from '@/components/tile/comp.tile'
 
 export default {
-  name: 'Band',
-  components: { bandComp },
+  name: 'Bands',
+  components: { Tile },
   data () {
     return {
-      id: this.$route.params.id
+      bands: bandsJson
     }
   }
 }
 </script>
 <style>
-
+  .bands {
+    text-align: center;
+    padding: 2rem;
+  }
 </style>

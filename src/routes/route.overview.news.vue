@@ -1,24 +1,31 @@
 <template>
-  <main>
-    <h1>{{ id }}</h1>
-    <newsComp/>
-  </main>
+  <section class="news">
+    <h2>News</h2>
+    <div class="list">
+      <Tile v-for="(news,idx) in news" :key="idx" :name="news.title" :image="news.image" :imagePath="'news'"
+            :route="'NewsPage'" :id="news.id.toString()" sepia shadow backgroundimg border/>
+    </div>
+  </section>
 </template>
 
 <script>
-import newsComp from '../components/news/comp.news.list'
+import newsJson from '@/assets/json/news.json'
+import Tile from '@/components/tile/comp.tile'
 
 export default {
   name: 'News',
-  components: { newsComp },
+  components: { Tile },
   data () {
     return {
-      id: this.$route.params.id
+      news: newsJson
     }
   }
 }
 </script>
 
 <style>
-
+  .news {
+      text-align: center;
+      padding: 2rem;
+  }
 </style>

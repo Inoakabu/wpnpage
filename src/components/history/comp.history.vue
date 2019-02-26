@@ -16,6 +16,7 @@
 <script>
   // TODO: HISTORY fixing
   // TODO: HISTORY Styling
+  // TODO: HISTORY one picture in responsive less then 960px
 
   import history from '@/assets/json/history.json'
   import Tile from '@/components/tile/comp.tile'

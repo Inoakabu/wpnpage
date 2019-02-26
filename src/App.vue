@@ -149,6 +149,9 @@
     h3 {
       font-size: 1rem;
     }
+    .button {
+      font-size: 1rem
+    }
   }
 
   @media (max-width: 560px) {
@@ -161,6 +164,9 @@
     h3 {
       font-size: 0.8rem;
     }
+    .button {
+      font-size: 0.8rem
+    }
   }
 
   @media (max-width: 411px) {
@@ -172,6 +178,9 @@
     }
     h3 {
       font-size: 0.6rem;
+    }
+    .button {
+      font-size: 0.6rem
     }
   }
 
