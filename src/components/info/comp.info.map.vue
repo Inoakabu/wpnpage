@@ -30,7 +30,7 @@
             pos: L.latLng(52.48462, 13.39142),
             tooltip: 'De Mortem Et Diabolum',
             icon: L.icon({
-              iconUrl: require('@/assets/icons/map/sharp-local_activity-24px.svg')
+              iconUrl: '/map/sharp-local_activity-24px.svg'
             }),
             link: ''
           },
@@ -39,7 +39,8 @@
             pos: L.latLng(52.49381, 13.38793),
             tooltip: 'Metropol Hostel',
             icon: L.icon({
-              iconUrl: require('@/assets/icons/map/sharp-hotel-24px.svg')
+              iconUrl: '/map/sharp-hotel-24px.svg'
+              
             }),
             link: 'https://www.google.de/maps/place/Metropol+Hostel+Berlin/@52.4938521,13.385581,17z/data=!3m1!4b1!4m5!3m4!1s0x47a8502922fa4a61:0x9439b531e7d32206!8m2!3d52.4938489!4d13.3877697'
           },
@@ -48,7 +49,7 @@
             pos: L.latLng(52.48469, 13.38490),
             tooltip: 'ATM',
             icon: L.icon({
-              iconUrl: require('@/assets/icons/map/sharp-local_atm-24px.svg')
+              iconUrl: '/map/sharp-local_atm-24px.svg'
             }),
             link: ''
           },
@@ -57,7 +58,7 @@
             pos: L.latLng(52.48496, 13.38593),
             tooltip: 'Train Station',
             icon: L.icon({
-              iconUrl: require('@/assets/icons/map/sharp-train-24px.svg')
+              iconUrl: '/map/sharp-train-24px.svg'
             }),
             link: ''
           }
@@ -68,6 +69,9 @@
       goTo () {
         return open(this.markers.link)
       }
+    },
+    mounted() {
+      setTimeout(function() { window.dispatchEvent(new Event('resize')) }, 250);
     }
   }
 </script>
