@@ -1,8 +1,11 @@
 <template>
   <footer class="footer">
     <div class="sponsor">
-      <Tile v-for="(sponsor, idx) in sponsors" :key="idx" :image="sponsor.image"
-            imagePath="logo/sponsor"/>
+      <Tile v-for="(sponsor, idx) in sponsors" :key="idx"
+            :route="sponsor.url"
+            :image="sponsor.image"
+            imagePath="logo/sponsor"
+            external/>
     </div>
     <nav class="impressum">
       <router-link :to="link.route" v-for="(link,idx) in links" :key="idx" :alt="link.alt" :title="link.alt">

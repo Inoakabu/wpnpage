@@ -8,7 +8,7 @@
     "contact": {
       "name": "Kontakt",
       "alt": "Bei Fragen, meld dich bei uns.",
-      "route": "contact"
+      "route": "impressum"
     }
   },
   "sponsors": [
