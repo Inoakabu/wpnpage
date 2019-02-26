@@ -4,7 +4,7 @@
     <div class="list">
       <Tile v-for="(item, idx) in CuttedArray" :key="idx" :route="item.link" :name="item.year" :image="item.image"
             imagePath="history"
-            external shadow backgroundimg border/>
+            external shadow backgroundImg border/>
     </div>
     <div class="history-controls">
       <button @click="previous" class="button">◀ Previous</button>

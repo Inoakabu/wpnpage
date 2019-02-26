@@ -3,7 +3,7 @@
     <h2>News</h2>
     <div class="list">
       <Tile v-for="(news,idx) in news" :key="idx" :name="news.title" :image="news.image" :imagePath="'news'"
-            :route="'NewsPage'" :id="news.id.toString()" sepia shadow backgroundimg border/>
+            :route="'NewsPage'" :id="news.id.toString()" sepia shadow backgroundImg border/>
     </div>
     <router-link class="button" :to="'News'">show more</router-link>
   </section>

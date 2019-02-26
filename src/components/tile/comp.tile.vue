@@ -1,11 +1,11 @@
 <template>
-  <a :href="route" class="tile" v-if="external" target="_blank" :class="{sepia: sepia, shadow: shadow, backgroundimg: backgroundimg, border: border }">
+  <a :href="route" class="tile" v-if="external" target="_blank" :class="{sepia: sepia, shadow: shadow, backgroundImg: backgroundImg, border: border }">
     <h3 class="tile-name" v-if="name">{{ name }}</h3>
     <div class="tile-image--wrapper">
       <img class="tile-image" :src="imageUrl ? imageUrl : imageSrc" :alt="`Bild von ${name}`"/>
     </div>
   </a>
-  <router-link :to="{ name: route, params:{id} }" class="tile" :class="{sepia: sepia, shadow: shadow, backgroundimg: backgroundimg, border: border, linkDisplay: linkDisplay }" v-else>
+  <router-link :to="{ name: route, params:{id} }" class="tile" :class="{sepia: sepia, shadow: shadow, backgroundImg: backgroundImg, border: border, linkDisplay: linkDisplay }" v-else>
     <h3 class="tile-name" v-if="name">{{ name }}</h3>
     <div class="tile-image--wrapper">
       <img class="tile-image" :src="imageUrl ? imageUrl : imageSrc" :alt="`Bild von ${name}`"/>
@@ -26,7 +26,7 @@
       id: { type: String },
       linkDisplay: { type: Boolean, default: false },
       border: { type: Boolean, default: false },
-      backgroundimg: {type: Boolean, default: false},
+      backgroundImg: {type: Boolean, default: false},
       external: { type: Boolean, default: false },
       shadow: { type: Boolean, default: false },
       sepia: { type: Boolean, default: false }
@@ -69,7 +69,7 @@
     top: 2.5%;
     opacity: 0.2;
   }
-  .backgroundimg::before {
+  .backgroundImg::before {
     background-image: url('../../assets/images/background/bg.jpg')
   }
 

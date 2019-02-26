@@ -3,7 +3,7 @@
     <h2>Instagram</h2>
     <div class="list four">
       <Tile v-for="(item, idx) in parse" :key="idx" :route="instagramPost(item.node.shortcode)"
-            :imageUrl="item.node.display_url" external sepia backgroundimg border/>
+            :imageUrl="item.node.display_url" external sepia backgroundImg border/>
     </div>
     <a class="button" :href="instagramlink" target="_blank">Open Instagram</a>
   </section>

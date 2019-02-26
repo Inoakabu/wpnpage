@@ -3,7 +3,7 @@
     <h2>Bands</h2>
     <div class="list four">
       <Tile v-for="(band,idx) in bands" :key="idx" :name="band.name" :image="band.image" :imagePath="'logo/bands'"
-            :route="'BandPage'" :id="band.name" backgroundimg border/>
+            :route="'BandPage'" :id="band.name" backgroundImg border/>
     </div>
     <router-link class="button" :to="'bands'">show more</router-link>
   </section>
