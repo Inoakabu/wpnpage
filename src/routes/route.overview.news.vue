@@ -1,7 +1,7 @@
 <template>
-  <section class="news">
+  <section class="news ov">
     <h2>News</h2>
-    <div class="list">
+    <div class="list ov">
       <Tile v-for="(news,idx) in news" :key="idx" :name="news.title" :image="news.image" :imagePath="'news'"
             :route="'NewsPage'" :id="news.id.toString()" sepia shadow backgroundImg border/>
     </div>
@@ -24,8 +24,12 @@ export default {
 </script>
 
 <style>
-  .news {
-      text-align: center;
-      padding: 2rem;
+  .news.ov {
+    text-align: center;
+    padding: 2rem;
+    padding-top: 11rem;
+  }
+  .list.ov {
+    padding-top: 12rem;
   }
 </style>

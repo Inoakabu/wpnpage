@@ -1,7 +1,7 @@
 <template>
-  <section class="bands">
+  <section class="bands ov">
     <h2>Bands</h2>
-    <div class="list four">
+    <div class="list four ov">
       <Tile v-for="(band,idx) in bands" :key="idx" :name="band.name" :image="band.image" :imagePath="'logo/bands'"
             :route="'BandPage'" :id="band.name" backgroundImg border/>
     </div>
@@ -22,8 +22,12 @@ export default {
 }
 </script>
 <style>
-  .bands {
+  .bands.ov {
     text-align: center;
     padding: 2rem;
+    padding-top: 11rem
+  }
+  .list.four.ov {
+    padding-top: 12rem;
   }
 </style>
