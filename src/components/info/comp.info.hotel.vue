@@ -25,6 +25,9 @@ export default {
 </script>
 
 <style>
+  .hotel-link {
+    align-self: center
+  }
   .hotel-link:hover {
     cursor: pointer;
   }

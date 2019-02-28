@@ -1,7 +1,7 @@
 <template>
   <section class="history">
     <h2>History</h2>
-    <div class="list" v-if="showOne() > 960">
+    <div class="list hist" v-if="showOne() > 767">
       <Tile v-for="(item, idx) in CuttedArray" :key="idx" :route="item.link" :name="item.year" :image="item.image"
             imagePath="history"
             external shadow backgroundImg border/>
@@ -67,7 +67,14 @@
   .list.one {
     display: grid;
     grid-template-columns: 1fr;
-    grid-gap: 2rem;
     margin-bottom: 3rem;
+  }
+  @media (max-width: 960px){
+    .list.hist {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-gap: 1rem;
+      margin-bottom: 3rem;
+    }
   }
 </style>
