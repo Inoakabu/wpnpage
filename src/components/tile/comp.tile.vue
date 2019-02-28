@@ -5,7 +5,7 @@
       <img class="tile-image" :src="imageUrl ? imageUrl : imageSrc" :alt="`Bild von ${name}`"/>
     </div>
   </a>
-  <router-link :to="{ name: route, params:{id} }" class="tile" :class="{sepia: sepia, shadow: shadow, backgroundImg: backgroundImg, border: border, linkDisplay: linkDisplay }" v-else>
+  <router-link :to="{ name: route, params:{id} }" class="tile" :class="{sepia: sepia, shadow: shadow, backgroundImg: backgroundImg, border: border }" v-else>
     <h3 class="tile-name" v-if="name">{{ name }}</h3>
     <div class="tile-image--wrapper">
       <img class="tile-image" :src="imageUrl ? imageUrl : imageSrc" :alt="`Bild von ${name}`"/>
@@ -24,7 +24,6 @@
       imageUrl: String,
       route: { type: String },
       id: { type: String },
-      linkDisplay: { type: Boolean, default: false },
       border: { type: Boolean, default: false },
       backgroundImg: {type: Boolean, default: false},
       external: { type: Boolean, default: false },

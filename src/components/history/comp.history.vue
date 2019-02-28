@@ -1,8 +1,13 @@
 <template>
   <section class="history">
     <h2>History</h2>
-    <div class="list">
+    <div class="list" v-if="showOne() > 960">
       <Tile v-for="(item, idx) in CuttedArray" :key="idx" :route="item.link" :name="item.year" :image="item.image"
+            imagePath="history"
+            external shadow backgroundImg border/>
+    </div>
+    <div class="list one" v-else>
+      <Tile v-for="(item, idx) in OneFromArray" :key="idx" :route="item.link" :name="item.year" :image="item.image"
             imagePath="history"
             external shadow backgroundImg border/>
     </div>
@@ -32,6 +37,9 @@
     computed: {
       CuttedArray () {
         return this.arr.slice(0, 3) // limitiert den array
+      },
+      OneFromArray () {
+        return this.arr.slice(0, 1)
       }
     },
     methods: {
@@ -42,6 +50,9 @@
       previous () {
         let last = this.arr.pop() // entfernt den letzten eintrag
         this.arr = [last].concat(this.arr) // fuegt den eintrag vorne am array ein
+      },
+      showOne () {
+        return window.outerWidth
       }
     }
   }
@@ -52,5 +63,11 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+  .list.one {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 2rem;
+    margin-bottom: 3rem;
   }
 </style>
