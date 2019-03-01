@@ -26,38 +26,31 @@ export default new Router({
     },
     {
       path: `/${navigation.tickets.route}`,
-      name: 'TicketPage',
+      name: `${navigation.tickets.route}`,
       beforeEnter () {
         location.href = navigation.tickets.url
       }
     },
     {
       path: `/${navigation.shop.route}`,
-      name: 'ShopPage',
+      name: `${navigation.shop.route}`,
       beforeEnter () {
         location.href = navigation.shop.url
       }
     },
     {
       path: `/${navigation.bands.route}`,
-      name: 'BandOverview',
+      name: `${navigation.bands.route}`,
       component: BandOverview,
-      children: [
-        {
-          path: `/${navigation.bands.route}`+'/:id',
-          name: 'BandPage',
-          component: BandPage
-        }
-      ]
     },
-    // {
-    //   path: '/band/:id',
-    //   name: 'BandPage',
-    //   component: BandPage
-    // },
+    {
+      path: '/band/:id',
+      name: 'BandPage',
+      component: BandPage
+    },
     {
       path: `/${navigation.news.route}`,
-      name: 'NewsOverview',
+      name: `${navigation.news.route}`,
       component: NewsOverview
     },
     {
@@ -67,12 +60,12 @@ export default new Router({
     },
     {
       path: `/${navigation.info.route}`,
-      name: 'InfoOverview',
+      name: `${navigation.info.route}`,
       component: InfoOverview
     },
     {
-      path: '/impressum',
-      name: 'ImpressumOverview',
+      path: `/impressum`,
+      name: `impressum`,
       component: ImpressumOverview
     }
   ]
