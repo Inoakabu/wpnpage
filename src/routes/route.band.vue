@@ -6,6 +6,7 @@
     </div>
     <div class="band-page-description">{{ band.text }}</div>
     <youtube class="band-page-video" :link="band.video"/>
+    <router-view></router-view>
   </section>
 </template>
 

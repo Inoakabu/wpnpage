@@ -41,13 +41,20 @@ export default new Router({
     {
       path: `/${navigation.bands.route}`,
       name: 'BandOverview',
-      component: BandOverview
+      component: BandOverview,
+      children: [
+        {
+          path: `/${navigation.bands.route}`+'/:id',
+          name: 'BandPage',
+          component: BandPage
+        }
+      ]
     },
-    {
-      path: '/band/:id',
-      name: 'BandPage',
-      component: BandPage
-    },
+    // {
+    //   path: '/band/:id',
+    //   name: 'BandPage',
+    //   component: BandPage
+    // },
     {
       path: `/${navigation.news.route}`,
       name: 'NewsOverview',
