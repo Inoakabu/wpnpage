@@ -1,10 +1,10 @@
 <template>
   <header class="header">
-    <router-link :to="{name:'MainPage'}" class="header-logo" alt="De Mortem Et Diabolum">
+    <router-link :to="{name:'MainPage', params: {lang: currentlang}}" class="header-logo" alt="De Mortem Et Diabolum">
       <logoComp/>
     </router-link>
     <navComp/>
-    <langSwitch />
+    <langSwitch/>
   </header>
 </template>
 
