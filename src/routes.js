@@ -1,12 +1,18 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import MainPage from './routes/route.Main'
+// Mainpage
+import MainPage from './routes/route.main'
+// Overview
+import BandOverview from './routes/route.overview.bands'
+import NewsOverview from './routes/route.overview.news'
+import InfoOverview from './routes/route.info'
+import ImpressumOverview from './routes/route.impressum'
+// Singlepages
 import BandPage from './routes/route.band'
 import NewsPage from './routes/route.news'
-import InfoPage from './routes/route.info'
-import ImpressumPage from './routes/route.impressum'
-import BandSinglePage from './routes/route.band.single'
-import NewsSinglePage from './routes/route.news.single'
+
+// Header.json for get the short urls
+import {navigation} from '@/assets/json/header.json'
 
 Vue.use(Router)
 
@@ -19,38 +25,48 @@ export default new Router({
       component: MainPage
     },
     {
-      path: '/Tickets',
-      name: 'TicketPage'
+      path: `/${navigation.tickets.route}`,
+      name: `${navigation.tickets.route}`,
+      beforeEnter () {
+        location.href = navigation.tickets.url
+      }
     },
     {
-      path: '/Bands',
+      path: `/${navigation.shop.route}`,
+      name: `${navigation.shop.route}`,
+      beforeEnter () {
+        location.href = navigation.shop.url
+      }
+    },
+    {
+      path: `/${navigation.bands.route}`,
+      name: `${navigation.bands.route}`,
+      component: BandOverview,
+    },
+    {
+      path: '/band/:id',
       name: 'BandPage',
       component: BandPage
     },
     {
-      path: '/Bands/:bId?:name',
-      name: 'BandSinglePage',
-      component: BandSinglePage
+      path: `/${navigation.news.route}`,
+      name: `${navigation.news.route}`,
+      component: NewsOverview
     },
     {
-      path: '/News',
+      path: '/news/:id',
       name: 'NewsPage',
       component: NewsPage
     },
     {
-      path: '/News/:id?:title',
-      name: 'NewsSinglePage',
-      component: NewsSinglePage
+      path: `/${navigation.info.route}`,
+      name: `${navigation.info.route}`,
+      component: InfoOverview
     },
     {
-      path: '/Info',
-      name: 'InfoPage',
-      component: InfoPage
-    },
-    {
-      path: '/Impressum',
-      name: 'ImpressumPage',
-      component: ImpressumPage
+      path: `/impressum`,
+      name: `impressum`,
+      component: ImpressumOverview
     }
   ]
 })

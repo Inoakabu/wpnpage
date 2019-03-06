@@ -13,10 +13,16 @@ L.Icon.Default.mergeOptions({
 
 Vue.config.productionTip = false
 
-// eslint-disable-next-line no-new
-new Vue({
-  el: '#app',
-  router,
-  components: { App },
-  template: '<App/>'
+export const globalStore = new Vue({
+  data: {
+    globalLang: '',
+  }
 })
+
+new Vue({
+  router,
+  scrollBehavior (to, from, savedPosition) {
+    return { x: 0, y: 0 }
+  },
+  render: h => h(App)
+}).$mount('#app')

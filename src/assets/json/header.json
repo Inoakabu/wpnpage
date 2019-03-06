@@ -1,0 +1,50 @@
+{
+  "navigation": {
+    "tickets": {
+      "name": "Tickets",
+      "alt": "Weiter zum Ticket Shop",
+      "big": true,
+      "route": "tickets",
+      "url": "https://www.folter666shop.de/de/Tickets/eTicket/de-mortem-et-diabolum-vol-v-early-bird-eticket-fuer-60-00-anstatt-68-00.html"
+    },
+    "bands": {
+      "name": "Bands",
+      "alt": "Alle Bands anzeigen",
+      "big": true,
+      "route": "bands"
+    },
+    "shop": {
+      "name": "Shop",
+      "alt": "Weiter zum Merchandise Shop",
+      "big": false,
+      "route": "shop",
+      "url": "https://www.folter666shop.de/de/"
+    },
+    "news": {
+      "name": "News",
+      "alt": "Alle News anzeigen",
+      "big": false,
+      "route": "news"
+    },
+    "info": {
+      "name": "Info",
+      "alt": "Informationen zum Festival",
+      "big": false,
+      "route": "info"
+    }
+  },
+  "socials": [
+    {
+      "name": "facebook",
+      "url": "https://www.facebook.com/dmed666/"
+    },
+    {
+      "name": "instagram",
+      "url": "https://www.instagram.com/de_mortem_et_diabolum/"
+    },
+    {
+      "name": "youtube",
+      "url": "https://www.youtube.com/channel/UCCbEhQrfkHZyS6Jl178Uusg"
+    }
+  ]
+}

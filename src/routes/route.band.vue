@@ -1,21 +1,53 @@
 <template>
-  <main>
-    <h1>{{ id }}</h1>
-    <bandComp />
-  </main>
+  <section class="band-page" v-if="band">
+    <h1 class="band-page-headline">{{ band.name }}</h1>
+    <div class="band-page-social" v-for="link in band.links" :key="link.name">
+      <social :url="link.url" :name="link.name"/>
+    </div>
+    <div class="band-page-description">{{ band.text }}</div>
+    <youtube class="band-page-video" :link="band.video"/>
+    <router-view></router-view>
+  </section>
 </template>
+
 <script>
-import bandComp from '../components/bands/comp.bands'
-export default {
-  name: 'Band',
-  components: { bandComp },
-  data () {
-    return {
-      id: this.$route.params.id
+  import youtube from '@/components/social/comp.youtube-embedded'
+  import social from '@/components/social/comp.social-tag'
+  import bandJson from '@/assets/json/bands.json'
+
+  export default {
+    name: 'Band',
+    components: { youtube, social },
+    computed: {
+      name () {
+        return this.$route.params.id
+      },
+      band () {
+        return bandJson.filter(b => b.name.toLowerCase() === this.name.toLowerCase())[0]
+      }
     }
   }
-}
 </script>
-<style>
 
+<style scoped>
+  .band-page-headline {
+    text-align: center;
+    margin: 5rem 0;
+  }
+
+  .band-page-description {
+    max-width: 900px;
+    line-height: 1.5rem;
+    padding-top: 5rem;
+  }
+
+  .band-page-video {
+    padding-top: 5rem;
+  }
+
+  .band-page-social {
+    display: inline-flex;
+    padding: 1rem;
+    align-self: center;
+  }
 </style>
