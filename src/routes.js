@@ -14,6 +14,9 @@ import NewsPage from './routes/route.news'
 // Header.json for get the short urls
 import {navigation} from '@/assets/json/header.json'
 
+// language.json for langSwitch
+import {defaultLang} from '@/assets/json/language.json'
+
 Vue.use(Router)
 
 export default new Router({
@@ -21,8 +24,7 @@ export default new Router({
   routes: [
     {
       path: '/',
-      name: 'MainPage',
-      component: MainPage
+      redirect: `/${defaultLang}`
     },
     {
       path: `/${navigation.tickets.route}`,
@@ -39,34 +41,44 @@ export default new Router({
       }
     },
     {
-      path: `/${navigation.bands.route}`,
-      name: `${navigation.bands.route}`,
-      component: BandOverview,
-    },
-    {
-      path: '/band/:id',
-      name: 'BandPage',
-      component: BandPage
-    },
-    {
-      path: `/${navigation.news.route}`,
-      name: `${navigation.news.route}`,
-      component: NewsOverview
-    },
-    {
-      path: '/news/:id',
-      name: 'NewsPage',
-      component: NewsPage
-    },
-    {
-      path: `/${navigation.info.route}`,
-      name: `${navigation.info.route}`,
-      component: InfoOverview
-    },
-    {
-      path: `/impressum`,
-      name: `impressum`,
-      component: ImpressumOverview
+      path: '/:lang',
+      children: [
+        {
+          path: '',
+          name: 'MainPage',
+          component: MainPage,
+        },
+        {
+          path: `/${navigation.bands.route}`,
+          name: `${navigation.bands.route}`,
+          component: BandOverview,
+        },
+        {
+          path: '/band/:id',
+          name: 'BandPage',
+          component: BandPage
+        },
+        {
+          path: `/${navigation.news.route}`,
+          name: `${navigation.news.route}`,
+          component: NewsOverview
+        },
+        {
+          path: '/news/:id',
+          name: 'NewsPage',
+          component: NewsPage
+        },
+        {
+          path: `/${navigation.info.route}`,
+          name: `${navigation.info.route}`,
+          component: InfoOverview
+        },
+        {
+          path: `/impressum`,
+          name: `impressum`,
+          component: ImpressumOverview
+        }
+      ]
     }
   ]
 })

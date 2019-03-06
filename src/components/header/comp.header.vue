@@ -15,7 +15,12 @@
 
   export default {
     name: 'Header',
-    components: { logoComp, navComp, langSwitch }
+    components: { logoComp, navComp, langSwitch },
+    computed: {
+      currentlang () {
+        return this.$route.params.lang
+      }
+    }
   }
 </script>
 
