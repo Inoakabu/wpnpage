@@ -8,7 +8,7 @@
 import impressumComp from '../components/impressum/comp.impressum'
 
 export default {
-  name: 'Info',
+  name: 'Impressum',
   components: { impressumComp },
   data () {
     return {
