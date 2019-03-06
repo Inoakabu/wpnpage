@@ -1,6 +1,7 @@
 <template>
   <section class="bands">
     <h2>Bands</h2>
+    <div class="lang">{{ gLang }}</div>
     <div class="list four">
       <Tile v-for="(band,idx) in bands" :key="idx" :name="band.name" :image="band.image" :imagePath="'logo/bands'"
             :route="'BandPage'" :id="band.name" backgroundImg border/>
@@ -10,12 +11,23 @@
 </template>
 
 <script>
+  import {globalStore} from '../../main.js'
   import Tile from '@/components/tile/comp.tile'
   import bandsJson from '@/assets/json/bands.json'
 
   export default {
     name: 'Bands',
     components: { Tile },
+    data () {
+      return{
+        gLang: ''
+      }
+    },
+    methods: {
+      setLang(){
+        this.gLang = globalStore.globalLang
+      }
+    },
     computed: {
       bands () {
         let band = bandsJson.sort((a, b) => {
