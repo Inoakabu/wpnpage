@@ -4,7 +4,8 @@
       <option v-for="lang in langs" v-bind:key="lang.id" v-bind:value="lang.id">{{ lang.name }}</option>
     </select> -->
     <div>
-      <router-link v-for="lang in langs" :key="lang.id" :to="`/${lang.id}`" class="dropdown-item">
+      {{currentName}}
+      <router-link v-for="lang in langs" :key="lang.id" :to="{name: currentName, params: currentParams(lang.id)}" class="dropdown-item">
         <span class="select-name">{{ lang.name }}</span>
       </router-link>
     </div>
@@ -26,6 +27,15 @@
     computed: {
       currentLang () {
         return this.$route.params.lang
+      },
+      currentName () {
+        console.log(this.$route)
+        return this.$route.name
+      }
+    },
+    methods: {
+      currentParams (lang) {
+        return {lang: lang, id: this.$route.params.id}
       }
     }
   }
