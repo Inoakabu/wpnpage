@@ -13,16 +13,13 @@ L.Icon.Default.mergeOptions({
 
 Vue.config.productionTip = false
 
-export const globalStore = new Vue({
-  data: {
-    globalLang: '',
-  }
-})
-
 new Vue({
   router,
   scrollBehavior (to, from, savedPosition) {
     return { x: 0, y: 0 }
+  },
+  data: {
+    globalLang: 'en',
   },
   render: h => h(App)
 }).$mount('#app')

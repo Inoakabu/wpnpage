@@ -49,32 +49,32 @@ export default new Router({
           component: MainPage
         },
         {
-          path: `/${navigation.bands.route}`,
+          path: `${navigation.bands.route}`,
           name: `${navigation.bands.route}`,
           component: BandOverview
         },
         {
-          path: '/band/:id',
+          path: 'band/:id',
           name: 'BandPage',
           component: BandPage
         },
         {
-          path: `/${navigation.news.route}`,
+          path: `${navigation.news.route}`,
           name: `${navigation.news.route}`,
           component: NewsOverview
         },
         {
-          path: '/news/:id',
+          path: 'news/:id',
           name: 'NewsPage',
           component: NewsPage
         },
         {
-          path: `/${navigation.info.route}`,
+          path: `${navigation.info.route}`,
           name: `${navigation.info.route}`,
           component: InfoOverview
         },
         {
-          path: `/impressum`,
+          path: `impressum`,
           name: `impressum`,
           component: ImpressumOverview
         }
