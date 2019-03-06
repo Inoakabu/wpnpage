@@ -1,6 +1,6 @@
 <template>
   <header class="header">
-    <router-link to="/" class="header-logo" alt="De Mortem Et Diabolum">
+    <router-link :to="{name:'MainPage'}" class="header-logo" alt="De Mortem Et Diabolum">
       <logoComp/>
     </router-link>
     <navComp/>
