@@ -2,6 +2,7 @@ import Vue from 'vue'
 import Router from 'vue-router'
 // Mainpage
 import MainPage from './routes/route.main'
+import RoutePage from './routes/route'
 // Overview
 import BandOverview from './routes/route.overview.bands'
 import NewsOverview from './routes/route.overview.news'
@@ -10,12 +11,10 @@ import ImpressumOverview from './routes/route.impressum'
 // Singlepages
 import BandPage from './routes/route.band'
 import NewsPage from './routes/route.news'
-
 // Header.json for get the short urls
-import {navigation} from '@/assets/json/header.json'
-
+import { navigation } from '@/assets/json/header.json'
 // language.json for langSwitch
-import {defaultLang} from '@/assets/json/language.json'
+import { defaultLang } from '@/assets/json/language.json'
 
 Vue.use(Router)
 
@@ -42,16 +41,17 @@ export default new Router({
     },
     {
       path: '/:lang',
+      component: RoutePage,
       children: [
         {
           path: '',
           name: 'MainPage',
-          component: MainPage,
+          component: MainPage
         },
         {
           path: `/${navigation.bands.route}`,
           name: `${navigation.bands.route}`,
-          component: BandOverview,
+          component: BandOverview
         },
         {
           path: '/band/:id',
