@@ -8,7 +8,7 @@
             external/>
     </div>
     <nav class="impressum">
-      <router-link :to="link.route" v-for="(link,idx) in links" :key="idx" :alt="link.alt" :title="link.alt">
+      <router-link :to="link.route" v-for="(link,idx) in links" :key="idx" :alt="link.alt[currentLang]" :title="link.alt[currentLang]">
         {{link.name}}
       </router-link>
     </nav>
@@ -26,6 +26,11 @@
       return {
         links,
         sponsors
+      }
+    },
+    computed: {
+      currentLang () {
+        return this.$route.params.lang
       }
     }
   }

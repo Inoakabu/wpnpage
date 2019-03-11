@@ -5,13 +5,14 @@
       <Tile v-for="(item, idx) in parse" :key="idx" :route="instagramPost(item.node.shortcode)"
             :imageUrl="item.node.display_url" external sepia backgroundImg border/>
     </div>
-    <a class="button" :href="instagramlink" target="_blank">Open Instagram</a>
+    <a class="button" :href="instagramlink" target="_blank">{{ content[currentLang] }}</a>
   </section>
 </template>
 
 <script>
   import axios from 'axios'
   import Tile from '@/components/tile/comp.tile'
+  import content from '@/assets/json/content.json'
 
   export default {
     name: 'Instagram',
@@ -19,7 +20,8 @@
     data () {
       return {
         parse: [],
-        user: 'de_mortem_et_diabolum'
+        user: 'de_mortem_et_diabolum',
+        content: content.social.instagram
       }
     },
     computed: {
@@ -28,6 +30,9 @@
       },
       posts () {
         return this.parse
+      },
+      currentLang () {
+        return this.$route.params.lang
       }
     },
     methods: {

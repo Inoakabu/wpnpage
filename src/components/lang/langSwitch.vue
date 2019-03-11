@@ -1,15 +1,8 @@
 <template>
   <div>
-    <!-- <select v-model="currentLang">
-      <option v-for="lang in langs" v-bind:key="lang.id" v-bind:value="lang.id">{{ lang.name }}</option>
-    </select> -->
-    <div>
-      {{currentName}}
-      <router-link v-for="lang in langs" :key="lang.id" :to="{name: currentName, params: currentParams(lang.id)}" class="dropdown-item">
-        <span class="select-name">{{ lang.name }}</span>
-      </router-link>
-    </div>
-    <div> {{ currentLang }}</div>
+    <router-link v-for="lang in langs" :key="lang.id" :to="{name: currentName, params: currentParams(lang.id)}" class="dropdown-item">
+      <span class="select-name">{{ lang.name }}</span>
+    </router-link>
   </div>
 </template>
 
@@ -21,7 +14,7 @@
     name: 'langSwitch',
     data () {
       return {
-        langs: [{ id: 'eng', name: 'English' }, { id: 'de', name: 'Deutsch' }]
+        langs: [{ id: 'en', name: 'English' }, { id: 'de', name: 'Deutsch' }]
       }
     },
     computed: {

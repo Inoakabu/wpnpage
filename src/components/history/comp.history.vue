@@ -12,26 +12,24 @@
             external shadow backgroundImg border/>
     </div>
     <div class="history-controls">
-      <button @click="previous" class="button">◀ Previous</button>
-      <button @click="next" class="button">Next ▶</button>
+      <button @click="previous" class="button">◀ {{ content[currentLang].prev }}</button>
+      <button @click="next" class="button">{{ content[currentLang].next }} ▶</button>
     </div>
   </section>
 </template>
 
 <script>
-  // TODO: HISTORY fixing
-  // TODO: HISTORY Styling
-  // TODO: HISTORY one picture in responsive less then 960px
-
   import history from '@/assets/json/history.json'
   import Tile from '@/components/tile/comp.tile'
+  import content from '@/assets/json/content.json'
 
   export default {
     name: 'history',
     components: { Tile },
     data () {
       return {
-        arr: history
+        arr: history,
+        content: content.history
       }
     },
     computed: {
@@ -40,6 +38,9 @@
       },
       OneFromArray () {
         return this.arr.slice(0, 1)
+      },
+      currentLang () {
+        return this.$route.params.lang
       }
     },
     methods: {

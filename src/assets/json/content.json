@@ -1,0 +1,42 @@
+{
+  "bands": {
+    "button": {
+      "en": "show more",
+      "de": "mehr anzeigen"
+    }
+  },
+  "header": {
+    "social": {
+      "en": "go to ",
+      "de": "weiter zu "
+    }
+  },
+  "history": {
+    "en": {
+      "prev": "prev",
+      "next": "next"
+    },
+    "de": {
+      "prev": "zurueck",
+      "next": "weiter"
+    }
+  },
+  "info": {
+
+  },
+  "map": {
+
+  },
+  "news": {
+    "button": {
+      "en": "show more",
+      "de": "mehr anzeigen"
+    }
+  },
+  "social": {
+    "instagram": {
+      "en": "open instagram",
+      "de": "mehr auf instagram"
+    }
+  }
+}

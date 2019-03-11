@@ -5,17 +5,23 @@
       <Tile v-for="(band,idx) in bands" :key="idx" :name="band.name" :image="band.image" :imagePath="'logo/bands'"
             :route="'BandPage'" :id="band.name" backgroundImg border/>
     </div>
-    <router-link class="button" :to="'bands'">show more</router-link>
+    <router-link class="button" :to="'bands'">{{ content[currentLang] }}</router-link>
   </section>
 </template>
 
 <script>
   import Tile from '@/components/tile/comp.tile'
   import bandsJson from '@/assets/json/bands.json'
+  import content from '@/assets/json/content.json'
 
   export default {
     name: 'Bands',
     components: { Tile },
+    data () {
+      return {
+        content: content.bands.button
+      }
+    },
     computed: {
       bands () {
         let band = bandsJson.sort((a, b) => {
@@ -28,6 +34,9 @@
           return 0
         })
         return band.slice(0, 4)
+      },
+      currentLang () {
+        return this.$route.params.lang
       }
     }
   }

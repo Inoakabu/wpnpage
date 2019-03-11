@@ -4,7 +4,7 @@
     <div class="band-page-social" v-for="link in band.links" :key="link.name">
       <social :url="link.url" :name="link.name"/>
     </div>
-    <div class="band-page-description">{{ band.text }}</div>
+    <div class="band-page-description">{{ band.text[currentLang] }}</div>
     <youtube class="band-page-video" :link="band.video"/>
     <router-view></router-view>
   </section>
@@ -24,6 +24,9 @@
       },
       band () {
         return bandJson.filter(b => b.name.toLowerCase() === this.name.toLowerCase())[0]
+      },
+      currentLang () {
+        return this.$route.params.lang
       }
     }
   }

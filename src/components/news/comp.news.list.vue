@@ -5,20 +5,29 @@
       <Tile v-for="(news,idx) in news" :key="idx" :name="news.title" :image="news.image" :imagePath="'news'"
             :route="'NewsPage'" :id="news.id.toString()" sepia shadow backgroundImg border/>
     </div>
-    <router-link class="button" :to="'News'">show more</router-link>
+    <router-link class="button" :to="'News'">{{ content[currentLang] }}</router-link>
   </section>
 </template>
 
 <script>
   import newsJson from '@/assets/json/news.json'
   import Tile from '@/components/tile/comp.tile'
+  import content from '@/assets/json/content.json'
 
   export default {
     name: 'News',
     components: { Tile },
+    data () {
+      return {
+        content: content.news.button
+      }
+    },
     computed: {
       news () {
         return newsJson.slice(0, 3)
+      },
+      currentLang () {
+        return this.$route.params.lang
       }
     }
   }

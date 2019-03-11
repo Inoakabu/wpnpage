@@ -1,16 +1,22 @@
 <template>
   <a :href="url" class="social-item" :class="getType" :key="name" target="_blank"
-     :alt="`Weiter zu ${name.toUpperCase()}`" :title="`Weiter zu ${name.toUpperCase()}`">
+     :alt="content[currentLang]+`${name.toUpperCase()}`" :title="content[currentLang]+`${name.toUpperCase()}`">
     {{firstLetterOfName}}
   </a>
 </template>
 
 <script>
+import content from '@/assets/json/content.json'
   export default {
     name: 'Navigation',
     props: {
       url: { type: String, default: 'https://www.instagram.com/stefvn.io/' },
       name: { type: String, default: 'instagram' }
+    },
+    data () {
+      return {
+        content: content.header.social
+      }
     },
     computed: {
       getType () {
@@ -25,6 +31,9 @@
       },
       firstLetterOfName () {
         return this.name[0]
+      },
+      currentLang () {
+        return this.$route.params.lang
       }
     }
   }

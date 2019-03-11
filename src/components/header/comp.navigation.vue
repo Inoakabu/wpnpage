@@ -1,8 +1,8 @@
 <template>
   <nav class="nav-wrapper">
     <div class="nav-bar">
-      <router-link :to="{name: item.route, params: {lang:currentLang}}" class="nav-item" :alt="item.alt"
-                   :title="item.alt" v-for="item in navigation"
+      <router-link :to="{name: item.route, params: {lang:currentLang}}" class="nav-item" :alt="item.alt[currentLang]"
+                   :title="item.alt[currentLang]" v-for="item in navigation"
                    :key="item.name" :class="{ 'nav-item--big': item.big }">
         {{item.name }}
       </router-link>

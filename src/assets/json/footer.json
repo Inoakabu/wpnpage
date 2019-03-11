@@ -2,12 +2,18 @@
   "links": {
     "impressum": {
       "name": "Impressum",
-      "alt": "Weiter zum Impressum",
+      "alt": {
+        "en": "go to impressum",
+        "de": "Weiter zum Impressum"
+      },
       "route": "impressum"
     },
     "contact": {
       "name": "Kontakt",
-      "alt": "Bei Fragen, meld dich bei uns.",
+      "alt": {
+        "en": "contact us",
+        "de": "Bei Fragen, meld dich bei uns."
+      },
       "route": "impressum"
     }
   },
