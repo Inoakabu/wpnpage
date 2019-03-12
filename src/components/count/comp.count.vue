@@ -2,17 +2,19 @@
   <div class="count">
     <h3>Festival-Countdown</h3>
     <h1>{{ days }} : {{ hours }} : {{ minutes }} : {{ seconds }}</h1>
-    <p>Days : Hrs : Min : Sec</p>
+    <p>{{ content[currentLang].days }} : {{ content[currentLang].hrs }} : {{ content[currentLang].min }} : {{ content[currentLang].sec }}</p>
   </div>
 </template>
 
 <script>
+import content from '@/assets/json/content.json'
   export default {
     name: 'Count',
     data () {
       return {
         currentDate: Date.parse(new Date(this.endDate)) - Date.parse(new Date()),
-        endDate: 'Dec 13, 2019 01:00:00'
+        endDate: 'Dec 13, 2019 01:00:00',
+        content: content.countdown
       }
     },
     computed: {
@@ -30,6 +32,9 @@
       seconds () {
         let seconds = Math.floor((this.currentDate / 1000) % 60)
         return seconds > 9 ? seconds : `0${seconds}`
+      },
+      currentLang () {
+        return this.$route.params.lang
       }
     },
     methods: {

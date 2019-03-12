@@ -9,7 +9,7 @@
       {{ info.land }}<br>
     </div>
     <br>
-    <h4>Phone</h4>
+    <h4>Tel.</h4>
     {{ info.tel }}<br><br>
     <h4>E-Mail</h4>
     {{ info.email }}<br><br>
