@@ -9,7 +9,7 @@
     </div>
     <nav class="impressum">
       <router-link :to="link.route" v-for="(link,idx) in links" :key="idx" :alt="link.alt[currentLang]" :title="link.alt[currentLang]">
-        {{link.name}}
+        {{link.name[currentLang]}}
       </router-link>
     </nav>
   </footer>
@@ -46,6 +46,12 @@
     justify-content: center;
     align-content: center;
     flex-direction: column;
+  }
+  .impressum:nth-child(2)::before {
+    content: "|"
+  }
+  .impressum:nth-child(2)::after {
+    content: "|"
   }
 
   @media (max-width: 960px) {
