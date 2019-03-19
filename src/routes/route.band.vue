@@ -4,7 +4,7 @@
     <div class="band-page-social" v-for="link in band.links" :key="link.name">
       <social :url="link.url" :name="link.name"/>
     </div>
-    <div class="band-page-description">{{ band.text[currentLang] }}</div>
+    <p class="band-page-description">{{ band.text[currentLang] }}</p>
     <youtube class="band-page-video" :link="band.video"/>
     <router-view></router-view>
   </section>
@@ -33,15 +33,18 @@
 </script>
 
 <style scoped>
+  .band-page {
+    text-align: center;
+  }
   .band-page-headline {
     text-align: center;
     margin: 5rem 0;
   }
 
   .band-page-description {
-    max-width: 900px;
     line-height: 1.5rem;
-    padding-top: 5rem;
+    padding-top: 10rem;
+    text-align: center;
   }
 
   .band-page-video {

@@ -17,10 +17,32 @@
     "steuerNR": "31/520/00474 ",
     "FA": "FA Berlin/Prenzlauer Berg",
     "name_CO": "Joerg Schroeder",
-    "email": "info@dmed-festival.de"
-  },
-  "hotel": [
-    {
+    "email": "info@dmed-festival.de",
+    "en": {
+      "_1": { "h": "Legal Notice",
+              "text": "De Mortem Et Diabolum assumes no liability for the topicality, correctness, completeness or quality of the information provided. Liability claims against De Mortem Et Diabolum caused by the use or non-use of any information provided, including any kind of information which is incomplete or incorrect, will therefore be rejected. De Mortem Et Diabolum expressly reserves the right to change, supplement, delete or temporarily or permanently cease publication of parts of the site or the entire site without prior notice. Despite careful control, we hereby distance ourselves from all linked pages. We have no influence on the design of these pages. At the time of linking, no page was legally objectionable in any way. The service providers of De Mortem Et Diabolum partly act freelance on their own account."
+            }
+    },
+    "de": {
+      "_1": { "h": "Haftungshinweis",
+              "text": "De Mortem Et Diabolum übernimmt keinerlei Gewähr für die Aktualität, Korrektheit, Vollständigkeit oder Qualität der bereitgestellten Informationen. Haftungsansprüche gegen De Mortem Et Diabolum, die durch die Nutzung oder Nichtnutzung der dargebotenen Informationen bzw. durch die Nutzung fehlerhafter und oder unvollständiger Informationen verursacht wurden sind grundsätzlich ausgeschlossen. De Mortem Et Diabolum behält es sich ausdrücklich vor, Teile der Seite oder das gesamte Angebot ohne gesonderte Ankündigung zu verändern, zu ergänzen, zu löschen oder die Veröffentlichung zeitweise oder endgültig einzustellen. Trotz sorgfältiger Kontrolle distanzieren wir uns hiermit von allen verlinkten Seiten. Wir haben keinerlei Einfluss auf die Gestaltung selbiger. Zum Zeitpunkt der Verlinkung war keine Seite in irgendeiner Art und Weise rechtlich zu beanstanden. Die Dienstleister von De Mortem Et Diabolum handeln zum Teil freiberuflich auf eigene Rechnung."
+            }
     }
-  ]
+  },
+  "privacy_policy": {
+    "title": {
+      "en": "Privacy Policy",
+      "de": "Datenschutz"
+    },
+    "en": {
+      "_1": { "h": "",
+        "text": ""
+      }
+    },
+    "de": {
+      "_1": { "h": "",
+        "text": ""
+      }
+    }
+  }
 }
