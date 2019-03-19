@@ -1,20 +1,30 @@
 <template>
-  <div class="privacy-policy">
-    <h3>{{ content.title[currentLang] }}</h3>
-    <ol class="privacy-policy-list" type="I">
-      <li class="privacy-policy-listitems" v-for="(item, index) in content[currentLang]" :key="index">
-        {{ item }}
-      </li>
-    </ol>
-  </div>
+  <section class="privacy-policy">
+    <div class="privacy-policy">
+      <h1>{{ content.title[currentLang] }}</h1>
+      <ol class="privacy-policy-list">
+        <li class="privacy-policy-listitems" v-for="(item, index) in content[currentLang]" :key="index">
+          <h2>{{ item.h }}</h2>
+          <h3>{{ item.h2 }}</h3>
+          {{ item.text }}<br>
+          <ul class="privacy-policy-sublist">
+            <li class="privacy-policy-sublistItem" v-for="(subitem, index) in item.list" :key="index">
+              {{ subitem }}
+            </li>
+          </ul><br>
+          {{ item.text2 }}
+        </li>
+      </ol>
+    </div>
+  </section>
 </template>
 
 <script>
-import content from '@/assets/json/content.json'
+import content from '@/assets/json/info.json'
 export default {
   data () {
     return {
-      content: content.info.privacy_policy
+      content: content.privacy_policy
     }
   },
   computed: {
@@ -28,9 +38,11 @@ export default {
 <style>
   .privacy-policy-list {
     text-align: left;
+    list-style: none;
   }
 
   .privacy-policy-listitems {
     left: 10rem;
+    padding-top: 2rem;
   }
 </style>

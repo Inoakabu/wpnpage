@@ -1,7 +1,10 @@
 {
   "links": {
     "impressum": {
-      "name": "Impressum",
+      "name": {
+        "en":"Impressum",
+        "de":"Impressum"
+      },
       "alt": {
         "en": "go to impressum",
         "de": "Weiter zum Impressum"
@@ -9,12 +12,25 @@
       "route": "impressum"
     },
     "contact": {
-      "name": "Kontakt",
+      "name": {
+        "en": "Contact",
+        "de":"Kontakt"
+      },
       "alt": {
         "en": "contact us",
         "de": "Bei Fragen, meld dich bei uns."
       },
       "route": "impressum"
+    },
+    "policy": {
+      "name": {
+        "en":"Privacy Policy",
+        "de":"Datenschutz"},
+      "alt": {
+        "en": "go to",
+        "de": "weiter"
+      },
+      "route": "privacypolicy"
     }
   },
   "sponsors": [

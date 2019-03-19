@@ -8,6 +8,7 @@ import BandOverview from './routes/route.overview.bands'
 import NewsOverview from './routes/route.overview.news'
 import InfoOverview from './routes/route.info'
 import ImpressumOverview from './routes/route.impressum'
+import PrivacyPolicy from './routes/route.privacy_policy'
 // Singlepages
 import BandPage from './routes/route.band'
 import NewsPage from './routes/route.news'
@@ -77,6 +78,11 @@ export default new Router({
           path: `impressum`,
           name: `impressum`,
           component: ImpressumOverview
+        },
+        {
+          path: `privacypolicy`,
+          name: `privacypolicy`,
+          component: PrivacyPolicy
         }
       ]
     }

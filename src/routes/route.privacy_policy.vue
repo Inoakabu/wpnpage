@@ -5,10 +5,10 @@
   </main>
 </template>
 <script>
-import privacyPolicyComp from '../components/impressum/comp.privacyPolicy'
+import privacyPolicyComp from '../components/privacy/comp.privacyPolicy'
 
 export default {
-  name: 'Privacy Policy',
+  name: 'PrivacyPolicy',
   components: { privacyPolicyComp },
   data () {
     return {
