@@ -1,0 +1,14 @@
+{
+  "markers": [
+    {
+      "name": "De Mortem Et Diabolum",
+      "pos": "L.latLng(52.48438, 13.39136)",
+      "tooltip": "De Mortem Et Diabolum"
+    },
+    {
+      "name": "Hotel",
+      "pos": "${L.latLng(52.49381, 13.38793)}",
+      "tooltip": "Hotel"
+    }
+  ]
+}

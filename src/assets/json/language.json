@@ -1,0 +1,15 @@
+{
+  "defaultLang": "en",
+  "en":{
+    "showMore": "show more",
+    "instagramEng": "open instagram",
+    "prev": "prev",
+    "next": "next"
+  },
+  "de":{
+    "mehrZeigen": "mehr anzeigen",
+    "instagramDe": "weiter zu instagram",
+    "zuruck": "zurück",
+    "weiter": "weiter"
+  }
+}
