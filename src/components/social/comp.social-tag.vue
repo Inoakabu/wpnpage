@@ -20,7 +20,7 @@ import content from '@/assets/json/content.json'
     },
     computed: {
       getType () {
-        /* eslint no-useless-escape: "error" */
+        /* eslint-disable */
         const regex = /^(?:https?:\/\/)?(?:[^@\/\n]+@)?(?:www\.)?([^:\/?\n]+)/gim
         let data = regex.exec(this.url) || null
         if (data) {

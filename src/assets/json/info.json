@@ -35,17 +35,102 @@
       "de": "Datenschutz"
     },
     "en": {
-      "_1": { "h1": "", "h2":"",
-        "text": ""
+      "_1": { "h": "What data we use and why", "h2":"Hosting",
+        "text": "The hosting services used by us serve the provision of the following services: Infrastructure and platform services, computing capacity, storage space and database services, security services as well as technical maintenance services which we use for the purpose of operating the website. In doing so, we or our hosting provider process inventory data, contact data, content data, contract data, usage data, meta data and communication data of customers, interested parties and visitors to this website on the basis of our legitimate interests in the efficient and secure provision of our website in accordance with section 6 (1) sentence 1 f) DSGVO in conjunction with section 28 DSGVO."
       },
-      "_2": { "h": "",
-        "text": ""
+      "_2": { "h2": "Access Data",
+        "text": "We collect information from you when you use this website. We automatically collect information about your usage patterns and your interaction with us, and we register information about your computer or mobile device. We collect, store and use data about each access to our website (so-called server log files). This includes access data:",
+        "list": {
+          "a": "Name and URL of the retrieved file",
+          "b": "Date and time of retrieval",
+          "c": "transferred data volume",
+          "d": "Notification of successful retrieval (HTTP response code)",
+          "e": "Browser type and browser version",
+          "f": "operating system",
+          "g": "Referer URL (i.e. the previously visited page)",
+          "h": "Websites accessed by the user's system through our website",
+          "i": "Internet service provider of the user",
+          "j": "IP address and the requesting provider"
+        },
+        "text2": "We use this log data without allocation to your person or other profiling to carry out statistical evaluations for the purpose of the operation, security and optimisation of our website, but also to anonymously record the number of visitors to our website (traffic) and the scope and type of use of our website and services, as well as for billing purposes to measure the number of clicks received from cooperation partners. This information enables us to provide personalized and location-based content and analyze traffic, troubleshoot and correct errors, and improve our services. This is also our legitimate interest pursuant to section 6 § 1 sentence 1 f) DSGVO. We reserve the right to subsequently check the log data if there is a justified suspicion of illegal use on the basis of concrete indications. We store IP addresses in the log files for a limited period of time if this is necessary for security purposes or for the provision of services or the billing of a service, e.g. if you use one of our offers."
       },
-      "_3": { "h": "",
-        "text": ""
+      "_3": { "h2": "Cookies",
+        "text": "We use so-called session cookies to optimize our website. A session cookie is a small text file that is sent by the respective servers when you visit a website and stored temporarily on your hard drive. This file as such contains a so-called session ID, which can be used to assign various requests from your browser to the joint session. This enables your computer to be recognised when you return to our website. These cookies are deleted after you close your browser. They are used, for example, to enable you to use the shopping basket function across several pages. To a small extent, we also use persistent cookies (also small text files that are stored on your end device) that remain on your end device and enable us to recognize your browser the next time you visit. These cookies are stored on your hard drive and are deleted automatically after the specified time. Their lifespan is 1 month to 10 years. This enables us to present our services to you in a more user-friendly, effective and secure manner and, for example, to display information on the site that is specifically tailored to your interests. Our legitimate interest in the use of cookies pursuant to section 6 §1 sentence 1 f) DSGVO is to make our website more user-friendly, effective and secure. The following data and information are stored in the cookies: Information about the number of visits to our website and the use of individual functions of our website. When the cookie is activated, it is assigned an identification number and your personal data is not assigned to this identification number. Your name, your IP address or similar data that would enable the cookie to be assigned to you will not be placed in the cookie. On the basis of cookie technology, we only receive pseudonymised information, such as which of our pages were visited. You can set your browser so that you are informed in advance when cookies are set and can decide on a case-by-case basis whether you wish to exclude the acceptance of cookies in certain cases or in general, or whether cookies should be prevented completely. This may limit the functionality of the website."
       },
-      "_4": { "h": "",
-        "text": ""
+      "_4": { "h2": "Data to fulfil our contractual obligations",
+        "text": "We process personal data that we need to fulfil our contractual obligations, such as name, address, e-mail address, requested services, invoice and payment data. The collection of this data is necessary for the conclusion of the contract. The data will be deleted after the warranty periods and statutory retention periods have expired. The legal basis for the processing of this data is section 6 § 1 sentence 1 b) DSGVO, because this data is needed so that we can fulfill our contractual obligations to you."
+      },
+      "_5": { "h2": "E-mail contact and contact form",
+        "text": "If you contact us (e.g. via contact form or e-mail), we will process your details to process the enquiry and in the case that follow-up questions occur. If the data processing is carried out to execute pre-contractual actions, which take place at your request, or, if you are already our customer, to execute the contract, the legal basis for this data processing is section 6 § 1 sentence 1 b) DSGVO. We only process further personal data if you consent to this ( section 6 § 1 sentence 1 a) DSGVO) or if we have a legitimate interest in the processing of your data (section 6 § 1 sentence 1 f) DSGVO). A legitimate interest lies, for example, in replying to your e-mail."
+      },
+      "_6": { "h2": "Google Analytics",
+        "text": "We use Google Analytics, a web analysis service provided by Google Inc. ('Google'). Google Analytics uses 'cookies', which are text files placed on your computer, to help the website analyze how users use the site. The information generated by the cookie about the use of this website by website visitors is generally transmitted to a Google server in the USA and stored there. This is also our legitimate interest pursuant to section 6 § 1 sentence 1 f) DSGVO. Google has submitted to the Privacy Shield Agreement concluded between the European Union and the USA and certified itself. Google thereby undertakes to comply with the standards and regulations of European data protection law. Further information can be found in the following linked entry: https://www.privacyshield.gov/participant?id=a2zt000000001L5AAI&status=Active. We have enabled IP anonymization on this website (anonymizeIp). However, this will cause Google to previously shorten your IP address within member states of the European Union or other states party to the Agreement on the European Economic Area. Only in exceptional cases will the full IP address be transmitted to and truncated by Google on servers in the United States. Google will use this information on our behalf to evaluate your use of the website, to compile reports on website activity and to provide us with other services relating to website activity and internet usage. The IP address transmitted by your browser as part of Google Analytics is not combined with other data from Google. You may refuse the use of cookies by selecting the appropriate settings on your browser, however please note that if you do this you may not be able to use the full functionality of this website. You can also prevent the transmission of data generated by the cookie and related to your use of the website (including your IP address) to Google and the processing of this data by Google by downloading and installing the browser plug-in available under the following link: http://tools.google.com/dlpage/gaoptout?hl=en. As an alternative to the browser plug-in or within browsers on mobile devices, you can click on the following link to set an opt-out cookie that will prevent Google Analytics from collecting this data within this website in the future (this opt-out cookie only works in this browser and only for this domain). If you delete the cookies in your browser, you must click this link again): Deactivate Google Analytics"
+      },
+      "_7": { "h2": "Storage Period",
+        "text": "Unless nonspecifically stated, we will only store personal data for as long as is necessary to fulfill the purposes for which it was collected. In some cases, the law provides for the preservation of personal data, for example in tax or commercial law. In these cases, the data is only stored by us for these legal purposes, but is not processed elsewhere and deleted after the legal retention period has expired."
+      },
+      "_8": { "h2": "Your rights as affected person by the data processing",
+        "text": "Under the applicable laws, you have various rights with regards to your personal information. If you wish to exercise these rights, please send your request by e-mail or by post, clearly identifying yourself, to the address given in paragraph 1. Below you will find an overview of your rights."
+      },
+      "_9": { "h2": "Right to confirmation and information",
+        "text": "You have the right to clear information about the processing of your personal data. In detail: You have the right at any time to receive confirmation from us as to whether or not your personal data is being processed. If this is the case, you have the right to request from us free information about the personal data stored about you together with a copy of this data. Furthermore, you have the right to the following information:",
+        "list":{
+          "a": "the processing purposes;",
+          "b": "the categories of personal data to be processed;",
+          "c": "the recipients or categories of recipients to whom the personal data have been or will be disclosed, in particular recipients in third countries or international organisations;",
+          "d": "if possible, the planned duration for which the personal data will be stored or, if this is not possible, the criteria for determining this duration;",
+          "e": "the existence of a right to rectify or delete personal data relating to you or to limit the processing by the responsible person or the right to object to this processing;",
+          "f": "the existence of a right to appeal to a regulatory authority;",
+          "g": "if the personal data is not collected from you, all available information about the origin of the data;",
+          "h": "the existence of automated decision-making including profiling in accordance with Section 22 (1) and (4) DSGVO and - at least in these cases - meaningful information on the logic involved and the importance and intended effects of such processing for you."
+        },
+        "text2": "If personal data are transferred to a third country or to an international organisation, you have the right to be informed of the appropriate safeguards pursuant to section. 46 DSGVO in connection with the transfer."
+      },
+      "_10": { "h2": "Right to rectification",
+        "text": "You have the right to demand from us the correction and, if necessary, the completion of your personal data. In detail: You have the right to demand from us immediately the correction of incorrect personal data concerning you. Taking into account the purposes of the processing, you have the right to request the completion of incomplete personal data - also by means of a supplementary declaration."
+      },
+      "_11": { "h2": "Right to deletion ('right to be forgotten')",
+        "text": "In a series of cases, we may be required to delete personal information about you. In detail: Pursuant to section 17 (1) of the DSGVO, you have the right to demand that we delete personal data relating to you immediately, and we are obliged to delete personal data immediately if one of the following reasons applies:",
+        "list": {
+          "a": "Personal data are no longer necessary for the purposes for which they were collected or otherwise processed.",
+          "b": "You withdraw your agreement on which the processing was based pursuant to section 6 §. 1 sentence 1 a) DSGVO or section 9 §. 2 a) DSGVO, and there is no other legal basis for the processing.",
+          "c": "You object to the processing pursuant to Section 21 (1) DSGVO and there are no priority legitimate reasons for the processing or you object to the processing pursuant to Section 21 (2) DSGVO.",
+          "d": "Personal data have been processed unlawfully.",
+          "e": "The deletion of personal data is necessary to fulfil a legal obligation according to Union law or the law of the Member States to which we are subject.",
+          "f": "The personal data were collected in relation to information society services offered pursuant to section 8 (1) DSGVO."
+        },
+        "text2": "If we have made the personal data public and we are obliged to delete them pursuant to section 17 (1) of the DSGVO, we shall take appropriate measures, including technical measures, taking into account the available technology and implementation costs, to inform those responsible for data processing who process the personal data that you have requested them to delete all links to this personal data or copies or replications of this personal data."
+      },
+      "_12": { "h2": "Right to limitation of processing",
+        "text": "In a series of cases, you are entitled to request that we limit the processing of your personal data. In detail: You have the right to demand that we limit the processing of your personal data if one of the following conditions is given:",
+        "list": {
+          "a": "the accuracy of the personal data is denied by you for a period of time that allows us to verify the accuracy of the personal data,",
+          "b": "the processing is unlawful and you refused to delete the personal data and instead requested that the use of the personal data be restricted;",
+          "c": "we no longer need the personal data for the purposes of processing, but you need the data to assert, exercise or defend legal claims, or",
+          "d": "you have lodged an objection against the processing pursuant to section 21 §. 1 DSGVO, as long as it has not yet been established whether the legitimate reasons of our company outweigh yours."}
+      },
+      "_13": { "h2": "Right to data portability",
+        "text": "You have the right to receive, transmit or have us transmit machine-readable personal data concerning you. In detail: You have the right to receive the personal data concerning you that you have provided to us in a structured, common and machine-readable format, and you have the right to transfer this data to another responsible person without our obstruction, provided that",
+        "list":{
+          "a": "the processing is based on a consent pursuant to Section 6 §. 1 sentence 1 a) DSGVO or Section 9 §. 2 a) DSGVO or on a contract pursuant to Section 6 §. 1 sentence 1 b) DSGVO and",
+          "b": "processing is performed using automated procedures."
+        },
+        "text2": "In exercising your right to data transfer in accordance with paragraph 1, you have the right to obtain that the personal data be transmitted directly by us to another responsible person, insofar as this is technically feasible."
+      },
+      "_14": { "h2": "Right of objection",
+        "text": "You have the right to object to a lawful processing of your personal data by us if this is justified by your particular situation and our interests in the processing do not outweigh. In detail: You have the right, for reasons arising from your particular situation, to object at any time to the processing of personal data concerning you on the basis of section 6 §. 1 sentence 1 e) or f) DSGVO; this also applies to profiling based on these provisions. We no longer process personal data unless we can prove compelling reasons for the processing worthy of protection which outweigh your interests, rights and freedoms, or the processing serves the assertion, exercise or defence of legal claims. If personal data is processed by us for the purpose of direct advertising, you have the right to object at any time to the processing of your personal data for the purpose of such advertising; this also applies to profiling, insofar as it is connected with such direct advertising. You have the right to object to the processing of your personal data for scientific or historical research purposes or for statistical purposes pursuant to section 89 §. 1 DSGVO for reasons arising from your particular situation, unless such processing is necessary for the performance of a task in the public interest. "
+      },
+      "_15": { "h2": "Automated decisions including profiling",
+        "text": "You have the right not to be subject to any decision based solely on automated processing, including profiling, that has any legal effect on you or similarly significantly affects you. There will be no automated decision-making based on the personal data collected. "
+      },
+      "_16": { "h2": "Right to withdraw consent under data protection law",
+        "text": "You have the right to withdraw your consent to the processing of personal data at any time."
+      },
+      "_17": { "h2": "Right of appeal to a regulatory authority",
+        "text": "You have the right to complain to a supervisory authority, in particular in the Member State where you are staying, at your place of work or at the place where the alleged infringement occurred, if you consider that the processing of your personal data is unlawful."
+      },
+      "_18": { "h": "Data integrity",
+        "text": "We make every effort to ensure the security of your data within the framework of the applicable data protection laws and technical possibilities. Your personal data will be transmitted encrypted. This applies to your orders and also to the customer login. We use the SSL (Secure Socket Layer) coding system, but point out that data transmission over the Internet (e.g. when communicating by e-mail) can have security gaps. A complete protection of the data against access by third parties is not possible. To secure your data, we maintain technical and organisational security measures in accordance with section 32 of the German Data Protection Act (DSGVO), which we continually adapt to the state of the art. Furthermore, we do not guarantee that our services will be available at certain times; disruptions, interruptions or failures cannot be ruled out. The servers we use are regularly and carefully backed up."
       }
     },
     "de": {

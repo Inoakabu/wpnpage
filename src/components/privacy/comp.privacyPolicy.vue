@@ -4,7 +4,7 @@
       <h1>{{ content.title[currentLang] }}</h1>
       <ol class="privacy-policy-list">
         <li class="privacy-policy-listitems" v-for="(item, index) in content[currentLang]" :key="index">
-          <h2>{{ item.h }}</h2>
+          <h2>{{ item.h }}</h2><br>
           <h3>{{ item.h2 }}</h3>
           {{ item.text }}<br>
           <ul class="privacy-policy-sublist">
