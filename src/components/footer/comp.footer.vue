@@ -97,13 +97,19 @@
 
   @media (max-width: 425px) {
     .footer:before {
-      background-size: 235%;
+      background-size: 240%;
+    }
+    .sponsor-item{
+      max-width: 80%;
     }
   }
 
   @media (max-width: 320px) {
     .footer:before {
       background-size: 275%;
+    }
+    .sponsor-item{
+      max-width: 40%;
     }
   }
   .sponsor {
@@ -113,6 +119,7 @@
   }
   .sponsor-item {
     margin-right: 5px;
+    max-width: 100%;
   }
   .sponsor-item:last-child {
     margin-right: 0
