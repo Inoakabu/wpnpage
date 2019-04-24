@@ -19,7 +19,8 @@
     components: { Tile },
     data () {
       return {
-        content: content.news.button
+        content: content.news.button,
+        newsContent: newsJson.news
       }
     },
     computed: {

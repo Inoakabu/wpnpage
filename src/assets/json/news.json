@@ -1,26 +1,152 @@
 [
   {
     "id": 1,
-    "title": "News 1",
-    "image": "news-icon-13.png",
-    "text": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet."
+    "date": "16.12.2018",
+    "title": "DMED 2019",
+    "image": "news_161218.jpg",
+    "text": { 
+      "en": "Our pre-sale is starting now – again with early-bird tickets [bitte „early-bird tickets“ mit Ticketseite verlinken], which are strictly limited to 50 pieces! They are available as an e-ticket for 60 € instead of 68 €. The first bands will be announced in early 2019!",
+      "de": "Unser Vorverkauf startet schon jetzt – wieder mit Early-Bird-Tickets [bitte „Early-Bird-Tickets“ mit Ticketseite verlinken], die auf 50 Exemplare limitiert sind! Sie sind als E-Tickets für 60 € statt 68 € verfügbar. Die ersten Bands werden Anfang 2019 bekanntgegeben!"
+    }
   },
   {
     "id": 2,
-    "title": "News 2",
-    "image": "news-icon-14.png",
-    "text": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet."
+    "date": "28.12.2017",
+    "title": "DMED 2018",
+    "image": "news_281218.jpg",
+    "text": {
+      "en": "After hopefully unholy Christmas, we take a look back at the DMED 2018 – with these great photos by Void Revelations! [bitte „Void Revelations“ mit folgender Seite verlinken: https://www.facebook.com/Voidrevelations/] The first bands will be announced in early 2019!",
+      "de": "Nach hoffentlich unheiliger Weihnacht werfen wir den Blick noch mal aufs DMED 2018 zurück – mit den großartigen Fotos von Void Revelations! [bitte „Void Revelations“ mit folgender Seite verlinken: https://www.facebook.com/Voidrevelations/] Die ersten Bands werden Anfang 2019 bekanntgegeben!"
+    }
   },
   {
     "id": 3,
-    "title": "News 3",
-    "image": "news-icon-12.png",
-    "text": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet."
+    "date": "30.12.2018",
+    "title": "DMED 2018 REPORT",
+    "image": "news_301218.jpg",
+    "text": {
+      "en": "First festival report about DMED 2018 is online at Zephyr's Odem [bitte „Zephyr's Odem“ mit folgender Seite verlinken: http://www.zephyrs-odem.de/festivals/de-mortem-et-diabolum/de-mortem-et-diabolum-2018-traubensaft-im-milchaufschaeumer-unser-bericht/] (German only).",
+      "de": "Den ersten Festivalbericht zum DMED 2018 findet ihr bei Zephyr's Odem. [bitte „Zephyr's Odem“ mit folgender Seite verlinken: http://www.zephyrs-odem.de/festivals/de-mortem-et-diabolum/de-mortem-et-diabolum-2018-traubensaft-im-milchaufschaeumer-unser-bericht/] [Allgemein: Bitte den 2018er-Flyer oder folgendes Bild hinterlegen: http://www.zephyrs-odem.de/fileadmin/_processed_/csm_26952518_1981886085467994_8739592568149705137_o_d8b29d6690.jpg]"
+    }
   },
   {
     "id": 4,
-    "title": "News 4",
-    "image": "news-icon-12.png",
-    "text": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet."
+    "date": "05.01.2019",
+    "title": "NEW BAND",
+    "image": "news_050119.jpg",
+    "text": {
+      "en": "During the darkest nights they've created a mixture of death and black metal: ARROGANZ [bitte „ARROGANZ“ mit Arroganz-Bandseite verlinken] telling tales from the death and devil, sometimes pleasantly primitive, often complex. We are proud to announce the first band for the De Mortem Et Diabolum 2019!",
+      "de": "In der schwärzesten Nacht entstandene Mischung aus Death und Black Metal: ARROGANZ [bitte „ARROGANZ“ mit Arroganz-Bandseite verlinken] erzählen Geschichten von Tod und Teufel, mal angenehm primitiv, häufig ausgefeilt. Wir freuen uns, euch die erste Band fürs De Mortem Et Diabolum 2019 zu präsentieren![Allgemein: Bitte Band-Grafik hinterlegen]"
+    }
+  },
+  {
+    "id": 5,
+    "date": "06.01.2019",
+    "title": "NEW BAND",
+    "image": "news_060119.jpg",
+    "text": {
+      "en": "There are bands that have been far up on our wishlist ever since we had first thoughts about DMED – ASCENSION [bitte „ASCENSION“ mit Ascension-Bandseite verlinken] are one of them. In December, you can experience one of the best German Black Metal bands there is.",
+      "de": "Es gibt Bands, die stehen seit dem ersten Gedanken ans DMED auf unserem Wunschzettel – ASCENSION [bitte „ASCENSION“ mit Ascension-Bandseite verlinken] gehören dazu! Erlebt im Dezember eine der besten deutschen Black-Metal-Bands.[Allgemein: Bitte Band-Grafik hinterlegen]"
+    }
+  },
+  {
+    "id": 6,
+    "date": "07.01.2019",
+    "title": "FLYER UPDATE",
+    "image": "news_070119.jpg",
+    "text": {
+      "en": "We still have some early-bird tickets [bitte „early-bird tickets“ mit Ticketseite verlinken] available for 60 € instead of 68 €. So far we've confirmed ASCENSION and ARROGANZ ... more bands will follow at the end of the month.",
+      "de": "Noch gibt es einige Early-Bird-Tickets [bitte „Early-Bird-Tickets“ mit Ticketseite verlinken] für 60 € statt 68 €. Bisher bestätigt: ASCENSION und ARROGANZ ... weitere Bands folgen schon Ende des Monats.[Allgemein: Bitte zweite Flyer-Grafik hinterlegen]"
+    }
+  },
+  {
+    "id": 7,
+    "date": "12.01.2019",
+    "title": "DMED 2018 REPORT",
+    "image": "news_120119.jpg",
+    "text": {
+      "en": "Festival report about DMED 2018 is online at metal.de [bitte „metal.de“ mit folgender Seite verlinken: https://www.metal.de/konzertberichte/de-mortem-et-diabolum-2018-364093/] (German only).",
+      "de": "Der Festivalbericht zum DMED 2018 von metal.de. [bitte „metal.de“ mit folgender Seite verlinken: https://www.metal.de/konzertberichte/de-mortem-et-diabolum-2018-364093/] [Allgemein: Bitte den 2018er-Flyer oder folgendes Bild hinterlegen: http://www.zephyrsodem.de/fileadmin/_processed_/csm_26952518_1981886085467994_8739592568149705137_o_d8b29d6690.jpg]"
+    }
+  },
+  {
+    "id": 8,
+    "date": "26.01.2019",
+    "title": "NEW BAND",
+    "image": "news_260119.jpg",
+    "text": {
+      "en": "2004 they’ve kicked off a masterly debut album, yet their energetic live shows are rare, compared to other German Black Metal bands: please welcome MEMBARIS [bitte „MEMBARIS“ mit Membaris-Bandseite verlinken] on the billing for DMED 2019!",
+      "de": "Sie sind 2004 mit einem meisterhaften Debütalbum gestartet, ihre energischen Live-Auftritte sind im Vergleich zu anderen deutschen Black-Metal-Bands aber eher rar: Begrüßt MEMBARIS [bitte „MEMBARIS“ mit Membaris-Bandseite verlinken] beim DMED 2019! [Allgemein: Bitte Band-Grafik hinterlegen]"
+    }
+  },
+  {
+    "id": 9,
+    "date": "27.01.2019",
+    "title": "NEW BAND",
+    "image": "news_270119.jpg",
+    "text": {
+      "en": "In 2019, Iceland stays a guarantor for high quality Black Metal! We stick truthful to our line and are happy to present to you SINMARA [bitte „SINMARA“ mit Sinmara-Bandseite verlinken] as fourth band for DMED 2019 – with a new album that the band will release in the beginning of March.",
+      "de": "Island bleibt auch 2019 einer der Garanten für hochqualitativen Black Metal! Wir bleiben unserer Linie treu und freuen uns, SINMARA [bitte „SINMARA“ mit Sinmara-Bandseite verlinken] als vierte Band fürs DMED 2019 zu präsentieren – mit neuem Album, das die Isländer Anfang März veröffentlichen. [Allgemein: Bitte Band-Grafik hinterlegen]"
+    }
+  },
+  {
+    "id": 10,
+    "date": "28.01.2019",
+    "title": "FLYER UPDATE",
+    "image": "news_280119.jpg",
+    "text": {
+      "en": "We still have some early-bird tickets [bitte „early-bird tickets“ mit Ticketseite verlinken] available for 60 € instead of 68 €. So far we've confirmed ASCENSION, SINMARA, MEMBARIS and ARROGANZ ... more bands will follow.",
+      "de": "Noch gibt es einige Early-Bird-Tickets [bitte „Early-Bird-Tickets“ mit Ticketseite verlinken] für 60 € statt 68 €. Bisher bestätigt: ASCENSION, SINMARA, MEMBARIS und ARROGANZ ... weitere Bands folgen. [Allgemein: Bitte zweite Flyer-Grafik hinterlegen]"
+    }
+  },
+  {
+    "id": 11,
+    "date": "23.02.2019",
+    "title": "NEW BAND",
+    "image": "news_230219.jpg",
+    "text": {
+      "en": "GROZA [bitte „GROZA“ mit Groza-Bandseite verlinken] are not making a big secret of their musical inspiration and bring exhilarating songs with a special recognition value. One of the most thrilling new Black Metal Bands from Germany.",
+      "de": "GROZA [bitte „GROZA“ mit Groza-Bandseite verlinken] machen keinen Hehl aus ihrer musikalischen Inspiration und liefern berauschende Songs mit besonderem Wiedererkennungswert. Eine der spannendsten neuen Black-Metal-Bands aus Deutschland! [Allgemein: Bitte Band-Grafik hinterlegen]"
+    }
+  },
+  {
+    "id": 12,
+    "date": "24.02.2019",
+    "title": "NEW BAND",
+    "image": "news_240219.jpg",
+    "text": {
+      "en": "This weekend, HALPHAS [bitte „HALPHAS“ mit Halphas-Bandseite verlinken] had to cancel their shows in Berlin and Rostock due to health issues, but they are going to return to the capital in December – with a brand new record!",
+      "de": "Am Wochenende mussten HALPHAS [bitte „HALPHAS“ mit Halphas-Bandseite verlinken] ihre Shows in Berlin und Rostock aus gesundheitlichen Gründen absagen, doch im Dezember kehren sie in die Hauptstadt zurück – mit neuem Album! [Allgemein: Bitte Band-Grafik hinterlegen]"
+    }
+  },
+  {
+    "id": 13,
+    "date": "25.02.2019",
+    "title": "FLYER UPDATE",
+    "image": "news_250219.jpg",
+    "text": {
+      "en": "We still have some early-bird tickets [bitte „early-bird tickets“ mit Ticketseite verlinken] available for 60 € instead of 68 €. So far we've confirmed ASCENSION, SINMARA, MEMBARIS, ARROGANZ, HALPHAS and GROZA ... more bands will follow.",
+      "de": "Noch gibt es einige Early-Bird-Tickets [bitte „Early-Bird-Tickets“ mit Ticketseite verlinken] für 60 € statt 68 €. Bisher bestätigt: ASCENSION, SINMARA, MEMBARIS, ARROGANZ, HALPHAS und GROZA ... weitere Bands folgen. [Allgemein: Bitte dritte Flyer-Grafik hinterlegen]"
+    }
+  },
+  {
+    "id": 14,
+    "date": "16.03.2019",
+    "title": "NEW BAND",
+    "image": "news_160319.jpg",
+    "text": {
+      "en": "SCHAMMASCH [bitte „SCHAMMASCH“ mit Schammasch-Bandseite verlinken] have high standards for every detail of their work - music, artwork and stage performance, these Swiss leave nothing to chance. One of their very few and carefully selected performances this year will be on the DMED in 2019!",
+      "de": "SCHAMMASCH [bitte „SCHAMMASCH“ mit Schammasch-Bandseite verlinken] stehen mit jeder Faser ihres Schaffens für hohe Ansprüche – Musik, Artworks und Bühnenauftritt, die Schweizer überlassen nichts dem Zufall. Einen ihrer sehr wenigen, sorgfältig ausgewählten Auftritte absolvieren sie 2019 auf dem DMED! [Allgemein: Bitte Band-Grafik hinterlegen]"
+    }
+  },
+  {
+    "id": 15,
+    "date": "17.03.2019",
+    "title": "FLYER UPDATE",
+    "image": "news_170319.jpg",
+    "text": {
+      "en": "We still have some early-bird tickets [bitte „early-bird tickets“ mit Ticketseite verlinken] available for 60 € instead of 68 €. So far we've confirmed ASCENSION, SINMARA, SCHAMMASCH, MEMBARIS, ARROGANZ, HALPHAS and GROZA ... more bands will follow.",
+      "de": "Noch gibt es einige Early-Bird-Tickets [bitte „Early-Bird-Tickets“ mit Ticketseite verlinken] für 60 € statt 68 €. Bisher bestätigt: ASCENSION, SINMARA, SCHAMMASCH, MEMBARIS, ARROGANZ, HALPHAS und GROZA ... weitere Bands folgen. [Allgemein: Bitte aktuelle Flyer-Grafik hinterlegen]"
+    }
   }
 ]

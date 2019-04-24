@@ -2,7 +2,7 @@
   <section class="news-single">
       <div class="news-inner-single" v-if="news">
         <h1> {{ news.title }}</h1>
-        <div> {{ news.text }}</div>
+        <div> {{ news.text[currentLang] }}</div>
         <img :src="imageSrc"/>
       </div>
   </section>
@@ -22,6 +22,9 @@
       },
       imageSrc() {
         return require(`@/assets/images/news/${this.news.image}`)
+      },
+      currentLang () {
+        return this.$route.params.lang
       }
     }
   }
