@@ -5,6 +5,7 @@
       <Tile v-for="(band,idx) in bands" :key="idx" :name="band.name" :image="band.image" :imagePath="'logo/bands'"
             :route="'BandPage'" :id="band.name" backgroundImg border/>
     </div>
+    <router-view></router-view>
   </section>
 </template>
 <script>
@@ -25,9 +26,11 @@ export default {
   .bands.ov {
     text-align: center;
     padding: 2rem;
-    padding-top: 11rem
+    /* padding-top: 11rem; */
+    padding-top: 3rem
   }
   .list.four.ov {
-    padding-top: 12rem;
+    /* padding-top: 12rem; */
+    padding-top: 3rem;
   }
 </style>

@@ -42,7 +42,8 @@
 
   .news-page-description {
     line-height: 1.5rem;
-    padding-top: 10rem;
+    /* padding-top: 10rem; */
+    padding-top: 3rem;
     text-align: center;
   }
 
@@ -57,10 +58,27 @@
   }
 
   .news-page-image{
-    max-width: 1024px;
-    text-align: center
+    max-width: 780px;
   }
   .div-image{
     text-align: center
+  }
+
+  @media (max-width: 960px) {
+    .news-page-image{
+    max-width: 450px;
+    }
+  }
+
+  @media (max-width: 560px) {
+    .news-page-image{
+    max-width: 350px;
+    }
+  }
+
+  @media (max-width: 411px) {
+    .news-page-image{
+    max-width: 220px;
+    }
   }
 </style>

@@ -55,6 +55,7 @@
   body {
     margin: 0;
     padding: 0;
+    /* font-size: 1.4rem */
   }
 
   h1,
@@ -78,6 +79,9 @@
   a {
     color: var(--main);
     text-decoration: none;
+  }
+  p{
+    font-size: 1.8rem;
   }
 
   .button {

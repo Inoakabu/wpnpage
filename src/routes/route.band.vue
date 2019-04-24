@@ -43,7 +43,8 @@
 
   .band-page-description {
     line-height: 1.5rem;
-    padding-top: 10rem;
+    /* padding-top: 10rem; */
+    padding-top: 3rem;
     text-align: center;
   }
 
