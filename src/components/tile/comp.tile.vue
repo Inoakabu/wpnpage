@@ -34,6 +34,11 @@
       imageSrc () {
         return require(`@/assets/images/${this.imagePath}/${this.image}`)
       }
+    },
+    watch: {
+      '$route.params': function(params) {
+        this.$forceUpdate();
+      }
     }
   }
 </script>

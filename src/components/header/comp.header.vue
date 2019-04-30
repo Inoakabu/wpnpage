@@ -4,18 +4,16 @@
       <logoComp/>
     </router-link>
     <navComp/>
-    <langSwitch/>
   </header>
 </template>
 
 <script>
-  import langSwitch from '../lang/langSwitch'
   import navComp from './comp.navigation'
   import logoComp from '@/assets/images/logo/festival/logo.svg'
 
   export default {
     name: 'Header',
-    components: { logoComp, navComp, langSwitch },
+    components: { logoComp, navComp },
     computed: {
       currentlang () {
         return this.$route.params.lang

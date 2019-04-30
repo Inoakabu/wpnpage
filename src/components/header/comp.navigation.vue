@@ -10,16 +10,18 @@
     <div class="social-bar">
       <social v-for="item in socials" :key="item.name" :url="item.url" :name="item.name"/>
     </div>
+    <langSwitch/>
   </nav>
 </template>
 
 <script>
   import { navigation, socials } from '@/assets/json/header.json'
   import social from '@/components/social/comp.social-tag'
+  import langSwitch from '../lang/langSwitch'
 
   export default {
     name: 'Navigation',
-    components: { social },
+    components: { social, langSwitch },
     data () {
       return {
         navigation: navigation,
