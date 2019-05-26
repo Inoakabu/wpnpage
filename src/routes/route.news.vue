@@ -5,15 +5,23 @@
       <div class="div-image">
         <img class="news-page-image" :src="imageSrc"/>
       </div>
+      <PSC pSCimagePath = 'news/pictureSCcontent' :arr="nArr" />
       <router-view></router-view>
   </section>
 </template>
 
 <script>
   import newsJson from '@/assets/json/news.json'
+  import PSC from '@/components/pictureShowCase/comp.pictureSC'
 
   export default {
     name: 'News',
+    components: { PSC },
+    data() {
+      return {
+        nArr: newsJson.pictureSC
+      }
+    },
     computed: {
       id() {
         return Number(this.$route.params.id)
