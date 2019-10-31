@@ -21,18 +21,18 @@
     data () {
       return {
         zoom: 14,
-        center: L.latLng(52.48841, 13.38858),
+        center: L.latLng(52.6742683,12.7077129),
         url: 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
         attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors',
         markers: [
           {
             name: 'De Mortem Et Diabolum',
-            pos: L.latLng(52.48462, 13.39142),
+            pos: L.latLng(52.6742683,12.7077129),
             tooltip: 'De Mortem Et Diabolum',
             icon: L.icon({
               iconUrl: '/map/sharp-local_activity-24px.svg'
             }),
-            link: ''
+            link: 'https://www.google.com/maps/place/Prof.-Mitscherlich-Allee+1,+14641+Paulinenaue/@52.6742683,12.7077129,17z/data=!4m13!1m7!3m6!1s0x47a8dfc81a4ef9eb:0xb862116ca090521b!2sProf.-Mitscherlich-Allee+1,+14641+Paulinenaue!3b1!8m2!3d52.6742683!4d12.7099016!3m4!1s0x47a8dfc81a4ef9eb:0xb862116ca090521b!8m2!3d52.6742683!4d12.7099016'
           },
           {
             name: 'Metropol Hostel',

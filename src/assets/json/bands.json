@@ -9,7 +9,7 @@
     },
     "links": [
       {
-        "name": "fb",
+        "name": "Facebook",
         "url": "https://www.facebook.com/Ascension.Germany/"
       },
       {
@@ -132,27 +132,183 @@
     "video": "https://www.youtube.com/embed/chSP7dKot4M"
   },
   {
-    "name": "schammasch",
+    "name": "Evohe",
     "count": 5838,
-    "image": "dmed2019_announce_band_schammasch_transp.png",
+    "image": "dmed2019_web_announce_band_evohe_transp.png",
     "text": {
-      "en": "SCHAMMASCH set pure quality to music in every note and create inspiring works full of tension and depth. The attention to detail as well as the powerful combination of Black Metal and musical experiments are fascinating. And live? Actually, it is hardly possible to put the impression of SCHAMMASCH's concerts into justifiable words. Therefore the motto can only be the following: Take the chance and be there in December, when the Swiss will contribute their part to the darkest end of the year.",
-      "de": "SCHAMMASCH vertonen in jeder Note pure Qualität und erschaffen begeisternde Werke voller Spannung und Tiefe. Dabei fasziniert die Detailverliebtheit ebenso wie die machtvolle Kombination von Black Metal und musikalischen Experimenten. Und live? Eigentlich ist es kaum möglich, die Wirkung der Konzerte von SCHAMMASCH in gerechtfertigte Worte zu fassen. Daher kann die Devise nur lauten: Chance nutzen und im Dezember dabei sein, wenn die Schweizer ihren Teil zum finstersten Jahresabschluss beitragen."
+      "en": "This May, the new album of the Pagan Black Metallers Evohe will be released. We already gave it a listen, are psyched and really glad to welcome the French band at DMED 2019.",
+      "de": "Im Mai erscheint das neue Album der Pagan-Black-Metaller EVOHÉ. Wir haben schon mal reingehört, sind begeistert und freuen uns sehr, die Franzosen auf dem DMED 2019 zu begrüßen."
     },
     "links": [
       {
         "name": "Facebook",
-        "url": "https://www.facebook.com/SCHAMMASCH/"
-      },
-      {
-        "name": "Website",
-        "url": "https://schammasch.com/?fbclid=IwAR0ZHSNdma99sabNLRrIndhyZS016zSLQ-yYVWC-3_mpH8CYyPnOxKqk15M"
+        "url": "https://www.facebook.com/EVOHE.METAL/"
       },
       {
         "name": "BandCamp",
-        "url": "https://schammasch.bandcamp.com/"
+        "url": "https://evohe.bandcamp.com/music"
       }
     ],
-    "video": "https://www.youtube.com/embed/A3xZDdVq2kQ"
+    "video": "https://www.youtube.com/embed/ZUVxOA-W7xQ"
+  },
+  {
+    "name": "Crimson Moon",
+    "count": 1,
+    "image": "dmed2019_web_announce_band_crimsonmoon_transp.png",
+    "text": {
+      "en": "'When four musicians show more thrilling ideas in one song than other bands on three albums' ... this is just one superlative used in official reviews of this band's latest album 'Oneironaut'. You have to see Crimson Moon live!",
+      "de": "'Wenn vier Musiker in einem Song mehr zündende Ideen haben als andere Bands auf drei Alben' ... nur ein Superlativ offizieller Reviews des letzten Albums 'Oneironaut'. CRIMSON MOON muss man live erleben!"
+    },
+    "links": [
+      {
+        "name": "Facebook",
+        "url": "https://www.facebook.com/Crimsonmoonxeper/"
+      },
+      {
+        "name": "BandCamp",
+        "url": "https://crimsonmoonxeper.bandcamp.com/music"
+      }
+    ],
+    "video": "https://www.youtube.com/embed/X0aURVvSwqQ"
+  },
+  {
+    "name": "MATTERHORN",
+    "count": 5838,
+    "image": "dmed2019_web_announce_band_matterhorn_transp.png",
+    "text": {
+      "en": "Are you eager to listen into something different from those Swiss summiteers? MATTERHORN are not moving through the light, but they are breaking the well-known DMED darkness with a mixture of Death and Speed Metal. We are excited to see those newcomers perform!",
+      "de": "Bock auf Abwechslung mit den Schweizer Gipfelstürmern? MATTERHORN bewegen sich nicht im Licht, brechen die gängige DMED-Dunkelheit durch ihre Mischung aus Death und Speed Metal aber durchaus auf. Wir sind mehr als gespannt auf die Newcomer!"
+    },
+    "links": [
+      {
+        "name": "Facebook",
+        "url": "https://www.facebook.com/bandMATTERHORN/?ref=page_internal"
+      },
+      {
+        "name": "Website",
+        "url": "https://crass-cleansing.com/?fbclid=IwAR2YHgUUcuznkKbu7OtvSeKmf3LtHAN4pGR8VG6u1xdgmzcFXK7Gnoh0jOM"
+      }
+    ],
+    "video": "https://www.youtube.com/embed/QuopQdOlt3w"
+  },
+  {
+    "name": "DODHEIMSGARD",
+    "count": 5838,
+    "image": "dmed2019_announce_band_dodheimsgard_transp.png",
+    "text": {
+      "en": "Hardly any other band had such an intense change in their style of music. DHG/Dødheimsgard Official started with Black Metal and belong nowadays to the best progressive extreme-sectore bands with avantgardistic industrial elements. We are really glad to see those legends on our stage!",
+      "de": "Kaum eine andere Band hat so eine heftige Stilwandlung erfahren. DØDHEIMSGARD haben mit Black Metal angefangen und gehören inzwischen zu den besten Bands im progressiven Extrem-Sektor mit avantgardistischen und Insdustrial-Elementen. Wir freuen uns immer, solche Legenden auf unserer Bühne zu haben!"
+    },
+    "links": [
+      {
+        "name": "Facebook",
+        "url": "https://www.facebook.com/DODHEIMSGARD/"
+      }
+    ],
+    "video": "https://www.youtube.com/embed/JoXl-8TF_vQ"
+  },
+  {
+    "name": "Blaze of Perdition",
+    "count": 5838,
+    "image": "dmed2019_web_announce_band_blazeofperdition_transp.png",
+    "text": {
+      "en": "These Polish band will be the one to play the most with us, and now they return the second time in a row. When we heard that they will be on tour with more great bands, we just couldn't say 'no', on the one hand because we were completely psyched by any one of their shows, on the other hand because they are probably one of the strongest representatives of Poland, and also because their seems to be new material to be heard – Blaze of Perdition.",
+      "de": "Die Polen werden die Band sein, die am häufigsten und zwei Mal in Folge bei uns gespielt hat. Als wir hörten, dass sie mit weiteren großartigen Bands auf Tour sein werden, konnten wir nicht 'nein' sagen. Erstens, weil wir von ihren Shows völlig eingenommen waren, zweitens, weil sie zu den stärksten Vertretern Polens gehören, und drittens, weil neues Material zu hören sein wird – BLAZE OF PERDITION!"
+    },
+    "links": [
+      {
+        "name": "Facebook",
+        "url": "https://www.facebook.com/blazeofperdition/"
+      },
+      {
+        "name": "BandCamp",
+        "url": "https://blazeofperdition.bandcamp.com/"
+      }
+    ],
+    "video": "https://www.youtube.com/embed/3iTzKuBx6J0"
+  },
+  {
+    "name": "BÖLZER",
+    "count": 5838,
+    "image": "dmed2019_announce_band_bolzer_transp.png",
+    "text": {
+      "en": "BÖLZER just destroyed the stage of our friends at Wolf City Fest, so now we can go with our announcement. BÖLZER already played a fantastic show with us in 2016, and now the Swiss duo returns to our stage just in time for our anniversary. With two EPs and a breathtaking album, they are a definite must-see on any stage that they play on, and we are looking forward to an energetic, atmospheric and incomparible show.",
+      "de": "BÖLZER haben gerade erst die Bühne bei unseren Freunden vom Wolf City Fest zerlegt, da können wir auch endlich mit der Ankündigung raus. BÖLZER haben 2016 bereits einen fantastischen Auftritt bei uns hingelegt, pünktlich zu unserem Jubiläum kehrt das Schweizer Duo auf unsere Bühne zurück. Mit zwei EPs und einem überragenden Album, sind sie definitiv ein Must-See auf jeder Bühne, auf der sie stehen und wir freuen uns erneut auf eine energiegeladene, atmosphärische und unvergleichliche Show!"
+    },
+    "links": [
+      {
+        "name": "Facebook",
+        "url": "https://www.facebook.com/bolzerband/"
+      },
+      {
+        "name": "BandCamp",
+        "url": "https://bolzer.bandcamp.com/"
+      }
+    ],
+    "video": "https://www.youtube.com/embed/pPwmdr5nbfM"
+  },
+  {
+    "name": "Enisum",
+    "count": 5838,
+    "image": "dmed2019_web_announce_band_enisum_transp.png",
+    "text": {
+      "en": "Travel with Enisum musically to the Monte Musinè – atmospheric Black Metal, which is perfectly balanced between melancholy, nature and fury.",
+      "de": "Reist mit ENISUM musikalisch zum Monte Musinè – atmosphärischer Black Metal, der Melancholie, Naturverbundenheit und Raserei perfekt ausbalanciert."
+    },
+    "links": [
+      {
+        "name": "Facebook",
+        "url": "https://www.facebook.com/enisum/"
+      },
+      {
+        "name": "Website",
+        "url": "https://www.enisum.eu/"
+      },
+      {
+        "name": "BandCamp",
+        "url": "https://avantgardemusic.bandcamp.com/album/moths-illusion?fbclid=IwAR2mVmEDioPWUV0w92tXocHLAmilSfZaF0RlEEv3Rx8Psdo3gZDLkODjC9s"
+      }
+    ],
+    "video": "https://www.youtube.com/embed/CHuqf-vpw_M"
+  },
+  {
+    "name": "Almyrkvi",
+    "count": 5838,
+    "image": "dmed2019_announce_band_almyrkvi_transp.png",
+    "text": {
+      "en": "Almyrkvi are creating their unique sound swamp and every tone is pulling you deeper into the darkness – brutal, dark, engaging, special.",
+      "de": "ALMYRKVI erschaffen ihren ganz eigenen Sound-Sumpf, der dich mit jedem Klang tiefer ins Dunkel zieht – brachial, düster, einnehmend, besonders."
+    },
+    "links": [
+      {
+        "name": "Facebook",
+        "url": "https://www.facebook.com/Almyrkvi/"
+      },
+      {
+        "name": "BandCamp",
+        "url": "https://almyrkvi.bandcamp.com/"
+      }
+    ],
+    "video": "https://www.youtube.com/embed/LtbNIthc8u0"
+  },
+  {
+    "name": "MGLA",
+    "count": 5838,
+    "image": "dmed2019_announce_band_mgla_transp.png",
+    "text": {
+      "en": "No further words needed.",
+      "de": "No further words needed."
+    },
+    "links": [
+      {
+        "name": "Facebook",
+        "url": "https://www.facebook.com/mglaofficial/"
+      },
+      {
+        "name": "BandCamp",
+        "url": "https://no-solace.bandcamp.com/"
+      }
+    ],
+    "video": "https://www.youtube.com/embed/e0ryOwlXkP4"
   }
 ]
