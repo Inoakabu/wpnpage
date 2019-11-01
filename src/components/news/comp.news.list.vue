@@ -3,7 +3,7 @@
     <h2>News</h2>
     <div class="list">
       <Tile v-for="(news,idx) in news" :key="idx" :name="news.title" :image="news.image" :imagePath="'news'"
-            :route="'NewsPage'" :id="news.id.toString()" sepia shadow backgroundImg border/>
+            :route="'NewsPage'" :id="news.id.toString()" sepia shadow backgroundImg border />
     </div>
     <router-link class="button" :to="'News'">{{ content[currentLang] }}</router-link>
   </section>
@@ -20,7 +20,7 @@
     data () {
       return {
         content: content.news.button,
-        newsContent: newsJson.news
+        newsContent: newsJson.news,
       }
     },
     computed: {

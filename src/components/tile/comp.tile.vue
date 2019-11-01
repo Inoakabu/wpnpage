@@ -1,11 +1,11 @@
 <template>
-  <a :href="route" class="tile" v-if="external" target="_blank" :class="{sepia: sepia, shadow: shadow, backgroundImg: backgroundImg, border: border }">
+  <a :href="route" class="tile" v-if="external" target="_blank" :class="{sepia: sepia, shadow: shadow, backgroundImg: backgroundImg, border: border, alert: alert }">
     <h3 class="tile-name" v-if="name">{{ name }}</h3>
     <div class="tile-image--wrapper">
       <img class="tile-image" :src="imageUrl ? imageUrl : imageSrc" :alt="`Bild von ${name}`"/>
     </div>
   </a>
-  <router-link :to="{ name: route, params:{id} }" class="tile" :class="{sepia: sepia, shadow: shadow, backgroundImg: backgroundImg, border: border }" v-else>
+  <router-link :to="{ name: route, params:{id} }" class="tile" :class="{sepia: sepia, shadow: shadow, backgroundImg: backgroundImg, border: border, alert: alert }" v-else>
     <h3 class="tile-name" v-if="name">{{ name }}</h3>
     <div class="tile-image--wrapper">
       <img class="tile-image" :src="imageUrl ? imageUrl : imageSrc" :alt="`Bild von ${name}`"/>
@@ -28,7 +28,8 @@
       backgroundImg: {type: Boolean, default: false},
       external: { type: Boolean, default: false },
       shadow: { type: Boolean, default: false },
-      sepia: { type: Boolean, default: false }
+      sepia: { type: Boolean, default: false },
+      alert: { type: Boolean, default: false }
     },
     computed: {
       imageSrc () {
@@ -55,6 +56,10 @@
 
   .border {
     border: 2px solid var(--motiv);
+  }
+
+  .alert{
+    border: 2px solid var(--alert);
   }
 
   .tile:hover {

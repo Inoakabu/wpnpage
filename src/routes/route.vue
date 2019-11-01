@@ -39,6 +39,7 @@
     --typo: #57514a;
     --motiv: #9d8c7c;
     --background: #e9e6e2;
+    --alert: #9B0025;
   }
 
   html {
