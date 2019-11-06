@@ -1,7 +1,8 @@
 <template>
   <section class="news-page" v-if="news">
       <h1 class="news-page-headline">{{ news.title }}</h1>
-      <p class="news-page-description">{{ news.text[currentLang] }}</p>
+      <!-- <p class="news-page-description">{{ news.text[currentLang] }}</p> -->
+      <div><span v-html="news.text[currentLang]"></span></div>
       <div class="div-image">
         <img class="news-page-image" :src="imageSrc"/>
       </div>
