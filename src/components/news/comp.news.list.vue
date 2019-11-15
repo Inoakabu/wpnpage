@@ -25,7 +25,7 @@
     },
     computed: {
       news () {
-        return newsJson.slice(0, 3)
+        return newsJson.slice(-3).reverse()
       },
       currentLang () {
         return this.$route.params.lang
