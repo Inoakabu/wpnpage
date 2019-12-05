@@ -18,7 +18,7 @@
 </template>
 
 <script>
-  import content from '@/assets/json/content.json' // need change
+  import content from '@/assets/json/content.json' 
   import Tile from '@/components/tile/comp.tile'
 
   export default {
@@ -35,7 +35,7 @@
     },
     computed: {
       CuttedArray () {
-        return this.arr.slice(0, 3) // limitiert den array
+        return this.arr.slice(0, 3) 
       },
       OneFromArray () {
         return this.arr.slice(0, 1)
@@ -46,12 +46,12 @@
     },
     methods: {
       next () {
-        let first = this.arr.shift() // entfernt den ersten eintrag
-        this.arr = this.arr.concat(first) // fuegt den eintrag hinten am array ein
+        let first = this.arr.shift() 
+        this.arr = this.arr.concat(first) 
       },
       previous () {
-        let last = this.arr.pop() // entfernt den letzten eintrag
-        this.arr = [last].concat(this.arr) // fuegt den eintrag vorne am array ein
+        let last = this.arr.pop() 
+        this.arr = [last].concat(this.arr) 
       },
       showOne () {
         return window.outerWidth
