@@ -19,13 +19,28 @@
 
 <style>
 .iframe {
-  width: 100%;
-  /* height: 100%; */
+  width: 680px;
+  height: 450px;
 }
-/* @media (max-width: 411px) {
-    .iframe {
-      width: 2%;
-      height: 2%;
-    }
-  } */
+
+@media (max-width: 960px) {
+  .iframe {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+@media (max-width: 560px) {
+  .iframe {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+@media (max-width: 411px) {
+  .iframe {
+    width: 100%;
+    height: 100%;
+  }
+}
 </style>

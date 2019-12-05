@@ -38,6 +38,15 @@
       "big": false,
       "route": "news"
     },
+    "runningorder": {
+      "name": "Running Order",
+      "alt": {
+        "en": "show all news",
+        "de": "Alle News anzeigen"
+      },
+      "big": false,
+      "route": "runningorder"
+    },
     "info": {
       "name": "Info",
       "alt": {

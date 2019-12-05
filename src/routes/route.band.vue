@@ -66,10 +66,10 @@
     .band-page-description{
       font-size: 1.5rem
     }
-    .band-page-video {
+    /* .band-page-video {
       width: 100%;
       height: 100%;
-    }
+    } */
   }
 
   @media (max-width: 560px) {
