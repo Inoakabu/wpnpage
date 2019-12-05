@@ -45,7 +45,8 @@
     line-height: 1.5rem;
     /* padding-top: 10rem; */
     padding-top: 3rem;
-    text-align: center;
+    hyphens: auto; 
+    text-align: justify
   }
 
   .band-page-video {
@@ -56,5 +57,36 @@
     display: inline-flex;
     padding: 1rem;
     align-self: center;
+  }
+
+  @media (max-width: 960px) {
+    .band-page-headline {
+      font-size: 3rem
+    }
+    .band-page-description{
+      font-size: 1.5rem
+    }
+    .band-page-video {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  @media (max-width: 560px) {
+    .band-page-headline {
+      font-size: 2.3rem
+    }
+    .band-page-description{
+      font-size: 1rem
+    }
+  }
+
+  @media (max-width: 411px) {
+    .band-page-headline {
+      font-size: 2.3rem
+    }
+    .band-page-description{
+      font-size: 1rem
+    }
   }
 </style>

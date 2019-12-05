@@ -53,7 +53,8 @@
     line-height: 1.5rem;
     /* padding-top: 10rem; */
     padding-top: 3rem;
-    text-align: center;
+    hyphens: auto; 
+    text-align: justify
   }
 
   .news-page-video {

@@ -1,6 +1,6 @@
 <template>
   <section>
-    <iframe width="80%" height="650px" :src="link" frameborder="0" :allow="allow" allowfullscreen></iframe>
+    <iframe class="iframe" :src="link" frameborder="0" :allow="allow" allowfullscreen></iframe>
   </section>
 </template>
 
@@ -20,6 +20,12 @@
 <style>
 .iframe {
   width: 100%;
-  height: 650px;
+  /* height: 100%; */
 }
+/* @media (max-width: 411px) {
+    .iframe {
+      width: 2%;
+      height: 2%;
+    }
+  } */
 </style>

@@ -1,7 +1,7 @@
 <template>
   <section class="info">
     <infoContact/>
-    <infoHotel/>
+    <!-- <infoHotel/> -->
     <infoMap/>
     <infoGTC/>
   </section>
@@ -9,12 +9,12 @@
 
 <script>
 import infoMap from './comp.info.map'
-import infoHotel from './comp.info.hotel'
+// import infoHotel from './comp.info.hotel'
 import infoContact from './comp.info.contact'
 import infoGTC from './comp.gtc'
 export default {
   name: 'Info',
-  components: { infoMap, infoHotel, infoContact, infoGTC }
+  components: { infoMap, /* infoHotel, */ infoContact, infoGTC }
 }
 </script>
 
