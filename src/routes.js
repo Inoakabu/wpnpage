@@ -45,7 +45,7 @@ export default new Router({
       component: RoutePage,
       children: [
         {
-          path: '',
+          path: '/',
           name: 'MainPage',
           component: MainPage
         },

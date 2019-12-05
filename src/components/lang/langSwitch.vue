@@ -26,7 +26,7 @@ export default {
       return this.$route.params.lang
     },
     currentName () {
-      console.log(this.$route)
+      // console.log(this.$route)
       return this.$route.name
     }
   },

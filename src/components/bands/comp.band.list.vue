@@ -5,7 +5,7 @@
       <Tile v-for="(band,idx) in bands" :key="idx" :name="band.name" :image="band.image" :imagePath="'logo/bands'"
             :route="'BandPage'" :id="band.name" backgroundImg border/>
     </div>
-    <router-link class="button" :to="'bands'">{{ content[currentLang] }}</router-link>
+    <router-link class="button" :to="'bands'">{{ content[currentLang] }} </router-link>
   </section>
 </template>
 
@@ -37,6 +37,11 @@
       },
       currentLang () {
         return this.$route.params.lang
+      }
+    },
+    watch: {
+      '$route.params.id': function (id) {
+      this.$forceUpdate()
       }
     }
   }
