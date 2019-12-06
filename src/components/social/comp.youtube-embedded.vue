@@ -1,6 +1,8 @@
 <template>
   <section>
-    <iframe class="iframe" :src="link" frameborder="0" :allow="allow" allowfullscreen></iframe>
+    <div class="iframeWrapper">
+      <iframe width="560" height="349" :src="link" frameborder="0" :allow="allow" allowfullscreen></iframe>
+    </div>
   </section>
 </template>
 
@@ -18,29 +20,17 @@
 </script>
 
 <style>
-.iframe {
-  width: 680px;
-  height: 450px;
+.iframeWrapper {
+	position: relative;
+	padding-bottom: 56.25%; /* 16:9 */
+	padding-top: 25px;
+	height: 0;
 }
-
-@media (max-width: 960px) {
-  .iframe {
-    width: 100%;
-    height: 100%;
-  }
-}
-
-@media (max-width: 560px) {
-  .iframe {
-    width: 100%;
-    height: 100%;
-  }
-}
-
-@media (max-width: 411px) {
-  .iframe {
-    width: 100%;
-    height: 100%;
-  }
+.iframeWrapper iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
 }
 </style>

@@ -50,7 +50,7 @@
   }
 
   .band-page-video {
-    padding-top: 5rem;
+    padding-top: 1rem;
   }
 
   .band-page-social {
