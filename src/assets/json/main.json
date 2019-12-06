@@ -1,0 +1,10 @@
+{
+  "show": {
+    "intro"         : true,
+    "bands"         : true,
+    "news"          : false,
+    "instagram"     : true,
+    "history"       : true,
+    "runningorder"  : true
+  }
+}

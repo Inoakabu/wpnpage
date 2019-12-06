@@ -1,6 +1,7 @@
 {
   "navigation": {
     "tickets": {
+      "active": true,
       "name": "Tickets",
       "alt": {
         "en": "go to ticket shop",
@@ -11,6 +12,7 @@
       "url": "https://www.folter666shop.de/de/advanced_search_result.php?categories_id=0&keywords=de+mortem+et+diabolum&inc_subcat=1"
     },
     "bands": {
+      "active": true,
       "name": "Bands",
       "alt": {
         "en": "show all bands",
@@ -20,6 +22,7 @@
       "route": "bands"
     },
     "shop": {
+      "active": true,
       "name": "Shop",
       "alt": {
         "en": "go to merch shop",
@@ -30,6 +33,7 @@
       "url": "https://www.folter666shop.de/de/"
     },
     "news": {
+      "active": false,
       "name": "News",
       "alt": {
         "en": "show all news",
@@ -39,6 +43,7 @@
       "route": "news"
     },
     "runningorder": {
+      "active": true,
       "name": "Running Order",
       "alt": {
         "en": "show all news",
@@ -48,6 +53,7 @@
       "route": "runningorder"
     },
     "info": {
+      "active": true,
       "name": "Info",
       "alt": {
         "en": "all festival informations",

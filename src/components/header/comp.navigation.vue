@@ -31,6 +31,15 @@
     computed: {
       currentLang () {
         return this.$route.params.lang
+      },
+      activeNav: function() {
+        let filterNav = this.navigation
+          if(filterNav.tickets.active === true){
+            filterNav = filterNav.filter((n) => {
+              return n.active === true
+            })
+          }
+        return filterNav
       }
     }
   }

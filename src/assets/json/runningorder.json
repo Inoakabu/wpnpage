@@ -1,0 +1,23 @@
+{
+  "friday": [
+    { "slot": 1, "span": "16:00 - 16:35", "band": "DOORS" },
+    { "slot": 2, "span": "16:35 - 17:05", "band": "EVOHE" },
+    { "slot": 3, "span": "17:25 - 18:05", "band": "MATTERHORN" },
+    { "slot": 4, "span": "18:25 - 19:10", "band": "HALPHAS" },
+    { "slot": 5, "span": "19:30 - 20:20", "band": "MEMBARIS" },
+    { "slot": 6, "span": "20:40 - 21:30", "band": "BLAZE OF PERDITION" },
+    { "slot": 7, "span": "22:00 - 23:00", "band": "BÖLZER" },
+    { "slot": 8, "span": "23:30 - 00:30", "band": "DÖDHEIMSGARD" }
+  ],
+  "saturday": [
+    { "slot": 1, "span": "15:00 - 15:30", "band": "DOORS" },
+    { "slot": 2, "span": "15:30 - 16:00", "band": "GROZA" },
+    { "slot": 3, "span": "16:20 - 17:00", "band": "ENISUM" },
+    { "slot": 4, "span": "17:20 - 18:05", "band": "ARROGANZ" },
+    { "slot": 5, "span": "18:25 - 19:10", "band": "ALMYRKVI" },
+    { "slot": 6, "span": "19:30 - 20:20", "band": "CRIMSON MOON" },
+    { "slot": 7, "span": "20:40 - 21:30", "band": "SINMARA" },
+    { "slot": 8, "span": "22:00 - 23:00", "band": "ASCENSION" },
+    { "slot": 9, "span": "23:30 - 00:30", "band": "MGLA" }
+  ]
+}
