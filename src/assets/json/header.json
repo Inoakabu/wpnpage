@@ -42,16 +42,6 @@
       "big": false,
       "route": "news"
     },
-    "runningorder": {
-      "active": true,
-      "name": "Running Order",
-      "alt": {
-        "en": "show all news",
-        "de": "Alle News anzeigen"
-      },
-      "big": false,
-      "route": "runningorder"
-    },
     "info": {
       "active": true,
       "name": "Info",

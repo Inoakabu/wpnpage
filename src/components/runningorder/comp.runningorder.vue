@@ -2,7 +2,8 @@
   <section class="bands">
     <h2>Running Order</h2>
     <div class="runningorder">
-      
+      <img class="col" src="../../assets/images/runningorder/RO_Friday.jpg" alt="">
+      <img class="col" src="../../assets/images/runningorder/RO_Saturday.jpg" alt="">
     </div>
     
   </section>
@@ -10,7 +11,6 @@
 
 <script>
 // import runningorderListComp from '../runningorder/comp.runningorder.list'
-import roPictures from ''
 export default {
   // components: {
   //   runningorderListComp
@@ -20,15 +20,24 @@ export default {
       roFriday: require('../../assets/images/runningorder/RO_Friday.jpg'),
       roSaturday: require('../../assets/images/runningorder/RO_Saturday.jpg')
     }
-  },
-  methods: {
-    test () {
-      console.log(roPictures)
-    }
-  },
+  }
 }
 </script>
 
 <style>
-
+.col {
+  float: left;
+  width: 50%;
+}
+/* Clear floats after the columns */
+.runningorder:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+@media screen and (max-width: 600px) {
+  .col {
+    width: 100%;
+  }
+}
 </style>
