@@ -5,7 +5,7 @@ import MainPage from './routes/route.main'
 import RoutePage from './routes/route'
 // Overview
 import BandOverview from './routes/route.overview.bands'
-import NewsOverview from './routes/route.overview.news'
+// import NewsOverview from './routes/route.overview.news'
 import InfoOverview from './routes/route.info'
 import ImpressumOverview from './routes/route.impressum'
 import PrivacyPolicy from './routes/route.privacy_policy'
@@ -34,13 +34,6 @@ export default new Router({
       }
     },
     {
-      path: `/${navigation.shop.route}`,
-      name: `${navigation.shop.route}`,
-      beforeEnter () {
-        location.href = navigation.shop.url
-      }
-    },
-    {
       path: '/:lang',
       component: RoutePage,
       children: [
@@ -58,11 +51,6 @@ export default new Router({
           path: 'band/:id',
           name: 'BandPage',
           component: BandPage
-        },
-        {
-          path: `${navigation.news.route}`,
-          name: `${navigation.news.route}`,
-          component: NewsOverview
         },
         {
           path: 'news/:id',

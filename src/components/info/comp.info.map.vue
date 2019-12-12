@@ -1,6 +1,6 @@
 <template>
   <section class="map-section">
-    <h3>Map</h3>
+    <h3>{{ header[currentLang] }}</h3>
     <div class="map">
       <l-map :zoom="zoom" :center="center">
         <l-tile-layer :url="url" :attribution="attribution"></l-tile-layer>
@@ -15,11 +15,13 @@
 <script>
   import { L, LMap, LMarker, LTileLayer, LTooltip } from 'vue2-leaflet'
   import 'leaflet/dist/leaflet.css'
+  import content from '@/assets/json/content.json'
 
   export default {
     components: { LMap, LTileLayer, LMarker, LTooltip },
     data () {
       return {
+        header: content.info.map,
         zoom: 14,
         center: L.latLng(52.6742683,12.7077129),
         url: 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
@@ -63,6 +65,11 @@
             link: ''
           }
         ]
+      }
+    },
+    computed: {
+      currentLang () {
+        return this.$route.params.lang
       }
     },
     methods: {

@@ -48,6 +48,10 @@
         "rowSmall": "(auf der Karte unten seht ihr wo sich das Hotel befindet)"
       }
     },
+    "map": {
+      "en": "LOCATION",
+      "de": "STANDORT"
+    },
     "gtc": {
       "title": {
         "en": "General Terms and Conditions",
@@ -61,16 +65,15 @@
         "_5": "All types of weapons, fireworks and glass containers (bottles, jars, etc.) are NOT permitted.",
         "_6": "Please keep in mind that you are entering the festival area at your own risk.",
         "_7": "The organizer assumes NO responsibility for theft or damage of personal property.",
-        "_8": "The concert ticket is valid only on the festival area. The ticket is immediatly invalid when you leave the festival area.",
-        "_9": "Recording devices and cameras are not allowed.",
-        "_10": "The organizer reserves the right to make any line-up changes without prior notice.",
-        "_11": "The organizer reserves the right to change location and/or date of the event.",
-        "_12": "Refunds are accepted only in the case of cancelation of the event. Only the face (purchase) value of the ticket can be refunded.",
-        "_13": "It is your responisibility to follow the rules of the organizer and the security staff. Breaking any of the rules can result in being kicked out of the festival area.",
-        "_14": "Security staff reserves the right to conduct random searches upon entrance.",
-        "_15": "Security staff has complete authority.",
-        "_16": "Wearing and/or displaying illegal and/or anticonstitutional symbols is strictly forbidden. Playing right-wing music is not permitted. By breaking the rules you will be refused entry and/or kicked out of the festival area.",
-        "_17": "Campfires and cutting down trees for fires is STRICTLY not permitted."
+        "_8": "Recording devices and cameras are not allowed.",
+        "_9": "The organizer reserves the right to make any line-up changes without prior notice.",
+        "_10": "The organizer reserves the right to change location and/or date of the event.",
+        "_11": "Refunds are accepted only in the case of cancelation of the event. Only the face (purchase) value of the ticket can be refunded.",
+        "_12": "It is your responisibility to follow the rules of the organizer and the security staff. Breaking any of the rules can result in being kicked out of the festival area.",
+        "_13": "Security staff reserves the right to conduct random searches upon entrance.",
+        "_14": "Security staff has complete authority.",
+        "_15": "Wearing and/or displaying illegal and/or anticonstitutional symbols is strictly forbidden. Playing right-wing music is not permitted. By breaking the rules you will be refused entry and/or kicked out of the festival area.",
+        "_16": "Campfires and cutting down trees for fires is STRICTLY not permitted."
       },
       "de": {
         "_1": "Kinder unter 6 Jahren (auch in Begleitung eines Erwachsenen) sind auf dem Festivalgelände nicht erlaubt. Kinder zwischen 6-14 Jahren sind NUR unter Aufsicht eines Erwachsenen (Elternteil oder Erziehungsberechtigter) erlaubt.",
@@ -80,16 +83,15 @@
         "_5": "Alle Arten von Waffen, Feuerwerkskörpern und Glasbehältern (Flaschen, Gläser usw.) sind NICHT erlaubt.",
         "_6": "Bitte beachten Sie, dass Sie das Festivalgelände auf eigene Gefahr betreten.",
         "_7": "Der Veranstalter übernimmt KEINE Verantwortung für Diebstahl oder Beschädigung von persönlichem Eigentum.",
-        "_8": "Die Konzertkarte ist nur auf dem Festivalgelände gültig. Das Ticket ist sofort ungültig, wenn Sie das Festivalgelände verlassen.",
-        "_9": "Aufnahmegeräte und Kameras sind nicht erlaubt.",
-        "_10": "Der Veranstalter behält sich das Recht vor, Änderungen der Besetzung ohne vorherige Ankündigung vorzunehmen.",
-        "_11": "Der Veranstalter behält sich das Recht vor, Ort und/oder Datum der Veranstaltung zu ändern.",
-        "_12": "Rückerstattungen werden nur im Falle einer Stornierung der Veranstaltung akzeptiert. Es kann nur der Nennwert des Tickets erstattet werden.",
-        "_13": "Es liegt in Ihrer Verantwortung, die Regeln des Veranstalters und des Sicherheitspersonals einzuhalten. Ein Verstoß gegen eine der Regeln kann dazu führen, dass Sie vom Festival ausgeschlossen werden.",
-        "_14": "Das Sicherheitspersonal behält sich das Recht vor, bei der betreten des Veranstaltungsortes eine Stichprobenkontrolle durchzuführen.",
-        "_15": "Dem Sicherheitspersonal unterliegt die vollständige Autorität.",
-        "_16": "Das Tragen und/oder Darstellen von illegalen und/oder verfassungsfeindlichen Symbolen ist strengstens verboten. Das Abspielen von rechter Musik ist nicht gestattet. Bei Verstoß gegen diese Regeln wird Ihnen der Zutritt verweigert und/oder Sie werden vom Festival ausgeschlossen.",
-        "_17": "Lagerfeuer und das Fällen von Bäumen für Feuer ist strengstens verboten."
+        "_8": "Aufnahmegeräte und Kameras sind nicht erlaubt.",
+        "_9": "Der Veranstalter behält sich das Recht vor, Änderungen der Besetzung ohne vorherige Ankündigung vorzunehmen.",
+        "_10": "Der Veranstalter behält sich das Recht vor, Ort und/oder Datum der Veranstaltung zu ändern.",
+        "_11": "Rückerstattungen werden nur im Falle einer Stornierung der Veranstaltung akzeptiert. Es kann nur der Nennwert des Tickets erstattet werden.",
+        "_12": "Es liegt in Ihrer Verantwortung, die Regeln des Veranstalters und des Sicherheitspersonals einzuhalten. Ein Verstoß gegen eine der Regeln kann dazu führen, dass Sie vom Festival ausgeschlossen werden.",
+        "_13": "Das Sicherheitspersonal behält sich das Recht vor, bei Betreten des Veranstaltungsortes eine Stichprobenkontrolle durchzuführen.",
+        "_14": "Dem Sicherheitspersonal unterliegt die vollständige Autorität.",
+        "_15": "Das Tragen und/oder Darstellen von illegalen und/oder verfassungsfeindlichen Symbolen ist strengstens verboten. Das Abspielen von rechter Musik ist nicht gestattet. Bei Verstoß gegen diese Regeln wird Ihnen der Zutritt verweigert und/oder Sie werden vom Festival ausgeschlossen.",
+        "_16": "Lagerfeuer und das Fällen von Bäumen für Feuer ist strengstens verboten."
       }
     }
   },

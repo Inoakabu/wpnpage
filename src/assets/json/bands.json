@@ -1,7 +1,27 @@
 [
   {
+    "name": "MGLA",
+    "count": 0,
+    "image": "dmed2019_announce_band_mgla_transp.png",
+    "text": {
+      "en": "No further words needed.",
+      "de": "No further words needed."
+    },
+    "links": [
+      {
+        "name": "Facebook",
+        "url": "https://www.facebook.com/mglaofficial/"
+      },
+      {
+        "name": "BandCamp",
+        "url": "https://no-solace.bandcamp.com/"
+      }
+    ],
+    "video": "https://www.youtube.com/embed/e0ryOwlXkP4"
+  },
+  {
     "name": "arroganz",
-    "count": 1337,
+    "count": 100,
     "image": "dmed2019_web_announce_band_arroganz_transp.png",
     "text": {
       "en": "A mixture of Death and Black Metal, established in the blackest night: ARROGANZ tell tales of death and the devil, sometimes comfortably primitive, yet often quite sophisticated. The songs seldom bludgeon, yet they fell the listeners with well-aimed attacks in order to pull them behind the last tombstone of a remote graveyard through menacing mid-tempo and gnawing slowness. If music can be described this pictorial, then this speaks of quality because it stimulates fantasy, owns substance, because it engages and does not leave someone blasé about itself although it exudes so much coldness. What could be better than to witness this energy in personified form? Even at the risk of being pulled to the next graveyard after their show in December.",
@@ -28,8 +48,8 @@
     "count": 421,
     "image": "dmed2019_web_announce_band_ascension_transp.png",
     "text": {
-      "en": "Have ASCENSION been ascending to the best or 'just' one of the best Black Metal bands originating from Germany? Well, it doesn't matter because whoever moves between these levels of superlatives has done a lot of things right over the course of the band's history. This five-piece from Saxony-Anhalt is probably not interested in this answer as well, their focus lies clearly on music and lyrics. Who is hiding behind ASCENSION? Also not important. Neither are they working with pseudonyms nor are they shouting out their identities. It's not about creating a shadowy veil that seems mysterious. It's always about the total work of art that belongs into the center - meaning music, lyrics, and artwork. And yet the contents, being about Satan, occultism or death, a reflection of what the pari passu band members represent. But it is possible to formulate it differently: ASCENSION raise impressive strongholds of sounds and it really is not always easy to find a direct access, yet if one invests enough time, one will find several treasures of extreme Metal. And of course one component of the work misses for completion: live performances, which you can enjoy in December in Berlin.",
-      "de": "Sind ASCENSION nun zur besten oder „nur“ zu einer der besten aus Deutschland stammenden Black-Metal-Bands aufgestiegen? Letztlich ganz egal, denn wer sich in diesen Superlativ-Ebenen bewegt, hat in der Bandgeschichte schon viel richtig gemacht. Den Fünfer aus Sachsen-Anhalt dürfte die Antwort ebenso wenig interessieren, liegt der Fokus doch klar auf der Musik und den Texten. Wer verbirgt sich hinter ASCENSION? Auch nicht wichtig. Sie arbeiten weder mit Pseudonymen noch brüllen sie ihre Identitäten nach außen. Es geht nicht darum, auf diese Weise einen nebulösen Schleier zu kreieren, der mysteriös wirkt. Es geht immer ums Gesamtkunstwerk, das in den Mittelpunkt gehört – also um Musik, Texte und Artwork. Und doch sind die Inhalte, ob es gerade um Satan, Okkultismus oder den Tod geht, eine Reflexion dessen, was die gleichberechtigten Bandmitglieder ausmacht. Man kann es aber auch anders formulieren: ASCENSION errichten beeindruckende Klangfestungen und es ist wahrlich nicht immer einfach, einen direkten Zugang zu finden, investiert man aber genug Zeit, wird man so einige Schätze des extremen Metals finden. Und natürlich fehlt noch eine wichtige Komponente des Gesamtwerks: die Live-Performance – zu genießen im Dezember in Berlin."
+      "en": "Have ASCENSION been ascending to the best or 'just' one of the best Black Metal bands originating from Germany? Well, it doesn't matter because whoever moves between these levels of superlatives has done a lot of things right over the course of the band's history. This five-piece from Saxony-Anhalt is probably not interested in this answer as well, their focus lies clearly on music and lyrics. Who is hiding behind ASCENSION? Also not important. Neither are they working with pseudonyms nor are they shouting out their identities. It's not about creating a shadowy veil that seems mysterious. It's always about the total work of art that belongs into the center - meaning music, lyrics, and artwork. And yet the contents, being about Satan, occultism or death, a reflection of what the pari passu band members represent. But it is possible to formulate it differently: ASCENSION raise impressive strongholds of sounds and it really is not always easy to find a direct access, yet if one invests enough time, one will find several treasures of extreme Metal.",
+      "de": "Sind ASCENSION nun zur besten oder „nur“ zu einer der besten aus Deutschland stammenden Black-Metal-Bands aufgestiegen? Letztlich ganz egal, denn wer sich in diesen Superlativ-Ebenen bewegt, hat in der Bandgeschichte schon viel richtig gemacht. Den Fünfer aus Sachsen-Anhalt dürfte die Antwort ebenso wenig interessieren, liegt der Fokus doch klar auf der Musik und den Texten. Wer verbirgt sich hinter ASCENSION? Auch nicht wichtig. Sie arbeiten weder mit Pseudonymen noch brüllen sie ihre Identitäten nach außen. Es geht nicht darum, auf diese Weise einen nebulösen Schleier zu kreieren, der mysteriös wirkt. Es geht immer ums Gesamtkunstwerk, das in den Mittelpunkt gehört – also um Musik, Texte und Artwork. Und doch sind die Inhalte, ob es gerade um Satan, Okkultismus oder den Tod geht, eine Reflexion dessen, was die gleichberechtigten Bandmitglieder ausmacht. Man kann es aber auch anders formulieren: ASCENSION errichten beeindruckende Klangfestungen und es ist wahrlich nicht immer einfach, einen direkten Zugang zu finden, investiert man aber genug Zeit, wird man so einige Schätze des extremen Metals finden."
     },
     "links": [
       {
@@ -68,8 +88,8 @@
     "count": 5832,
     "image": "dmed2019_web_announce_band_sinmara_transp.png",
     "text": {
-      "en": "Nothing has changed: Iceland still offers a fabulous wealth of thrilling Black Metal bands. In 2018, Svartidauði, Misþyrming, Naðra and Zhrine played already, now we continue with SINMARA. Musically it seems as if that scene - and SINMARA contributed to its establishing significantly with the international attention towards their debut 'Aphotic Womb' - was only created to play at De Mortem Et Diabolum. Yet that does not mean that Icelandic Black Metal is characterized by strict uniformity. In the case of SINMARA, we here a sophisticated entanglement of orthodox and complex songs, being ambitiously structured, pulling into a dark and hypnotic maelstrom and spraying the raw charme of the 90's wave in thrilling nuances. By the way: The band from Reykjavik is going to put out their second studio album with the title 'Hvisl Stjarnanna' in 2019 - and they will bring it to Berlin in December.",
-      "de": "Es hat sich nichts geändert: Island bietet nach wie vor eine sagenhafte Fülle an spannenden Black-Metal-Bands. Nachdem 2018 bereits Svartidauði, Misþyrming, Naðra und Zhrine gespielt haben, geht es in diesem Jahr mit SINMARA weiter. Musikalisch scheint es, als wäre die dortige Szene – und SINMARA haben vor allem durch die internationale Aufmerksamkeit ihres Debüts 'Aphotic Womb' maßgeblich zur Etablierung beigetragen – entstanden, um auf dem De Mortem Et Diabolum zu spielen. Was nicht bedeutet, dass der isländische Black Metal durch eine strikte Einheitlichkeit charakterisiert ist. Im Fall von SINMARA hören wir eine ausgefeilte Verknüpfung aus orthodoxen und komplexen Songs, die anspruchsvoll strukturiert sind, in einen finster-hypnotischen Sog ziehen und den rohen Charme der 90er-Welle in spannenden Nuancen versprühen. Übrigens: Die Band aus Reykjavík bringt 2019 auch ihr zweites Studioalbum mit dem Titel 'Hvísl Stjarnanna' auf den Markt – und im Dezember mit nach Berlin."
+      "en": "Nothing has changed: Iceland still offers a fabulous wealth of thrilling Black Metal bands. In 2018, Svartidauði, Misþyrming, Naðra and Zhrine played already, now we continue with SINMARA. Musically it seems as if that scene - and SINMARA contributed to its establishing significantly with the international attention towards their debut 'Aphotic Womb' - was only created to play at De Mortem Et Diabolum. Yet that does not mean that Icelandic Black Metal is characterized by strict uniformity. In the case of SINMARA, we here a sophisticated entanglement of orthodox and complex songs, being ambitiously structured, pulling into a dark and hypnotic maelstrom and spraying the raw charme of the 90's wave in thrilling nuances.",
+      "de": "Es hat sich nichts geändert: Island bietet nach wie vor eine sagenhafte Fülle an spannenden Black-Metal-Bands. Nachdem 2018 bereits Svartidauði, Misþyrming, Naðra und Zhrine gespielt haben, geht es in diesem Jahr mit SINMARA weiter. Musikalisch scheint es, als wäre die dortige Szene – und SINMARA haben vor allem durch die internationale Aufmerksamkeit ihres Debüts 'Aphotic Womb' maßgeblich zur Etablierung beigetragen – entstanden, um auf dem De Mortem Et Diabolum zu spielen. Was nicht bedeutet, dass der isländische Black Metal durch eine strikte Einheitlichkeit charakterisiert ist. Im Fall von SINMARA hören wir eine ausgefeilte Verknüpfung aus orthodoxen und komplexen Songs, die anspruchsvoll strukturiert sind, in einen finster-hypnotischen Sog ziehen und den rohen Charme der 90er-Welle in spannenden Nuancen versprühen."
     },
     "links": [
       {
@@ -232,8 +252,8 @@
     "count": 5838,
     "image": "dmed2019_announce_band_bolzer_transp.png",
     "text": {
-      "en": "BÖLZER just destroyed the stage of our friends at Wolf City Fest, so now we can go with our announcement. BÖLZER already played a fantastic show with us in 2016, and now the Swiss duo returns to our stage just in time for our anniversary. With two EPs and a breathtaking album, they are a definite must-see on any stage that they play on, and we are looking forward to an energetic, atmospheric and incomparible show.",
-      "de": "BÖLZER haben gerade erst die Bühne bei unseren Freunden vom Wolf City Fest zerlegt, da können wir auch endlich mit der Ankündigung raus. BÖLZER haben 2016 bereits einen fantastischen Auftritt bei uns hingelegt, pünktlich zu unserem Jubiläum kehrt das Schweizer Duo auf unsere Bühne zurück. Mit zwei EPs und einem überragenden Album, sind sie definitiv ein Must-See auf jeder Bühne, auf der sie stehen und wir freuen uns erneut auf eine energiegeladene, atmosphärische und unvergleichliche Show!"
+      "en": "BÖLZER already played a fantastic show with us in 2016, and now the Swiss duo returns to our stage just in time for our anniversary. With two EPs and an outstanding album they are definitely a must-see on every stage - we are looking forward to an energetic, atmospheric and incomparable show!",
+      "de": "BÖLZER haben 2016 bereits einen fantastischen Auftritt bei uns hingelegt, pünktlich zu unserem Jubiläum kehrt das Schweizer Duo auf unsere Bühne zurück. Mit zwei EPs und einem überragenden Album sind sie definitiv ein Must-See auf jeder Bühne – wir freuen uns auf eine energiegeladene, atmosphärische und unvergleichliche Show!"
     },
     "links": [
       {
@@ -290,25 +310,5 @@
       }
     ],
     "video": "https://www.youtube.com/embed/LtbNIthc8u0"
-  },
-  {
-    "name": "MGLA",
-    "count": 5838,
-    "image": "dmed2019_announce_band_mgla_transp.png",
-    "text": {
-      "en": "No further words needed.",
-      "de": "No further words needed."
-    },
-    "links": [
-      {
-        "name": "Facebook",
-        "url": "https://www.facebook.com/mglaofficial/"
-      },
-      {
-        "name": "BandCamp",
-        "url": "https://no-solace.bandcamp.com/"
-      }
-    ],
-    "video": "https://www.youtube.com/embed/e0ryOwlXkP4"
   }
 ]
