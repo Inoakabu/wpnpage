@@ -2,7 +2,7 @@
   "show": {
     "intro"         : true,
     "bands"         : true,
-    "news"          : false,
+    "news"          : true,
     "instagram"     : true,
     "history"       : true,
     "runningorder"  : true

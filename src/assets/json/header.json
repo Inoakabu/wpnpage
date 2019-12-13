@@ -21,6 +21,15 @@
       "big": true,
       "route": "bands"
     },
+    "news": {
+      "name": "News",
+      "alt": {
+        "en": "show all news",
+        "de": "Alle News anzeigen"
+      },
+      "big": false,
+      "route": "news"
+    },
     "info": {
       "active": true,
       "name": "Info",
