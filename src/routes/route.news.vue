@@ -78,17 +78,35 @@
     .news-page-image{
     max-width: 450px;
     }
+    .news-page-headline {
+      font-size: 2.5rem
+    }
+    .news-page-description{
+      font-size: 1.5rem
+    }
   }
 
   @media (max-width: 560px) {
     .news-page-image{
     max-width: 350px;
     }
+    .news-page-headline {
+      font-size: 2.3rem
+    }
+    .news-page-description{
+      font-size: 1rem
+    }
   }
 
   @media (max-width: 411px) {
     .news-page-image{
     max-width: 220px;
+    }
+    .news-page-headline {
+      font-size: 2rem
+    }
+    .news-page-description{
+      font-size: 1rem
     }
   }
 </style>
