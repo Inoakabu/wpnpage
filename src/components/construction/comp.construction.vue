@@ -1,5 +1,5 @@
 <template>
-  <section class="rebuild">
+  <section class="construction">
     <Carousel3d>
       <Slide v-for="(band,idx) in bands" :key="idx" :index="idx" >
         <carousel
@@ -18,13 +18,12 @@ import { Carousel3d, Slide } from 'vue-carousel-3d';
 
 export default {
   /* eslint-disable */
-  name: 'Rebuild',
+  name: 'Construction',
   components: {
     Carousel, Slide, Carousel3d
   },
   data () {
     return {
-      slides: 8,
       bands: bandsJson
     }
   },

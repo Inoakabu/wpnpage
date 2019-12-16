@@ -1,5 +1,17 @@
 <template>
   <div id="website">
+    <div class="modal-mask">
+      <div class="modal-wrapper">
+        <div class="modal-container">
+          <div class="modal-header">
+            The embers deep in the darkness will rise to an unholy fire in 2020.
+            <div class="modal-body">
+              <constructionComp />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <headerComp/>
     <router-view></router-view>
     <foot/>
@@ -9,14 +21,52 @@
 <script>
   import headerComp from '@/components/header/comp.header'
   import foot from '@/components/footer/comp.footer'
+  import constructionComp from '../components/construction/comp.construction'
 
   export default {
     name: 'app',
-    components: { headerComp, foot }
+    components: { headerComp, foot, constructionComp },
+    data () {
+      return {
+        showModal: true
+      }
+    }
   }
 </script>
 
 <style>
+
+  .modal-mask {
+    position: fixed;
+    z-index: 9998;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .97);
+    display:table
+  }
+
+  .modal-wrapper {
+    display: table-cell;
+    vertical-align: middle;
+  }
+
+  .modal-container {
+    width: 860px;
+    height: 860px;
+    margin: 0px auto;
+  }
+
+  .modal-header {
+    font-size: 2.5rem;
+    text-align: justify;
+    text-transform: uppercase;
+  }
+  .modal-body {
+    margin: 20px 0;
+  }
+
   :focus {
     outline: 0;
   }
