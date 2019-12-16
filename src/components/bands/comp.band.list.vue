@@ -24,16 +24,6 @@
     },
     computed: {
       bands () {
-        // let band = bandsJson.sort((a, b) => {
-        //   if (a.count > b.count) {
-        //     return -1
-        //   }
-        //   if (a.count < b.count) {
-        //     return 1
-        //   }
-        //   return 0
-        // })
-        // return band.slice(0, 4)
         return bandsJson.slice(0, 4)
       },
       currentLang () {
@@ -42,7 +32,7 @@
     },
     watch: {
       '$route.params.id': function (id) {
-      this.$forceUpdate()
+        this.$forceUpdate()
       }
     }
   }
