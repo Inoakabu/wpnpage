@@ -1,6 +1,6 @@
 <template>
   <section class="construction">
-    <Carousel3d :width="885" :height="920" :autoplay="true" :autoplay-timeout="5000">
+    <Carousel3d :autoplay="true" :autoplay-timeout="5000">
       <Slide v-for="(construction, idx) in construction" :key="idx" :index="idx" >
         <carousel 
           :image="construction.image" 

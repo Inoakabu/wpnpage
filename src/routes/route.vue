@@ -40,31 +40,36 @@
     position: fixed;
     z-index: 9998;
     top: 0;
+    bottom: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, .97);
-    display:table
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.98);
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
-  .modal-wrapper {
+  /* .modal-wrapper {
     display: table-cell;
     vertical-align: middle;
-  }
+  } */
 
   .modal-container {
-    width: 885px;
-    height: 920px;
-    margin: 0px auto;
+    overflow-x: auto;
+    display: flex;
+    flex-direction: column;
   }
 
   .modal-header {
+    padding: 120px;
     font-size: 2.5rem;
     text-align: justify;
     text-transform: uppercase;
+    justify-content: space-between;
   }
   .modal-body {
-    margin: 20px 0;
+    position: relative;
+    padding: 20px 10px;
   }
 
   :focus {
