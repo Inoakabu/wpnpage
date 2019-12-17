@@ -1,5 +1,5 @@
 <template>
-  <a :href="route" class="tile" target="_blank">
+  <a class="tile" target="_blank">
     <div class="tile-image--wrapper">
       <img class="tile-image" :src="imageUrl ? imageUrl : imageSrc"/>
     </div>
@@ -12,7 +12,7 @@ export default {
   name: 'Carousel',
   props: {
     image: { type: String, default: 'dmed2019_web_announce_band_arroganz_transp.png' },
-    imagePath: { type: String, default: 'logo/bands' },
+    imagePath: { type: String, default: 'logo/construction' },
     imageUrl: String,
   },
   computed: {

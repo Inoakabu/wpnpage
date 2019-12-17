@@ -53,8 +53,8 @@
   }
 
   .modal-container {
-    width: 860px;
-    height: 860px;
+    width: 885px;
+    height: 920px;
     margin: 0px auto;
   }
 
