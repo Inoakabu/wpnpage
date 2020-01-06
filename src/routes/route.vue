@@ -4,7 +4,7 @@
       <div class="modal-wrapper">
         <div class="modal-container">
           <div class="modal-header">
-            The embers deep in the darkness will rise to an unholy fire in 2020.
+            <p class= "conText">The embers deep in the darkness will rise to an unholy fire in 2020.</p>
             <div class="modal-body">
               <constructionComp />
             </div>
@@ -67,11 +67,20 @@
     text-transform: uppercase;
     justify-content: space-between;
   }
+  
   .modal-body {
     position: relative;
     padding: 20px 10px;
   }
-
+  /* @media (max-width: 560px) {
+    .modal-header {
+      font-size: 1.5rem;
+      padding: 500px
+    }
+    .modal-body {
+      padding: 10px 5px
+    }
+  } */
   :focus {
     outline: 0;
   }
