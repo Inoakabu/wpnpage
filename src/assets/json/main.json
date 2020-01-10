@@ -5,6 +5,6 @@
     "news"          : true,
     "instagram"     : true,
     "history"       : true,
-    "runningorder"  : true
+    "runningorder"  : false
   }
 }

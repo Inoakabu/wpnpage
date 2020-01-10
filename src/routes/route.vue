@@ -1,6 +1,6 @@
 <template>
   <div id="website">
-    <div class="modal-mask">
+    <div v-if="showModal == true" class="modal-mask">
       <div class="modal-wrapper">
         <div class="modal-container">
           <div class="modal-header">
@@ -28,7 +28,7 @@
     components: { headerComp, foot, constructionComp },
     data () {
       return {
-        showModal: true
+        showModal: false
       }
     }
   }
@@ -99,10 +99,10 @@
   }
 
   :root {
-    --main: #ab784b;
-    --typo: #57514a;
+    --main: #3d5a50;
+    --typo: #c7c7c7;
     --motiv: #9d8c7c;
-    --background: #e9e6e2;
+    --background: #000a02;
     --alert: #9B0025;
   }
 

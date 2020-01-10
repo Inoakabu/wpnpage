@@ -13,7 +13,7 @@ import content from '@/assets/json/content.json'
     data () {
       return {
         currentDate: Date.parse(new Date(this.endDate)) - Date.parse(new Date()),
-        endDate: 'Dec 13, 2019 16:00:00',
+        endDate: 'Dec 13, 2020 16:00:00',
         content: content.countdown
       }
     },

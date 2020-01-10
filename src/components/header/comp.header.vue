@@ -64,14 +64,14 @@
     max-width: 1600px;
     width: 100%;
     background-size: 100%;
-    background-position-y: 90%;
+    background-position-y: 30%;
     background-repeat: no-repeat;
     position: absolute;
     min-height: 750px;
     top: 0;
     left: 0;
     z-index: -1;
-
+    box-shadow: 0 0 8px 8px #000a02 inset;
     opacity: 0.15;
   }
 
