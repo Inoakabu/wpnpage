@@ -3,7 +3,6 @@
     <h3>Hotel</h3>
     <div class="hotel-info">
       <p>{{ content[currentLang].rowOne }}</p>
-      <p>{{ content[currentLang].rowTwo }}</p>
       <h4>Metropol Hostel</h4>
       <p>Mehringdamm 32</p>
       <p>10961 Berlin</p>
@@ -19,7 +18,7 @@ import content from '@/assets/json/content.json'
 export default {
   data () {
     return {
-      content: content.info.hotel
+      content: content.info.hotel   
     }
   },
   methods: {

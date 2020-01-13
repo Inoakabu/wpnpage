@@ -1,8 +1,9 @@
 <template>
   <div class="count">
     <h3>Festival-Countdown</h3>
-    <h1>{{ days }} : {{ hours }} : {{ minutes }} : {{ seconds }}</h1>
-    <p>{{ content[currentLang].days }} : {{ content[currentLang].hrs }} : {{ content[currentLang].min }} : {{ content[currentLang].sec }}</p>
+    <h1 v-if="total >= 0">{{ days }} : {{ hours }} : {{ minutes }} : {{ seconds }}</h1>
+    <h1 v-else> IT`S ON</h1>
+    <p >{{ content[currentLang].days }} : {{ content[currentLang].hrs }} : {{ content[currentLang].min }} : {{ content[currentLang].sec }}</p>
   </div>
 </template>
 
@@ -32,6 +33,11 @@ import content from '@/assets/json/content.json'
       seconds () {
         let seconds = Math.floor((this.currentDate / 1000) % 60)
         return seconds > 9 ? seconds : `0${seconds}`
+      },
+      total () {
+        let total = 0
+        total = this.days + this.hours + this.minutes + this.seconds
+        return total
       },
       currentLang () {
         return this.$route.params.lang

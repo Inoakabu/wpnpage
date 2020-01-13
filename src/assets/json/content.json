@@ -38,13 +38,11 @@
   "info": {
     "hotel": {
       "en": {
-        "rowOne": "Check out our recommended Hotel 'Metropol Hostel' it is right around the corner.",
-        "rowTwo": "There is also an option to buy a combi Ticket for Hotel and Festival",
+        "rowOne": "Check out our recommended Hotel 'Metropol Hostel' it is right around the corner. There is also an option to buy a combi Ticket for Hotel and Festival",
         "rowSmall": "(see the map below to get the location)"
       },
       "de": {
-        "rowOne": "Unser Empfohlenes Hotel 'Metropol Hostel' es ist gleich um die Ecke.",
-        "rowTwo": "Ihr habt ebenfalls die Möglichkeit ein Festival-Ticket inklusive Hotel zu buchen.",
+        "rowOne": "Unser Empfohlenes Hotel 'Metropol Hostel' es ist gleich um die Ecke. Ihr habt ebenfalls die Möglichkeit ein Festival-Ticket inklusive Hotel zu buchen.",
         "rowSmall": "(auf der Karte unten seht ihr wo sich das Hotel befindet)"
       }
     },
