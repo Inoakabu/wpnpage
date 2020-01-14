@@ -6,6 +6,7 @@
             :route="'BandPage'" :id="band.name" backgroundImg border/>
     </div>
     <router-link class="button" :to="'bands'">{{ content[currentLang] }} </router-link>
+    <div>{{ data.fetchData() }}</div>
   </section>
 </template>
 
@@ -14,12 +15,15 @@
   import bandsJson from '@/assets/json/bands.json'
   import content from '@/assets/json/content.json'
 
+  import dbData from '../fetcher/fetchDB'
+
   export default {
     name: 'Bands',
     components: { Tile },
     data () {
       return {
-        content: content.bands.button
+        content: content.bands.button,
+        data: dbData
       }
     },
     computed: {
