@@ -1,0 +1,7 @@
+{
+  "call": {
+    "apiURL": "https://dmed-cockpit.cl.semicode.de/api/collections/listCollections?token=",
+    "token": "671f08b3835fe5892cd9ca7f7cb1e4",
+    "baseURL": "https://dmed-cockpit.cl.semicode.de"
+  }
+}
