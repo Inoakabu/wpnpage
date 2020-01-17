@@ -13,6 +13,7 @@
     "axios": "^0.18.1",
     "fs": "0.0.1-security",
     "leaflet": "^1.6.0",
+    "node-fetch": "^2.6.0",
     "vue": "^2.6.11",
     "vue-async-function": "^3.1.0",
     "vue-carousel-3d": "^0.2.0",
