@@ -4,7 +4,7 @@ const cockpit = require('../../assets/conf/cpAPI.json')
 
 let collDef = 'Bands'
 const collListURL = JSON.stringify(cockpit.call.collListURL).replace(/"/g, "") + JSON.stringify(cockpit.call.token).replace(/"/g, "")
-const collURL = JSON.stringify(cockpit.call.collURL).replace(/"/g, "") + "Bands" + cockpit.call.endStr + JSON.stringify(cockpit.call.token).replace(/"/g, "")
+const collURL = JSON.stringify(cockpit.call.collURL).replace(/"/g, "") + collDef + cockpit.call.endStr + JSON.stringify(cockpit.call.token).replace(/"/g, "")
 // let data = []
 
 exports.getCollections = async function getCollections(url = '', data = {}){
@@ -19,9 +19,8 @@ exports.getCollections = async function getCollections(url = '', data = {}){
 }
 
 
-// exports.getData = 
-async function getData(url = '', collDef = '', data = {}) {
-  const res = await fetch(url, collDef, {
+exports.getData = async function getData(url = '', data = {}) {
+  const res = await fetch(url, {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json'
@@ -32,8 +31,6 @@ async function getData(url = '', collDef = '', data = {}) {
 }
 
 
-getData(collURL).then((data) => {
-  console.log(data)
-})
-
-// console.log(apiURL);
+// getData(collURL).then((data) => {
+//   console.log(data)
+// })
