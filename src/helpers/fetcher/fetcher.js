@@ -2,16 +2,38 @@
 const fetch = require('node-fetch')
 const cockpit = require('../../assets/conf/cpAPI.json')
 
-const apiURL = JSON.stringify(cockpit.call.apiURL).replace(/"/g, "") + JSON.stringify(cockpit.call.token).replace(/"/g, "")
+let collDef = 'Bands'
+const collListURL = JSON.stringify(cockpit.call.collListURL).replace(/"/g, "") + JSON.stringify(cockpit.call.token).replace(/"/g, "")
+const collURL = JSON.stringify(cockpit.call.collURL).replace(/"/g, "") + "Bands" + cockpit.call.endStr + JSON.stringify(cockpit.call.token).replace(/"/g, "")
 // let data = []
 
-async function getData(url = '', data = {}){
+exports.getCollections = async function getCollections(url = '', data = {}){
   const res = await fetch(url, {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json'
+    },
     body: JSON.stringify(data)
   });
   return await res.json();
 }
 
-getData
+
+// exports.getData = 
+async function getData(url = '', collDef = '', data = {}) {
+  const res = await fetch(url, collDef, {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify(data)
+  });
+  return await res.json();
+}
+
+
+getData(collURL).then((data) => {
+  console.log(data)
+})
 
 // console.log(apiURL);
