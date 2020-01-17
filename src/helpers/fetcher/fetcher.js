@@ -5,6 +5,13 @@ const cockpit = require('../../assets/conf/cpAPI.json')
 const apiURL = JSON.stringify(cockpit.call.apiURL).replace(/"/g, "") + JSON.stringify(cockpit.call.token).replace(/"/g, "")
 // let data = []
 
-async function getData(url = '', data = {})
+async function getData(url = '', data = {}){
+  const res = await fetch(url, {
+    body: JSON.stringify(data)
+  });
+  return await res.json();
+}
+
+getData
 
 // console.log(apiURL);
