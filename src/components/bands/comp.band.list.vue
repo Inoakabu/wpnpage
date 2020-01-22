@@ -13,6 +13,9 @@
   import Tile from '@/components/tile/comp.tile'
   import bandsJson from '@/assets/json/bands.json'
   import content from '@/assets/json/content.json'
+  const cockpit = require('../../assets/conf/cpAPI.json')
+  const fetcher = require('../../helpers/fetcher/fetcher')
+  const collURL = JSON.stringify(cockpit.call.collURL).replace(/"/g, "") + 'Bands' + cockpit.call.endStr + JSON.stringify(cockpit.call.token).replace(/"/g, "")
 
 
   export default {
@@ -21,6 +24,7 @@
     data () {
       return {
         content: content.bands.button,
+        data: fetcher.get
       }
     },
     computed: {
@@ -35,6 +39,13 @@
       '$route.params.id': function (id) {
         this.$forceUpdate()
       }
+    },
+    methods: {
+      // getData () {
+      //   fetcher.getData(collURL).then((data) => {
+      //     console.log(data)
+      //   })
+      // }
     }
   }
 </script>
