@@ -6,6 +6,7 @@
             :route="'BandPage'" :id="band.name" backgroundImg border/>
     </div>
     <router-link class="button" :to="'bands'">{{ content[currentLang] }} </router-link>
+    <div>{{ data }}</div>
   </section>
 </template>
 
@@ -16,6 +17,7 @@
   const cockpit = require('../../assets/conf/cpAPI.json')
   const fetcher = require('../../helpers/fetcher/fetcher')
   const collURL = JSON.stringify(cockpit.call.collURL).replace(/"/g, "") + 'Bands' + cockpit.call.endStr + JSON.stringify(cockpit.call.token).replace(/"/g, "")
+  // eslint-disable-next-line import/first
 
 
   export default {
@@ -24,7 +26,7 @@
     data () {
       return {
         content: content.bands.button,
-        data: fetcher.get
+        data: []
       }
     },
     computed: {
@@ -41,11 +43,14 @@
       }
     },
     methods: {
-      // getData () {
-      //   fetcher.getData(collURL).then((data) => {
-      //     console.log(data)
-      //   })
-      // }
+      getData: function() {
+        fetcher.getData(collURL).then((res) => {
+          this.data = res.entries
+        })
+      }
+    },
+    created: function () {
+      this.getData();
     }
   }
 </script>
