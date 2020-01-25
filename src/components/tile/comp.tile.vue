@@ -15,11 +15,12 @@
 </template>
 
 <script>
+const cockpit = require('../../assets/conf/cpAPI.json')
   export default {
     name: 'Tile',
     props: {
       name: String,
-      image: { type: String, default: 'dmed2019_web_announce_band_arroganz_transp.png' },
+      image: { type: String },
       imagePath: { type: String, default: 'logo/bands' },
       imageUrl: String,
       route: { type: String },
@@ -33,7 +34,7 @@
     },
     computed: {
       imageSrc () {
-        return require(`@/assets/images/${this.imagePath}/${this.image}`)
+        return cockpit.call.baseURL + this.image
       }
     },
     watch: {

@@ -1,12 +1,13 @@
 <template>
   <section class="news-page" v-if="news">
-      <h1 class="news-page-headline">{{ news.title }}</h1>
+      <!-- <h1 class="news-page-headline">{{ news.title }}</h1> -->
       <!-- <p class="news-page-description">{{ news.text[currentLang] }}</p> -->
-      <div><span v-html="news.text[currentLang]"></span></div>
-      <div class="div-image">
+      <!-- <div><span v-html="news.text[currentLang]"></span></div> -->
+      <!-- <div class="div-image">
         <img class="news-page-image" :src="imageSrc"/>
-      </div>
-      <PSC pSCimagePath = 'news/pictureSCcontent' :arr="nArr" />
+      </div> -->
+      <!-- <PSC pSCimagePath = 'news/pictureSCcontent' :arr="nArr" /> -->
+      <div>{{ news }}</div>
       <router-view></router-view>
   </section>
 </template>
@@ -14,28 +15,42 @@
 <script>
   import newsJson from '@/assets/json/news.json'
   import PSC from '@/components/pictureShowCase/comp.pictureSC'
-
+  const cockpit = require('../assets/conf/cpAPI.json')
+  const fetcher = require('../helpers/fetcher/fetcher')
+  const collURL = JSON.stringify(cockpit.call.collURL).replace(/"/g, "") + 'news' + cockpit.call.endStr + JSON.stringify(cockpit.call.token).replace(/"/g, "")
+/* eslint-disable */ 
   export default {
     name: 'News',
     components: { PSC },
     data() {
       return {
-        nArr: newsJson.pictureSC
+        nArr: newsJson.pictureSC,
+        data: []
       }
     },
     computed: {
       id() {
-        return Number(this.$route.params.id)
+        return this.$route.params.id
       },
-      news () {
-        return newsJson.filter(b => b.id === this.id)[0]
+      news() {
+        return this.data.filter(b => b.id === this.id)[0]
       },
       imageSrc() {
-        return require(`@/assets/images/news/${this.news.image}`)
+        return cockpit.call.baseURL + this.news.image.path
       },
       currentLang () {
         return this.$route.params.lang
       }
+    },
+    methods: {
+      getData: function() {
+        fetcher.getData(collURL).then((res) => {
+          this.data = res.entries
+        })
+      }
+    },
+    created: function () {
+      this.getData();
     }
   }
 </script>

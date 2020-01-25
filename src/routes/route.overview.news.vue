@@ -2,29 +2,44 @@
   <section class="news ov">
     <h2>News</h2>
     <div class="list ov">
-      <Tile v-for="(news,idx) in news.slice().reverse()" :key="idx" :name="news.title" :image="news.image" :imagePath="'news'"
-            :route="'NewsPage'" :id="news.id.toString()" sepia shadow backgroundImg border :alert="news.alert"/>
+      <Tile v-for="(news,idx) in data.slice().reverse()" :key="idx" :name="news.title" :image="news.image.path" :imagePath="'news'"
+            :route="'NewsPage'" :id="news._id.toString()" sepia shadow backgroundImg border :alert="news.alert"/>
     </div>
     <router-view></router-view>
+    <div>{{ data[1] }}</div>
   </section>
 </template>
 
 <script>
 import newsJson from '@/assets/json/news.json'
 import Tile from '@/components/tile/comp.tile'
+const cockpit = require('../assets/conf/cpAPI.json')
+const fetcher = require('../helpers/fetcher/fetcher')
+const collURL = JSON.stringify(cockpit.call.collURL).replace(/"/g, "") + 'news' + cockpit.call.endStr + JSON.stringify(cockpit.call.token).replace(/"/g, "")
 
 export default {
   name: 'News',
   components: { Tile },
   data () {
     return {
-      news: newsJson
+      news: newsJson,
+      data: []
     }
   },
   computed: {
     currentLang () {
         return this.$route.params.lang
     }
+  },
+  methods: {
+    getData: function() {
+      fetcher.getData(collURL).then((res) => {
+        this.data = res.entries
+      })
+    }
+  },
+  created: function () {
+    this.getData();
   }
 }
 </script>

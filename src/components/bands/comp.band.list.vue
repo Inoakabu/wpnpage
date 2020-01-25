@@ -2,23 +2,22 @@
   <section class="bands">
     <h2>Bands</h2>
     <div class="list four">
-      <Tile v-for="(band,idx) in bands" :key="idx" :name="band.name" :image="band.image" :imagePath="'logo/bands'"
+      <Tile v-for="(band,idx) in data" :key="idx" :name="band.name" :image="band.image.path"
             :route="'BandPage'" :id="band.name" backgroundImg border/>
     </div>
     <router-link class="button" :to="'bands'">{{ content[currentLang] }} </router-link>
-    <div>{{ data }}</div>
   </section>
 </template>
 
 <script>
   import Tile from '@/components/tile/comp.tile'
-  import bandsJson from '@/assets/json/bands.json'
+  // import bandsJson from '@/assets/json/bands.json'
   import content from '@/assets/json/content.json'
   const cockpit = require('../../assets/conf/cpAPI.json')
   const fetcher = require('../../helpers/fetcher/fetcher')
   const collURL = JSON.stringify(cockpit.call.collURL).replace(/"/g, "") + 'Bands' + cockpit.call.endStr + JSON.stringify(cockpit.call.token).replace(/"/g, "")
   // eslint-disable-next-line import/first
-
+  /* eslint-disable */ 
 
   export default {
     name: 'Bands',
@@ -31,7 +30,7 @@
     },
     computed: {
       bands () {
-        return bandsJson.slice(0, 4)
+        return data.slice(0, 4)
       },
       currentLang () {
         return this.$route.params.lang

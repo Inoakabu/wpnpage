@@ -1,10 +1,12 @@
 <template>
   <section class="band-page" v-if="band">
     <h1 class="band-page-headline">{{ band.name }}</h1>
-    <div class="band-page-social" v-for="link in band.links" :key="link.name">
-      <social :url="link.url" :name="link.name"/>
+    <div class="band-page-social" v-for="(link,idx) in band.links" :key="idx">
+      <social :url="link.value.url" :name="link.value.social"/>
     </div>
-    <p class="band-page-description">{{ band.text[currentLang] }}</p>
+    <p class="band-page-description" v-for="(item,idx) in band.description" :key="idx">
+      {{ item.value[currentLang] }}
+    </p>
     <youtube class="band-page-video" :link="band.video"/>
     <router-view></router-view>
   </section>
@@ -13,21 +15,39 @@
 <script>
   import youtube from '@/components/social/comp.youtube-embedded'
   import social from '@/components/social/comp.social-tag'
-  import bandJson from '@/assets/json/bands.json'
+  // import bandJson from '@/assets/json/bands.json'
+  const cockpit = require('../assets/conf/cpAPI.json')
+  const fetcher = require('../helpers/fetcher/fetcher')
+  const collURL = JSON.stringify(cockpit.call.collURL).replace(/"/g, "") + 'Bands' + cockpit.call.endStr + JSON.stringify(cockpit.call.token).replace(/"/g, "")
 
   export default {
     name: 'Band',
     components: { youtube, social },
+    data () {
+      return {
+        data: []
+      }
+    },
     computed: {
       name () {
         return this.$route.params.id
       },
       band () {
-        return bandJson.filter(b => b.name.toLowerCase() === this.name.toLowerCase())[0]
+        return this.data.filter(b => b.name.toLowerCase() === this.name.toLowerCase())[0]
       },
       currentLang () {
         return this.$route.params.lang
       }
+    },
+    methods: {
+      getData: function() {
+        fetcher.getData(collURL).then((res) => {
+          this.data = res.entries
+        })
+      }
+    },
+    created: function () {
+      this.getData();
     }
   }
 </script>
