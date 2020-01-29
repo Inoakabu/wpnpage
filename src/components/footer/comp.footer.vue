@@ -3,8 +3,7 @@
     <div class="sponsor">
       <Tile v-for="(sponsor, idx) in sponsors" :key="idx"
             :route="sponsor.url"
-            :image="sponsor.image"
-            imagePath="logo/sponsor"
+            :image="sponsor.image.path"
             external/>
     </div>
     <nav class="impressum">
@@ -16,8 +15,11 @@
 </template>
 
 <script>
-  import { links, sponsors } from '@/assets/json/footer.json'
+  import { links } from '@/assets/json/footer.json'
   import Tile from '@/components/tile/comp.tile'
+  const cockpit = require('../../assets/conf/cpAPI.json')
+  const fetcher = require('../../helpers/fetcher/fetcher')
+  const collURL = JSON.stringify(cockpit.call.collURL).replace(/"/g, "") + 'sponsors' + cockpit.call.endStr + JSON.stringify(cockpit.call.token).replace(/"/g, "")
 
   export default {
     name: 'sponsors',
@@ -25,13 +27,23 @@
     data () {
       return {
         links,
-        sponsors
+        sponsors: []
       }
     },
     computed: {
       currentLang () {
         return this.$route.params.lang
       }
+    },
+    methods: {
+      getData: function() {
+        fetcher.getData(collURL).then((res) => {
+          this.sponsors = res.entries
+        })
+      }
+    },
+    created: function () {
+      this.getData();
     }
   }
 </script>

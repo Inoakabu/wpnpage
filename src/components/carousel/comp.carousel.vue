@@ -1,23 +1,29 @@
 <template>
   <a class="tile" target="_blank">
     <div class="tile-image--wrapper">
-      <img class="tile-image" :src="imageUrl ? imageUrl : imageSrc"/>
+      <figure>
+        <img class="tile-image" :src="imageUrl ? imageUrl : imageSrc"/>
+        <figcaption> {{ year }} </figcaption>
+      </figure>      
     </div>
   </a>
 </template>
 
 <script>
+const cockpit = require('../../assets/conf/cpAPI.json')
 
 export default {
   name: 'Carousel',
   props: {
-    image: { type: String, default: 'dmed2019_web_announce_band_arroganz_transp.png' },
+    year: { type: String },
+    image: { type: String },
+    link: { type: String },
     imagePath: { type: String, default: 'logo/construction' },
     imageUrl: String,
   },
   computed: {
     imageSrc () {
-      return require(`@/assets/images/${this.imagePath}/${this.image}`)
+      return cockpit.call.baseURL + this.image
     }
   },
   watch: {

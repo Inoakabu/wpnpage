@@ -5,17 +5,19 @@
 </template>
 
 <script>
+const cockpit = require('../../assets/conf/cpAPI.json')
+
 export default {
   name: 'SponsorTile',
   props: {
     sId: Number,
     sponsor: String,
-    logo: String,
+    image: String,
     link: String
   },
   computed: {
     imageSrc () {
-      return require(`@/assets/images/logo/sponsor/${this.logo}`)
+      return cockpit.call.baseURL + this.image
     }
   },
   methods: {

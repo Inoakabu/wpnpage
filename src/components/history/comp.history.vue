@@ -1,60 +1,46 @@
 <template>
   <section class="history">
     <h2>History</h2>
-    <div class="list hist" v-if="showOne() > 767">
-      <Tile v-for="(item, idx) in CuttedArray" :key="idx" :route="item.link" :name="item.year" :image="item.image"
-            imagePath="history"
-            external shadow backgroundImg border/>
-    </div>
-    <div class="list one" v-else>
-      <Tile v-for="(item, idx) in OneFromArray" :key="idx" :route="item.link" :name="item.year" :image="item.image"
-            imagePath="history"
-            external shadow backgroundImg border/>
-    </div>
-    <div class="history-controls">
-      <button @click="previous" class="button">◀ {{ content[currentLang].prev }}</button>
-      <button @click="next" class="button">{{ content[currentLang].next }} ▶</button>
-    </div>
+      <Carousel3d class="Carousel3d" :autoplay="true" :autoplay-timeout="5000" :clickable="true">
+        <Slide v-for="(history, idx) in data" :key="idx" :index="idx" >
+          <carousel 
+            :year="history.year"
+            :image="history.image.path" 
+            :link="history.link"
+          />
+        </Slide>
+      </Carousel3d>
   </section>
 </template>
 
 <script>
-  import history from '@/assets/json/history.json'
-  import Tile from '@/components/tile/comp.tile'
-  import content from '@/assets/json/content.json'
+  // import history from '@/assets/json/history.json'
+  // import Tile from '@/components/tile/comp.tile'
+  // import content from '@/assets/json/content.json'
+  import Carousel from '../carousel/comp.carousel'
+  import { Carousel3d, Slide } from 'vue-carousel-3d';
+  const cockpit = require('../../assets/conf/cpAPI.json')
+  const fetcher = require('../../helpers/fetcher/fetcher')
+  const collURL = JSON.stringify(cockpit.call.collURL).replace(/"/g, "") + 'history' + cockpit.call.endStr + JSON.stringify(cockpit.call.token).replace(/"/g, "")
+
 
   export default {
     name: 'history',
-    components: { Tile },
+    components: { Carousel, Slide, Carousel3d },
     data () {
       return {
-        arr: history,
-        content: content.history
-      }
-    },
-    computed: {
-      CuttedArray () {
-        return this.arr.slice(0, 3) // limitiert den array
-      },
-      OneFromArray () {
-        return this.arr.slice(0, 1)
-      },
-      currentLang () {
-        return this.$route.params.lang
+        data: []
       }
     },
     methods: {
-      next () {
-        let first = this.arr.shift() // entfernt den ersten eintrag
-        this.arr = this.arr.concat(first) // fuegt den eintrag hinten am array ein
-      },
-      previous () {
-        let last = this.arr.pop() // entfernt den letzten eintrag
-        this.arr = [last].concat(this.arr) // fuegt den eintrag vorne am array ein
-      },
-      showOne () {
-        return window.outerWidth
+      getData: function() {
+        fetcher.getData(collURL).then((res) => {
+          this.data = res.entries
+        })
       }
+    },
+    created: function () {
+      this.getData();
     }
   }
 </script>
@@ -64,17 +50,9 @@
     flex-direction: column;
     align-items: center;
   }
-  .list.one {
-    display: grid;
-    grid-template-columns: 1fr;
-    margin-bottom: 3rem;
-  }
-  @media (max-width: 960px){
-    .list.hist {
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
-      grid-gap: 1rem;
-      margin-bottom: 3rem;
-    }
+
+  .Carousel3d {
+    position: relative;
+    padding: 20px 10px;
   }
 </style>
