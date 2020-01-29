@@ -1,13 +1,12 @@
 <template>
   <section class="news-page" v-if="news">
-      <!-- <h1 class="news-page-headline">{{ news.title }}</h1> -->
-      <!-- <p class="news-page-description">{{ news.text[currentLang] }}</p> -->
-      <!-- <div><span v-html="news.text[currentLang]"></span></div> -->
-      <!-- <div class="div-image">
+      <h1 class="news-page-headline">{{ news.title }}</h1>
+      <div v-for="(news,idx) in news.text" :key="idx">
+        <span v-html="news.value[currentLang]"></span>
+      </div>
+      <div class="div-image">
         <img class="news-page-image" :src="imageSrc"/>
-      </div> -->
-      <!-- <PSC pSCimagePath = 'news/pictureSCcontent' :arr="nArr" /> -->
-      <div>{{ news }}</div>
+      </div>
       <router-view></router-view>
   </section>
 </template>
@@ -33,7 +32,7 @@
         return this.$route.params.id
       },
       news() {
-        return this.data.filter(b => b.id === this.id)[0]
+        return this.data.filter(b => b._id === this.$route.params.id)[0]
       },
       imageSrc() {
         return cockpit.call.baseURL + this.news.image.path

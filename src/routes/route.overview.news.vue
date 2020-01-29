@@ -6,7 +6,6 @@
             :route="'NewsPage'" :id="news._id.toString()" sepia shadow backgroundImg border :alert="news.alert"/>
     </div>
     <router-view></router-view>
-    <div>{{ data[1] }}</div>
   </section>
 </template>
 
