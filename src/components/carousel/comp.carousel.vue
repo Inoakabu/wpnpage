@@ -21,6 +21,7 @@ export default {
     link: { type: String },
     imagePath: { type: String, default: 'logo/construction' },
     imageUrl: String,
+    href: String
   },
   computed: {
     imageSrc () {
@@ -28,7 +29,10 @@ export default {
     }
   },
   methods: {
-    
+    setLink: function() {
+
+
+    }
   },
   watch: {
     '$route.params': function(params) {

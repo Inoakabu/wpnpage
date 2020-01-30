@@ -7,6 +7,7 @@
             :year="history.year"
             :image="history.image.path" 
             :link="history.link"
+            :href="history.link"
           />
         </Slide>
       </Carousel3d>
