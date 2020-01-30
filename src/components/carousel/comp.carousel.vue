@@ -2,9 +2,10 @@
   <a class="tile" target="_blank">
     <div class="tile-image--wrapper">
       <figure>
-        <img class="tile-image" :src="imageUrl ? imageUrl : imageSrc"/>
-        <figcaption> {{ year }} </figcaption>
-      </figure>      
+        <a  :data-url="link" class="historyLink" target="_blank" :href="link">
+          <img class="tile-image" :src="imageUrl ? imageUrl : imageSrc"/>
+        </a>        
+      </figure>
     </div>
   </a>
 </template>
@@ -26,6 +27,9 @@ export default {
       return cockpit.call.baseURL + this.image
     }
   },
+  methods: {
+    
+  },
   watch: {
     '$route.params': function(params) {
       this.$forceUpdate();
@@ -36,5 +40,7 @@ export default {
 </script>
 
 <style>
-
+  figure {
+    margin: 2px;
+  }
 </style>

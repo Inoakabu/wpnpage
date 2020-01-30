@@ -1,8 +1,8 @@
 <template>
   <section class="history">
     <h2>History</h2>
-      <Carousel3d class="Carousel3d" :autoplay="true" :autoplay-timeout="5000" :clickable="true">
-        <Slide v-for="(history, idx) in data" :key="idx" :index="idx" >
+      <Carousel3d :height="500" class="Carousel3d" :autoplay="true" :autoplay-timeout="5000" :clickable="false">
+        <Slide v-for="(history, idx) in data" :key="idx" :index="idx">
           <carousel 
             :year="history.year"
             :image="history.image.path" 
@@ -37,6 +37,9 @@
         fetcher.getData(collURL).then((res) => {
           this.data = res.entries
         })
+      },
+      flagging: function() {
+        console.log("hadde alla")
       }
     },
     created: function () {
@@ -51,8 +54,7 @@
     align-items: center;
   }
 
-  .Carousel3d {
-    position: relative;
-    padding: 20px 10px;
+  .carousel-3d-slide {
+    padding: 2px;
   }
 </style>
