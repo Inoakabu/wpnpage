@@ -1,7 +1,7 @@
 <template>
   <section class="history">
     <h2>History</h2>
-      <Carousel3d :height="500" class="Carousel3d" :autoplay="true" :autoplay-timeout="5000" :clickable="false">
+      <Carousel3d :display="5" :height="500" class="Carousel3d" :autoplay="true" :autoplay-timeout="5000" :count="data.length">
         <Slide v-for="(history, idx) in data" :key="idx" :index="idx">
           <carousel 
             :year="history.year"
@@ -15,9 +15,6 @@
 </template>
 
 <script>
-  // import history from '@/assets/json/history.json'
-  // import Tile from '@/components/tile/comp.tile'
-  // import content from '@/assets/json/content.json'
   import Carousel from '../carousel/comp.carousel'
   import { Carousel3d, Slide } from 'vue-carousel-3d';
   const cockpit = require('../../assets/conf/cpAPI.json')
@@ -38,9 +35,6 @@
         fetcher.getData(collURL).then((res) => {
           this.data = res.entries
         })
-      },
-      flagging: function() {
-        console.log("hadde alla")
       }
     },
     created: function () {
