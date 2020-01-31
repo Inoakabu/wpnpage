@@ -12,7 +12,6 @@
 </template>
 
 <script>
-  import newsJson from '@/assets/json/news.json'
   import PSC from '@/components/pictureShowCase/comp.pictureSC'
   const cockpit = require('../assets/conf/cpAPI.json')
   const fetcher = require('../helpers/fetcher/fetcher')
@@ -23,7 +22,6 @@
     components: { PSC },
     data() {
       return {
-        nArr: newsJson.pictureSC,
         data: []
       }
     },

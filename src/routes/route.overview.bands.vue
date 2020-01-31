@@ -9,7 +9,6 @@
   </section>
 </template>
 <script>
-import bandsJson from '@/assets/json/bands.json'
 import Tile from '@/components/tile/comp.tile'
 const cockpit = require('../assets/conf/cpAPI.json')
 const fetcher = require('../helpers/fetcher/fetcher')
@@ -20,7 +19,6 @@ export default {
   components: { Tile },
   data () {
     return {
-      bands: bandsJson,
       data: []
     }
   },

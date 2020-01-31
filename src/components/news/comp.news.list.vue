@@ -10,7 +10,6 @@
 </template>
 
 <script>
-  import newsJson from '@/assets/json/news.json'
   import Tile from '@/components/tile/comp.tile'
   import content from '@/assets/json/content.json'
   const cockpit = require('../../assets/conf/cpAPI.json')
@@ -23,13 +22,12 @@
     data () {
       return {
         content: content.news.button,
-        newsContent: newsJson.news,
         data: []
       }
     },
     computed: {
       news () {
-        return newsJson.slice(-3).reverse()
+        return this.data.slice(-3).reverse()
       },
       currentLang () {
         return this.$route.params.lang

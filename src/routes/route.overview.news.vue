@@ -10,7 +10,6 @@
 </template>
 
 <script>
-import newsJson from '@/assets/json/news.json'
 import Tile from '@/components/tile/comp.tile'
 const cockpit = require('../assets/conf/cpAPI.json')
 const fetcher = require('../helpers/fetcher/fetcher')
@@ -21,7 +20,6 @@ export default {
   components: { Tile },
   data () {
     return {
-      news: newsJson,
       data: []
     }
   },

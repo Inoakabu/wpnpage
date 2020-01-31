@@ -1,22 +1,16 @@
 <template>
   <div class="gtc">
-    <h3>{{ content.title[currentLang] }}</h3>
-    <ol class="gtc-list" type="I">
-      <li class="gtc-listitems" v-for="(item, index) in content[currentLang]" :key="index">
-        {{ item }}
-      </li>
-    </ol>
+    <div v-for="(dat,idx) in data.gtcValue" :key="idx">
+      <span v-html="dat.value[currentLang]"></span>
+    </div>
   </div>
 </template>
 
 <script>
-import content from '@/assets/json/content.json'
 
 export default {
-  data () {
-    return {
-      content: content.info.gtc
-    }
+  props: {
+    data: Object
   },
   computed: {
     currentLang () {

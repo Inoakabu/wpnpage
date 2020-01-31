@@ -1,36 +1,36 @@
 <template>
   <section class="privacy-policy">
-    <div class="privacy-policy">
-      <h1>{{ content.title[currentLang] }}</h1>
-      <ol class="privacy-policy-list">
-        <li class="privacy-policy-listitems" v-for="(item, index) in content[currentLang]" :key="index">
-          <h2>{{ item.h }}</h2><br>
-          <h3>{{ item.h2 }}</h3>
-          {{ item.text }}<br>
-          <ul class="privacy-policy-sublist">
-            <li class="privacy-policy-sublistItem" v-for="(subitem, index) in item.list" :key="index">
-              {{ subitem }}
-            </li>
-          </ul><br>
-          {{ item.text2 }}
-        </li>
-      </ol>
+    <div v-for="(dat,idx) in data" :key="idx">
+      <span v-for="(da,idx) in dat.privacyPolicy" :key="idx" v-html="da.value[currentLang]"></span>
     </div>
   </section>
 </template>
 
 <script>
-import content from '@/assets/json/info.json'
+const cockpit = require('../../assets/conf/cpAPI.json')
+const fetcher = require('../../helpers/fetcher/fetcher')
+const collURL = JSON.stringify(cockpit.call.collURL).replace(/"/g, "") + 'footer' + cockpit.call.endStr + JSON.stringify(cockpit.call.token).replace(/"/g, "")
+
 export default {
   data () {
     return {
-      content: content.privacy_policy
+      data: []
     }
   },
   computed: {
     currentLang () {
-        return this.$route.params.lang
-      }
+      return this.$route.params.lang
+    }
+  },
+  methods: {
+    getData: function() {
+      fetcher.getData(collURL).then((res) => {
+        this.data = res.entries
+      })
+    }
+  },
+  created: function () {
+    this.getData();
   }
 }
 </script>

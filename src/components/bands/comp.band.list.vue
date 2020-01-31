@@ -11,7 +11,6 @@
 
 <script>
   import Tile from '@/components/tile/comp.tile'
-  // import bandsJson from '@/assets/json/bands.json'
   import content from '@/assets/json/content.json'
   const cockpit = require('../../assets/conf/cpAPI.json')
   const fetcher = require('../../helpers/fetcher/fetcher')
