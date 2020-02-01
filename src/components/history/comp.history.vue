@@ -3,9 +3,9 @@
     <h2>History</h2>
       <Carousel3d :display="5" :height="500" class="Carousel3d" :autoplay="true" :autoplay-timeout="5000" :count="data.length">
         <Slide v-for="(history, idx) in data" :key="idx" :index="idx">
-          <carousel 
+          <carousel
             :year="history.year"
-            :image="history.image.path" 
+            :image="history.image.path"
             :link="history.link"
             :href="history.link"
           />
@@ -17,28 +17,21 @@
 <script>
   import Carousel from '../carousel/comp.carousel'
   import { Carousel3d, Slide } from 'vue-carousel-3d';
-  const cockpit = require('../../assets/conf/cpAPI.json')
-  const fetcher = require('../../helpers/fetcher/fetcher')
-  const collURL = JSON.stringify(cockpit.call.collURL).replace(/"/g, "") + 'history' + cockpit.call.endStr + JSON.stringify(cockpit.call.token).replace(/"/g, "")
-
+  import { call } from '../../assets/conf/cpAPI.json';
+  import fetcher from '../../helpers/fetcher/fetcher';
 
   export default {
     name: 'history',
     components: { Carousel, Slide, Carousel3d },
     data () {
       return {
-        data: []
-      }
-    },
-    methods: {
-      getData: function() {
-        fetcher.getData(collURL).then((res) => {
-          this.data = res.entries
-        })
+        data: Array(7).fill({image: {path: undefined}, year: undefined, link: undefined})
       }
     },
     created: function () {
-      this.getData();
+      fetcher(`${call.collURL}${this.$options._componentTag}`).then((res) => {
+        this.data = res.entries
+      })
     }
   }
 </script>

@@ -1,5 +1,8 @@
 /* eslint-disable no-return-await */
-const fetch = require('node-fetch')
+import fetch from 'node-fetch'
+
+
+import { call } from '../../assets/conf/cpAPI.json';
 
 // exports.getCollections = async function getCollections(url = '', data = {}){
 //   const res = await fetch(url, {
@@ -12,11 +15,11 @@ const fetch = require('node-fetch')
 //   return await res.json();
 // }
 
-export async function getData(url = '', data = {}) {
+export default async function getData(url = '', data = {}) {
   const res = await fetch(url, {
     method: 'POST',
     headers: {
-
+      'Authorization': `Bearer ${call.token}`,
       'Content-Type': 'application/json'
     },
     body: JSON.stringify(data)
