@@ -69,7 +69,7 @@
     /* padding-top: 10rem; */
     padding-top: 3rem;
     hyphens: auto; 
-    text-align: justify
+    text-align: left
   }
 
   .news-page-video {

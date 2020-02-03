@@ -40,7 +40,7 @@ export default {
 
 <style>
   .impressum {
-    text-align: center;
+    text-align: left;
     padding: 2rem;
   }
   .impressum-listitems {

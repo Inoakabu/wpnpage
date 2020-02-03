@@ -21,7 +21,7 @@ export default {
 
 <style>
   .hotel-link {
-    align-self: center
+    align-self: left
   }
   .hotel-link:hover {
     cursor: pointer;

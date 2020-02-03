@@ -43,7 +43,7 @@ export default {
 
 <style>
   .info {
-    text-align: center;
+    text-align: left;
     padding: 2rem;
   }
 </style>
