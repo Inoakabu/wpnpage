@@ -23,18 +23,18 @@
       return {
         header: content.info.map,
         zoom: 14,
-        center: L.latLng(52.6742683,12.7077129),
+        center: L.latLng(52.5215595,13.408969),
         url: 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
         attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors',
         markers: [
           {
             name: 'De Mortem Et Diabolum',
-            pos: L.latLng(52.6742683,12.7077129),
+            pos: L.latLng(52.5215595,13.408969),
             tooltip: 'De Mortem Et Diabolum',
             icon: L.icon({
               iconUrl: '/map/sharp-local_activity-24px.svg'
             }),
-            link: 'https://www.google.com/maps/place/Prof.-Mitscherlich-Allee+1,+14641+Paulinenaue/@52.6742683,12.7077129,17z/data=!4m13!1m7!3m6!1s0x47a8dfc81a4ef9eb:0xb862116ca090521b!2sProf.-Mitscherlich-Allee+1,+14641+Paulinenaue!3b1!8m2!3d52.6742683!4d12.7099016!3m4!1s0x47a8dfc81a4ef9eb:0xb862116ca090521b!8m2!3d52.6742683!4d12.7099016'
+            link: 'https://www.google.com/maps/place/Berlin+Alexanderplatz+Bahnhof/@52.5215595,13.408969,17z/data=!3m1!4b1!4m13!1m7!4m6!1m3!2m2!1d13.4125198!2d52.5217877!1m0!3e0!3m4!1s0x47a84e1f766768eb:0x9bd67d3806e3d5c9!8m2!3d52.5215563!4d13.4111577'
           },
           {
             name: 'Metropol Hostel',
