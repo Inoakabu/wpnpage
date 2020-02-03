@@ -22,6 +22,7 @@ export default {
   },
   computed: {
     currentLang () {
+      
         return this.$route.params.lang
       }
   },
