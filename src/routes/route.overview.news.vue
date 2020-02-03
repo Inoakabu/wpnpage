@@ -3,7 +3,7 @@
     <h2>News</h2>
     <div class="list ov">
       <Tile v-for="(news,idx) in data.slice().reverse()" :key="idx" :name="news.title" :image="news.image.path" :imagePath="'news'"
-            :route="'NewsPage'" :id="news._id.toString()" sepia shadow backgroundImg border :alert="news.alert"/>
+            :route="'NewsPage'" :id="news._id.toString()" sepia backgroundImg border :alert="news.alert"/>
     </div>
     <router-view></router-view>
   </section>

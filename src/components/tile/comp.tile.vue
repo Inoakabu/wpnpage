@@ -49,6 +49,7 @@ const cockpit = require('../../assets/conf/cpAPI.json')
   .tile {
     position: relative;
     padding: 1rem;
+    padding-bottom: 3rem;
     transition: all 200ms ease-in-out;
   }
   .linkDisplay {
@@ -85,11 +86,13 @@ const cockpit = require('../../assets/conf/cpAPI.json')
 
   .tile-name {
     position: absolute;
-    bottom: 3rem;
-    right: 3rem;
+    padding: 0.5rem;
+    bottom: 1rem;
+    right: 0.5rem;
     color: var(--main);
     transition: all 200ms ease-in-out;
     z-index: 3;
+    text-align: right;
   }
 
   .tile:hover .tile-name {
@@ -137,11 +140,11 @@ const cockpit = require('../../assets/conf/cpAPI.json')
     top: 1rem;
   }
 
-  .shadow .tile-name {
+  .shadow {
     color: var(--background);
   }
 
-  .shadow:hover .tile-name {
+  .shadow:hover {
     color: var(--main);
   }
 

@@ -6,7 +6,7 @@
             :image="sponsor.image.path"
             external/>
     </div>
-    <nav class="impressum">
+    <nav class="imp">
       <router-link :to="link.route" v-for="(link,idx) in links" :key="idx" :alt="link.alt[currentLang]" :title="link.alt[currentLang]">
         {{link.name[currentLang]}}
       </router-link>
@@ -62,11 +62,15 @@
     align-content: center;
     flex-direction: column;
   }
-  .impressum:nth-child(2)::before {
+  .imp:nth-child(2)::before {
     content: "|"
   }
-  .impressum:nth-child(2)::after {
+  .imp:nth-child(2)::after {
     content: "|"
+  }
+  .imp {
+    text-align: center;
+    padding: 2rem;
   }
 
   @media (max-width: 960px) {
