@@ -8,7 +8,10 @@
 
 <script>
 const cockpit = require('../../assets/conf/cpAPI.json')
-const fetcher = require('../../helpers/fetcher/fetcher')
+// const fetcher = require('../../helpers/fetcher/fetcher')
+// eslint-disable-next-line import/first
+import fetcher from '../../helpers/fetcher/fetcher';
+
 const collURL = JSON.stringify(cockpit.call.collURL).replace(/"/g, "") + 'footer' + cockpit.call.endStr + JSON.stringify(cockpit.call.token).replace(/"/g, "")
 
 export default {
@@ -24,7 +27,7 @@ export default {
   },
   methods: {
     getData: function() {
-      fetcher.getData(collURL).then((res) => {
+      fetcher(collURL).then((res) => {
         this.data = res.entries
       })
     }

@@ -14,7 +14,10 @@
 <script>
   import PSC from '@/components/pictureShowCase/comp.pictureSC'
   const cockpit = require('../assets/conf/cpAPI.json')
-  const fetcher = require('../helpers/fetcher/fetcher')
+  // const fetcher = require('../helpers/fetcher/fetcher')
+  // eslint-disable-next-line import/first
+  import fetcher from '../helpers/fetcher/fetcher';
+
   const collURL = JSON.stringify(cockpit.call.collURL).replace(/"/g, "") + 'news' + cockpit.call.endStr + JSON.stringify(cockpit.call.token).replace(/"/g, "")
 /* eslint-disable */ 
   export default {
@@ -41,7 +44,7 @@
     },
     methods: {
       getData: function() {
-        fetcher.getData(collURL).then((res) => {
+        fetcher(collURL).then((res) => {
           this.data = res.entries
         })
       }
