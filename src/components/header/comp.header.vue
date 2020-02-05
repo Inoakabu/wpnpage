@@ -1,6 +1,6 @@
 <template>
   <header class="header">
-    <router-link :to="{name:'MainPage', params: {lang: currentlang}}" class="header-logo" alt="De Mortem Et Diabolum">
+    <router-link :to="{name:'MainPage', params: {lang: currentlang}}" class="header-logo" alt="Walpurgisnacht">
       <logoComp/>
     </router-link>
     <navComp/>

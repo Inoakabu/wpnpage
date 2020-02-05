@@ -18,7 +18,7 @@
   // eslint-disable-next-line import/first
   import fetcher from '../helpers/fetcher/fetcher';
 
-  const collURL = JSON.stringify(cockpit.call.collURL).replace(/"/g, "") + 'news' + cockpit.call.endStr + JSON.stringify(cockpit.call.token).replace(/"/g, "")
+  const collURL = JSON.stringify(cockpit.call.collURL).replace(/"/g, "") + 'wpnNews' + cockpit.call.endStr + JSON.stringify(cockpit.call.token).replace(/"/g, "")
 /* eslint-disable */ 
   export default {
     name: 'News',

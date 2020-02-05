@@ -16,7 +16,7 @@ const cockpit = require('../assets/conf/cpAPI.json')
 // eslint-disable-next-line import/first
 import fetcher from '../helpers/fetcher/fetcher';
 
-const collURL = JSON.stringify(cockpit.call.collURL).replace(/"/g, "") + 'news' + cockpit.call.endStr + JSON.stringify(cockpit.call.token).replace(/"/g, "")
+const collURL = JSON.stringify(cockpit.call.collURL).replace(/"/g, "") + 'wpnNews' + cockpit.call.endStr + JSON.stringify(cockpit.call.token).replace(/"/g, "")
 
 export default {
   name: 'News',

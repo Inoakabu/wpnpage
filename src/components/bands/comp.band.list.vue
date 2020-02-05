@@ -18,7 +18,7 @@
   // const fetcher = require('../../helpers/fetcher/fetcher')
   import fetcher from '../../helpers/fetcher/fetcher';
 
-  const collURL = JSON.stringify(cockpit.call.collURL).replace(/"/g, "") + 'Bands' + cockpit.call.endStr + JSON.stringify(cockpit.call.token).replace(/"/g, "")
+  const collURL = JSON.stringify(cockpit.call.collURL).replace(/"/g, "") + 'wpnBands' + cockpit.call.endStr + JSON.stringify(cockpit.call.token).replace(/"/g, "")
   // eslint-disable-next-line import/first
   /* eslint-disable */ 
 
