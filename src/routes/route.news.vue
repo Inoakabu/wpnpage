@@ -1,6 +1,6 @@
 <template>
   <section class="news-page" v-if="news">
-      <h1 class="news-page-headline">{{ news.title }}</h1>
+      <h1 class="news-page-headline" v-for="(news,idx) in news.title" :key="idx">{{ news.value[currentLang] }}</h1>
       <div v-for="(news,idx) in news.text" :key="idx">
         <span v-html="news.value[currentLang]"></span>
       </div>

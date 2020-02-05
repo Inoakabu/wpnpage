@@ -2,7 +2,7 @@
   <section class="news">
     <h2>News</h2>
     <div class="list">
-      <Tile v-for="(news,idx) in data" :key="idx" :name="news.title" :image="news.image.path" :imagePath="'news'"
+      <Tile v-for="(news,idx) in data" :key="idx" :name="news.title[0].value[currentLang]" :image="news.image.path" :imagePath="'news'"
             :route="'NewsPage'" :id="news._id.toString()" sepia backgroundImg border/>
     </div>
     <router-link class="button" :to="'news'">{{ content[currentLang] }}</router-link>
@@ -25,7 +25,8 @@
     data () {
       return {
         content: content.news.button,
-        data: []
+        data: [],
+        title: []
       }
     },
     computed: {
@@ -34,6 +35,9 @@
       },
       currentLang () {
         return this.$route.params.lang
+      },
+      genTitle () {
+        return 0
       }
     },
     methods: {
