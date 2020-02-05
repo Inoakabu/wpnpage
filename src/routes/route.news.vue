@@ -106,7 +106,7 @@
     max-width: 350px;
     }
     .news-page-headline {
-      font-size: 2.3rem
+      font-size: 2rem
     }
     .news-page-description{
       font-size: 1rem
@@ -118,7 +118,7 @@
     max-width: 220px;
     }
     .news-page-headline {
-      font-size: 2rem
+      font-size: 1.7rem
     }
     .news-page-description{
       font-size: 1rem

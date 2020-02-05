@@ -210,6 +210,9 @@
   .list.four {
     grid-template-columns: 1fr 1fr 1fr 1fr;
   }
+  li {
+    font-size: 1.8rem
+  }
 
   @media (max-width: 960px) {
     .list {
@@ -220,6 +223,15 @@
     }
     .button {
       font-size: 1rem
+    }
+    p {
+      font-size: 1rem
+    }
+    h2 {
+      font-size: 1.5rem
+    }
+    li {
+      font-size: 1rem;
     }
   }
 
@@ -236,6 +248,15 @@
     .button {
       font-size: 0.8rem
     }
+    p {
+      font-size: 1rem
+    }
+    h2 {
+      font-size: 1.5rem
+    }
+    li {
+      font-size: 1rem;
+    }
   }
 
   @media (max-width: 411px) {
@@ -250,6 +271,15 @@
     }
     .button {
       font-size: 0.6rem
+    }
+    p {
+      font-size: 1rem
+    }
+    h2 {
+      font-size: 1.5rem
+    }
+    li {
+      font-size: 1rem;
     }
   }
 
