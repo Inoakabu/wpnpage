@@ -67,6 +67,7 @@
     left: 0;
     z-index: -1;
   }
+  
   .header:after {
     content: '';
     background-image: url('../../assets/images/background/bg.jpg');
