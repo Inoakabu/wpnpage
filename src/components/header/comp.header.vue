@@ -57,11 +57,20 @@
   }
 
   .header:before {
-    /*filter: invert(100%); !* Invert *!*/
+    content: '';
+    background: radial-gradient(circle, var(--background-translute) 0%, var(--background) 85%);
+    display: block;
+    width: 100%;
+    position: absolute;
+    min-height: 750px;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+  .header:after {
     content: '';
     background-image: url('../../assets/images/background/bg.jpg');
     display: block;
-    max-width: 1600px;
     width: 100%;
     background-size: 100%;
     background-position-y: 30%;
@@ -70,9 +79,8 @@
     min-height: 750px;
     top: 0;
     left: 0;
-    z-index: -1;
-    opacity: 0.30;
-    box-shadow: 0 0 8px 8px #0e131e inset;
+    z-index: -2;
+    opacity: 0.15;
   }
 
   @media (max-width: 960px) {

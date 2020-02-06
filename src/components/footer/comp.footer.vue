@@ -7,7 +7,7 @@
             external/>
     </div>
     <nav class="imp">
-      <router-link :to="link.route" v-for="(link,idx) in links" :key="idx" :alt="link.alt[currentLang]" :title="link.alt[currentLang]">
+      <router-link :to="{name: link.route, params: {lang:currentLang}}" v-for="(link,idx) in links" :key="idx" :alt="link.alt[currentLang]" :title="link.alt[currentLang]">
         {{link.name[currentLang]}}
       </router-link>
     </nav>
@@ -36,6 +36,11 @@
     computed: {
       currentLang () {
         return this.$route.params.lang
+      }
+    },
+    watch: {
+      '$route': function () {
+        this.$forceUpdate()
       }
     },
     methods: {
@@ -80,6 +85,18 @@
     }
   }
 
+  .header:before {
+    content: '';
+    background: radial-gradient(circle, var(--background-translute) 0%, var(--background) 85%);
+    display: block;
+    width: 100%;
+    position: absolute;
+    min-height: 750px;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+
   .footer:before {
     /*filter: invert(100%); !* Invert *!*/
     content: '';
@@ -95,8 +112,7 @@
     top: 0;
     left: 0;
     z-index: -1;
-    opacity: 0.30;
-    box-shadow: 0 0 8px 8px #0e131e inset;
+    opacity: 0.15;
   }
 
   @media (max-width: 960px) {
