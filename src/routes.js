@@ -34,6 +34,13 @@ export default new Router({
       }
     },
     {
+      path: `/${navigation.dmed.route}`,
+      name: `${navigation.dmed.route}`,
+      beforeEnter () {
+        location.href = navigation.dmed.url
+      }
+    },
+    {
       path: '/:lang',
       component: RoutePage,
       children: [

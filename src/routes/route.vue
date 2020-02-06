@@ -72,15 +72,6 @@
     position: relative;
     padding: 20px 10px;
   }
-  /* @media (max-width: 560px) {
-    .modal-header {
-      font-size: 1.5rem;
-      padding: 500px
-    }
-    .modal-body {
-      padding: 10px 5px
-    }
-  } */
   :focus {
     outline: 0;
   }
@@ -99,10 +90,11 @@
   }
 
   :root {
-    --main: #3d5a50;
-    --typo: #c7c7c7;
+    --main: #19212f;
+    --typo: #cdc6ba;
+    --typoHover: ;
     --motiv: #9d8c7c;
-    --background: #000a02;
+    --background: #0e131e;
     --alert: #9B0025;
   }
 

@@ -95,8 +95,8 @@
     top: 0;
     left: 0;
     z-index: -1;
-
-    opacity: 0.15;
+    opacity: 0.30;
+    box-shadow: 0 0 8px 8px #0e131e inset;
   }
 
   @media (max-width: 960px) {

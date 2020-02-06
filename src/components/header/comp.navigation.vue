@@ -66,7 +66,7 @@
   }
 
   .nav-item:hover {
-    color: var(--main);
+    color: var(--motiv);
   }
 
   .nav-item--big {

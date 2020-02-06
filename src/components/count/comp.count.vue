@@ -62,7 +62,7 @@ import content from '@/assets/json/content.json'
   }
 
   .count h1 {
-    color: var(--main);
+    color: var(--typo);
     font-size: 3rem;
   }
 
@@ -91,7 +91,8 @@ import content from '@/assets/json/content.json'
   }
 
   .count p {
-    color: var(--motiv);
+    color: var(--typo);
     text-transform: uppercase;
+    opacity: 0.25;
   }
 </style>
