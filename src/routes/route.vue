@@ -134,7 +134,7 @@
     line-height: 2.5rem;
   }
   a {
-    color: var(--main);
+    color: var(--typo);
     text-decoration: none;
   }
   p{

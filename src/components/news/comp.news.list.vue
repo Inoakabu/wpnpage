@@ -2,7 +2,7 @@
   <section class="news">
     <h2>News</h2>
     <div class="list">
-      <Tile v-for="(news,idx) in data" :key="idx" :name="news.title[0].value[currentLang]" :image="news.image.path" :imagePath="'news'"
+      <Tile v-for="(news,idx) in data.slice(-3).reverse()" :key="idx" :name="news.title[0].value[currentLang]" :image="news.image.path" :imagePath="'news'"
             :route="'NewsPage'" :id="news._id.toString()" sepia backgroundImg border/>
     </div>
     <router-link class="button" :to="'news'">{{ content[currentLang] }}</router-link>
@@ -31,7 +31,7 @@
     },
     computed: {
       news () {
-        return this.data.slice(-3).reverse()
+        return this.data
       },
       currentLang () {
         return this.$route.params.lang

@@ -74,14 +74,14 @@ import content from '@/assets/json/content.json'
 
   @media (max-width: 560px) {
     .count h1 {
-      color: var(--main);
+      color: var(--typo);
       font-size: 12vw;
     }
   }
 
   @media (max-width: 411px) {
     .count h1 {
-      color: var(--main);
+      color: var(--typo);
       font-size: 10vw;
     }
   }
