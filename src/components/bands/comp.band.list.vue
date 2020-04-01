@@ -2,7 +2,7 @@
   <section class="bands">
     <h2>Bands</h2>
     <div class="list four">
-      <Tile v-for="(band,idx) in data" :key="idx" :name="band.name" :image="band.image.path"
+      <Tile v-for="(band,idx) in bands" :key="idx" :name="band.name" :image="band.image.path"
             :route="'BandPage'" :id="band.name" backgroundImg border/>
     </div>
     <router-link class="button" :to="'bands'">{{ content[currentLang] }} </router-link>
@@ -33,15 +33,19 @@
     },
     computed: {
       bands () {
-        return data.slice(0, 4)
+        return this.filteredData.slice(0, 4)
       },
       currentLang () {
         return this.$route.params.lang
-      }
-    },
-    watch: {
-      '$route.params.id': function (id) {
-        this.$forceUpdate()
+      },
+      filteredData () {
+        let toFilter = this.data
+        if(toFilter.length){
+          toFilter = toFilter.filter((e) => {
+            return e.show == true
+          })
+        }
+        return toFilter
       }
     },
     methods: {

@@ -9,12 +9,16 @@
 
 <script>
 import content from '@/assets/json/content.json'
+import fetcher from '../../helpers/fetcher/fetcher';
+const cockpit = require('../../assets/conf/cpAPI.json')
+const collURL = JSON.stringify(cockpit.call.collURL).replace(/"/g, "") + 'count' + cockpit.call.endStr + JSON.stringify(cockpit.call.token).replace(/"/g, "")
+
   export default {
     name: 'Count',
     data () {
       return {
-        currentDate: Date.parse(new Date(this.endDate)) - Date.parse(new Date()),
-        endDate: 'April 30, 2020 16:00:00',
+        currentDate: "",
+        endDate: "",
         content: content.countdown
       }
     },
@@ -46,11 +50,17 @@ import content from '@/assets/json/content.json'
     methods: {
       setCurrentDate () {
         this.currentDate = Date.parse(new Date(this.endDate)) - Date.parse(new Date())
+      },
+      getData: function() {
+        fetcher(collURL).then((res) => {
+          this.endDate = res.entries[0].wpnDate
+        })
       }
     },
     created () {
       this.setCurrentDate()
       setInterval(this.setCurrentDate, 1000)
+      this.getData();
     }
   }
 </script>
