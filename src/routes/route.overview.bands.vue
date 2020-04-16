@@ -2,7 +2,7 @@
   <section class="bands ov">
     <h2>Bands</h2>
     <div class="list four ov">
-      <Tile v-for="(band,idx) in filteredData" :key="idx" :name="band.name" :image="band.image.path" :imagePath="'logo/bands'"
+      <Tile v-for="(band,idx) in bands" :key="idx" :name="band.name" :image="band.image.path" :imagePath="'logo/bands'"
             :route="'BandPage'" :id="band.name" backgroundImg border/>
     </div>
     <router-view></router-view>
@@ -26,6 +26,13 @@ export default {
     }
   },
   computed: {
+    bands () {
+      return this.filteredData
+                  .slice()
+                  .sort(function(a,b) {
+                    return a.position - b.position
+                  })
+    },
     filteredData () {
       let toFilter = this.data
       if(toFilter.length){

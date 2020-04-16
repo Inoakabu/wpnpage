@@ -33,7 +33,11 @@
     },
     computed: {
       bands () {
-        return this.filteredData.slice(0, 4)
+        return this.filteredData
+                    .slice(0, 4)
+                    .sort(function(a,b) {
+                      return a.position - b.position
+                    })
       },
       currentLang () {
         return this.$route.params.lang
