@@ -35,9 +35,6 @@
       bands () {
         return this.filteredData
                     .slice(0, 4)
-                    .sort(function(a,b) {
-                      return a.position - b.position
-                    })
       },
       currentLang () {
         return this.$route.params.lang
@@ -48,6 +45,9 @@
           toFilter = toFilter.filter((e) => {
             return e.show == true
           })
+          .sort(function(a,b) {
+                      return a.position - b.position
+                    })
         }
         return toFilter
       }
