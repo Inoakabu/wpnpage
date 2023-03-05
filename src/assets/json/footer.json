@@ -32,5 +32,22 @@
       },
       "route": "privacypolicy"
     }
-  }
+  },
+  "sponsors": [
+    {
+      "name": "DEAF FOREVER",
+      "image": "dmed2019_web_slice_sponsor_deafforever.png",
+      "url": "https://www.deaf-forever.de/"
+    },
+    {
+      "name": "METAL.DE",
+      "image": "dmed2019_web_slice_sponsor_metal.de.png",
+      "url": "https://www.metal.de"
+    },
+    {
+      "name": "TIME FOR METAL",
+      "image": "dmed2019_web_slice_sponsor_timeformetal.png",
+      "url": "https://time-for-metal.eu/"
+    }
+  ]
 }

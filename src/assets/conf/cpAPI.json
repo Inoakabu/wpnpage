@@ -1,9 +1,9 @@
 {
   "call": {
-    "collListURL": "https://dmed-cockpit.cl.semicode.de/api/collections/listCollections?token=",
-    "collURL": "https://dmed-cockpit.cl.semicode.de/api/collections/get/",
+    "collListURL": "https://dmed.mairbaeurl.at/api/collections/listCollections?token=",
+    "collURL": "https://dmed.mairbaeurl.at/api/collections/get/",
     "endStr": "?token=",
-    "token": "account-1cdc1c4d2c041d50d7351fb48bd01d",
-    "baseURL": "https://dmed-cockpit.cl.semicode.de"
+    "token": "account-9eda565f7443c8ef67604c07c6634a",
+    "baseURL": "https://dmed.mairbaeurl.at"
   }
 }

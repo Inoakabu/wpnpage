@@ -9,7 +9,7 @@
       },
       "big": true,
       "route": "tickets",
-      "url": "https://www.mam-online.com/bands/de-mortem-et-diabolum.html"
+      "url": "https://shop.demortemetdiabolum.de/"
     },
     "bands": {
       "active": true,
@@ -20,15 +20,6 @@
       },
       "big": true,
       "route": "bands"
-    },
-    "news": {
-      "name": "News",
-      "alt": {
-        "en": "show all news",
-        "de": "Alle News anzeigen"
-      },
-      "big": false,
-      "route": "news"
     },
     "info": {
       "active": true,

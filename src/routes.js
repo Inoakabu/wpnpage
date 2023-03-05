@@ -29,14 +29,14 @@ export default new Router({
     {
       path: `/${navigation.tickets.route}`,
       name: `${navigation.tickets.route}`,
-      beforeEnter () {
+      beforeEnter() {
         location.href = navigation.tickets.url
       }
     },
     {
       path: `/${navigation.dmed.route}`,
       name: `${navigation.dmed.route}`,
-      beforeEnter () {
+      beforeEnter() {
         location.href = navigation.dmed.url
       }
     },
@@ -59,16 +59,16 @@ export default new Router({
           name: 'BandPage',
           component: BandPage
         },
-        {
-          path: 'news/:id',
-          name: 'NewsPage',
-          component: NewsPage
-        },
-        {
-          path: `${navigation.news.route}`,
-          name: `${navigation.news.route}`,
-          component: NewsOverview
-        },
+        // {
+        //   path: 'news/:id',
+        //   name: 'NewsPage',
+        //   component: NewsPage
+        // },
+        // {
+        //   path: `${navigation.news.route}`,
+        //   name: `${navigation.news.route}`,
+        //   component: NewsOverview
+        // },
         {
           path: `${navigation.info.route}`,
           name: `${navigation.info.route}`,
