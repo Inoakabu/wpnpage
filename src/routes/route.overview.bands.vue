@@ -57,7 +57,6 @@ export default {
   methods: {
     getData: function () {
       fetcher(collURL).then((res) => {
-        console.log(collURL);
         this.data = res.entries;
       });
     },

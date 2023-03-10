@@ -1,22 +1,22 @@
 {
   "info": {
     "contact": {
-      "name": "De Mortem Et Diabolum",
+      "name": "De Mortem Et Diabolum GbR",
       "strasse": "John-Schehr-Straße 56",
       "plz": "10407",
       "ort": "Berlin",
       "land": "Germany",
-      "tel": "+493064821079",
+      "tel": "030/64821079",
       "email": "info@demortemetdiabolum.de"
     }
   },
   "impressum": {
-    "name": "De Mortem Et Diabolum Gbr",
-    "umsatzsteuerID": "DE 280888578",
-    "steuerNR": "31/349/01740",
+    "name": "De Mortem Et Diabolum GbR",
+    "umsatzsteuerID": "DE 328187827",
+    "steuerNR": "31/349/01740 ",
     "FA": "FA Berlin/Prenzlauer Berg",
-    "name_CO": "De Mortem Et Diabolum Gbr",
     "email": "info@demortemetdiabolum.de",
+    "name_CO": "Mareike von Hoff",
     "en": {
       "_1": {
         "h": "Legal Notice",

@@ -40,9 +40,10 @@ export default {
       return this.$route.params.id;
     },
     band() {
-      return this.data.filter(
-        (b) => b.name.toLowerCase() === this.name.toLowerCase()
-      )[0];
+      return this.data;
+      // return this.data.filter(
+      //   (b) => b.name.toLowerCase() === this.name.toLowerCase()
+      // )[0];
     },
     description() {
       const result = this.band.description.filter(
@@ -57,7 +58,10 @@ export default {
   methods: {
     getData: function () {
       fetcher(collURL).then((res) => {
-        this.data = res.entries;
+        const result = res.entries.filter((item) => {
+          return item.name === this.name;
+        })[0];
+        this.data = result;
       });
     },
   },
