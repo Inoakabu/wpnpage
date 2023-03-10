@@ -33,13 +33,13 @@ export default new Router({
         location.href = navigation.tickets.url
       }
     },
-    {
-      path: `/${navigation.dmed.route}`,
-      name: `${navigation.dmed.route}`,
-      beforeEnter() {
-        location.href = navigation.dmed.url
-      }
-    },
+    // {
+    //   path: `/${navigation.dmed.route}`,
+    //   name: `${navigation.dmed.route}`,
+    //   beforeEnter() {
+    //     location.href = navigation.dmed.url
+    //   }
+    // },
     {
       path: '/:lang',
       component: RoutePage,
