@@ -8,8 +8,18 @@
               The embers deep in the darkness will rise to an unholy fire in
               2020.
             </p>
-            <div class="modal-body">
-              <constructionComp />
+            <div class="list">
+              <compTileVue
+                v-for="(tile, idx) in constructionTiles"
+                :isConstructiontile="true"
+                :key="idx"
+                :name="tile.name"
+                :image="tile.image"
+                :route="tile.link"
+                :external="true"
+                backgroundImg
+                border
+              />
             </div>
           </div>
         </div>
@@ -24,20 +34,43 @@
 <script>
 import headerComp from "@/components/header/comp.header";
 import foot from "@/components/footer/comp.footer";
-import constructionComp from "../components/construction/comp.construction";
+import compTileVue from "../components/tile/comp.tile.vue";
+
+import shopTilePicture from "../assets/images/constructionPictures/dmed_signet_clean_2023_rgb_1500pix.png";
+import wpnTilePicture from "../assets/images/constructionPictures/wpn2022_web_logo.png";
 
 export default {
   name: "app",
-  components: { headerComp, foot, constructionComp },
+  components: { headerComp, foot, compTileVue },
   data() {
     return {
-      showModal: false,
+      showModal: true,
+      constructionTiles: [
+        {
+          name: "DMED Shop",
+          image: shopTilePicture,
+          link: "https://shop.demortemetdiabolum.de/",
+        },
+        {
+          name: "DMED",
+          image: wpnTilePicture,
+          link: "https://demortemetdiabolum.de/de/",
+        },
+      ],
     };
   },
 };
 </script>
 
 <style>
+.list {
+  display: grid;
+  grid-template-columns: 0.3fr 0.3fr !important;
+  grid-gap: 2rem;
+  margin-bottom: 3rem;
+  justify-content: space-evenly;
+}
+
 .modal-mask {
   position: fixed;
   z-index: 9998;

@@ -16,8 +16,15 @@
     <h3 class="tile-name" v-if="name">{{ name }}</h3>
     <div class="tile-image--wrapper">
       <img
+        v-if="!isConstructiontile"
         class="tile-image"
         :src="imageUrl ? imageUrl : imageSrc"
+        :alt="`Bild von ${name}`"
+      />
+      <img
+        v-if="isConstructiontile"
+        class="tile-image"
+        :src="image"
         :alt="`Bild von ${name}`"
       />
     </div>
@@ -51,6 +58,7 @@ const cockpit = require("../../assets/conf/cpAPI.json");
 export default {
   name: "Tile",
   props: {
+    isConstructiontile: { type: Boolean, default: false },
     name: String,
     image: { type: String },
     imagePath: { type: String, default: "logo/bands" },
