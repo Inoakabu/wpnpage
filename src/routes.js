@@ -9,6 +9,7 @@ import NewsOverview from './routes/route.overview.news'
 import InfoOverview from './routes/route.info'
 import ImpressumOverview from './routes/route.impressum'
 import PrivacyPolicy from './routes/route.privacy_policy'
+import Blog from './routes/blog.route.vue'
 // Singlepages
 import BandPage from './routes/route.band'
 import NewsPage from './routes/route.news'
@@ -69,6 +70,11 @@ export default new Router({
         //   name: `${navigation.news.route}`,
         //   component: NewsOverview
         // },
+        {
+          path: `${navigation.blog.route}`,
+          name: `${navigation.blog.route}`,
+          component: Blog
+        },
         {
           path: `${navigation.info.route}`,
           name: `${navigation.info.route}`,

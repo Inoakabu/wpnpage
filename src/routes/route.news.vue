@@ -13,10 +13,9 @@
 
 <script>
 import PSC from "@/components/pictureShowCase/comp.pictureSC";
-const cockpit = require("../assets/conf/cpAPI.json");
-// const fetcher = require('../helpers/fetcher/fetcher')
-// eslint-disable-next-line import/first
 import fetcher from "../helpers/fetcher/fetcher";
+
+const cockpit = require("../assets/conf/cpAPI.json");
 
 const collURL =
   JSON.stringify(cockpit.call.collURL).replace(/"/g, "") +

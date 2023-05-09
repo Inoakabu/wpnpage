@@ -21,6 +21,16 @@
       "big": true,
       "route": "bands"
     },
+    "blog": {
+      "active": true,
+      "name": "Blog",
+      "alt": {
+        "en": "go to blog",
+        "de": "Zum Blog"
+      },
+      "big": true,
+      "route": "blog"
+    },
     "info": {
       "active": true,
       "name": "Info",
