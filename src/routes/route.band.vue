@@ -46,6 +46,9 @@ export default {
       // )[0];
     },
     description() {
+      if (!this.band.description) {
+        return "";
+      }
       const result = this.band.description.filter(
         (item) => item.value.language === this.currentLang
       );

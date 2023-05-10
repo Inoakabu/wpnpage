@@ -1,6 +1,9 @@
 <template>
   <section class="blog-page" v-if="data">
-    <div v-for="(entry, idx) in filteredData" :key="idx">
+    <div class="blog-page-headline" v-if="comingSoon">
+      Blog is coming soon. Stay tuned!
+    </div>
+    <div v-else v-for="(entry, idx) in filteredData" :key="idx">
       <h1 class="blog-page-headline">{{ entry.title }}</h1>
       <span v-html="blogText(entry.text)"></span>
       <div class="div-image" v-if="imageSrc(entry)">
@@ -26,11 +29,15 @@ export default {
   data() {
     return {
       data: [],
+      comingSoon: false,
     };
   },
   methods: {
     getData: function () {
       fetcher(collURL).then((res) => {
+        if (!res.entries.length) {
+          this.comingSoon = true;
+        }
         this.data = res.entries;
       });
     },
