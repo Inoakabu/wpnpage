@@ -14,20 +14,20 @@
 
 <script>
 import content from "@/assets/json/content.json";
-import fetcher from "../../helpers/fetcher/fetcher";
-const cockpit = require("../../assets/conf/cpAPI.json");
-const collURL =
-  JSON.stringify(cockpit.call.collURL).replace(/"/g, "") +
-  "count" +
-  cockpit.call.endStr +
-  JSON.stringify(cockpit.call.token).replace(/"/g, "");
+// import fetcher from "../../helpers/fetcher/fetcher";
+// const cockpit = require("../../assets/conf/cpAPI.json");
+// const collURL =
+//   JSON.stringify(cockpit.call.collURL).replace(/"/g, "") +
+//   "count" +
+//   cockpit.call.endStr +
+//   JSON.stringify(cockpit.call.token).replace(/"/g, "");
 
 export default {
   name: "Count",
   data() {
     return {
       currentDate: Date.parse(new Date(this.endDate)) - Date.parse(new Date()),
-      endDate: "April 29, 2023 01:00:00",
+      endDate: "April 26, 2024 01:00:00",
       content: content.countdown,
     };
   },

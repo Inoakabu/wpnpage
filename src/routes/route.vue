@@ -6,7 +6,7 @@
           <div class="modal-header">
             <p class="conText">
               The embers deep in the darkness will rise to an unholy fire in
-              2020.
+              2024.
             </p>
             <div class="list">
               <compTileVue
@@ -44,7 +44,7 @@ export default {
   components: { headerComp, foot, compTileVue },
   data() {
     return {
-      showModal: true,
+      showModal: false,
       constructionTiles: [
         {
           name: "DMED Shop",
@@ -125,11 +125,11 @@ export default {
 }
 
 :root {
-  --main: #c3987a;
+  --main: #4a2771;
   --typo: #cdc6ba;
   --typoHover: ;
-  --motiv: #530f28;
-  --background: #31010f;
+  --motiv: #c3987a;
+  --background: #270d39;
   --alert: #9b0025;
 }
 
