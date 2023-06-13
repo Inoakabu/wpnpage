@@ -37,6 +37,7 @@ export default {
       }
     },
     firstLetterOfName() {
+      console.log(this.name);
       return this.name[0];
     },
     currentLang() {

@@ -2,7 +2,10 @@
   <section class="band-page" v-if="band">
     <h1 class="band-page-headline">{{ band.name }}</h1>
     <div class="band-page-social" v-for="(link, idx) in band.links" :key="idx">
-      <social :url="link.value.url" :name="link.value.language" />
+      <social
+        :url="link.value.url"
+        :name="link.value.name ? link.value.name : link.value.language"
+      />
     </div>
     <p class="band-page-description">
       {{ description }}
