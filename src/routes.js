@@ -10,9 +10,11 @@ import InfoOverview from './routes/route.info'
 import ImpressumOverview from './routes/route.impressum'
 import PrivacyPolicy from './routes/route.privacy_policy'
 import Blog from './routes/blog.route.vue'
+import Crew from './routes/route.crew.overview.vue'
 // Singlepages
 import BandPage from './routes/route.band'
 import NewsPage from './routes/route.news'
+import CrewPage from './routes/route.crew.vue'
 // Header.json for get the short urls
 import { navigation } from '@/assets/json/header.json'
 // language.json for langSwitch
@@ -34,13 +36,13 @@ export default new Router({
         location.href = navigation.tickets.url
       }
     },
-    // {
-    //   path: `/${navigation.dmed.route}`,
-    //   name: `${navigation.dmed.route}`,
-    //   beforeEnter() {
-    //     location.href = navigation.dmed.url
-    //   }
-    // },
+    {
+      path: `/${navigation.dmed.route}`,
+      name: `${navigation.dmed.route}`,
+      beforeEnter() {
+        location.href = navigation.dmed.url
+      }
+    },
     {
       path: '/:lang',
       component: RoutePage,
@@ -89,7 +91,17 @@ export default new Router({
           path: `privacypolicy`,
           name: `privacypolicy`,
           component: PrivacyPolicy
-        }
+        },
+        {
+          path: `${navigation.crew.route}`,
+          name: `${navigation.crew.route}`,
+          component: Crew
+        },
+        {
+          path: 'crew/:id',
+          name: 'CrewPage',
+          component: CrewPage
+        },
       ]
     }
   ]
