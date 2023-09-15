@@ -4,10 +4,25 @@
       Crew is coming soon. Stay tuned!
     </div>
     <div v-else>
-      <h2>Crew</h2>
+      <h2>Veranstaltende</h2>
       <div class="list four ov">
         <SwitchTile
-          v-for="(item, idx) in crew"
+          v-for="(item, idx) in promoter"
+          :key="idx"
+          :name="item.name"
+          :imageBefore="item.imageBefore.path"
+          :imageAfter="item.imageAfter.path"
+          :imagePath="'logo/crew'"
+          :route="'CrewPage'"
+          :id="item.name"
+          backgroundImg
+          border
+        />
+      </div>
+      <h2>Team</h2>
+      <div class="list four ov">
+        <SwitchTile
+          v-for="(item, idx) in team"
           :key="idx"
           :name="item.name"
           :imageBefore="item.imageBefore.path"
@@ -41,29 +56,50 @@ export default {
   data() {
     return {
       data: [],
+      promoter: [],
+      team: [],
+      partners: [],
       comingSoon: false,
     };
   },
-  computed: {
-    crew() {
-      return this.filteredData.slice().sort(function (a, b) {
-        return a.position - b.position;
-      });
-    },
+  computed: {},
+  methods: {
     filteredData() {
       let toFilter = this.data;
+
       if (toFilter.length) {
         toFilter = toFilter.filter((e) => {
           return e.show === true;
         });
       }
+
       return toFilter;
     },
-  },
-  methods: {
+    crew() {
+      const filteredData = this.filteredData();
+
+      let sorting = filteredData.slice().sort(function (a, b) {
+        return a.position - b.position;
+      });
+
+      for (let item of sorting) {
+        if (item.assignment === "Veranstaltende") {
+          this.promoter.push(item);
+        }
+
+        if (item.assignment === "Team") {
+          this.team.push(item);
+        }
+
+        if (item.assignment === "Partner") {
+          this.partners.push(item);
+        }
+      }
+    },
     getData: function () {
       fetcher(collURL).then((res) => {
         this.data = res.entries;
+        this.crew();
       });
     },
   },
