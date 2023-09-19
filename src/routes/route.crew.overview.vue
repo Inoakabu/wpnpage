@@ -4,7 +4,7 @@
       Crew is coming soon. Stay tuned!
     </div>
     <div v-else>
-      <h2>Veranstaltende</h2>
+      <h2>Organizer</h2>
       <div class="list four ov">
         <SwitchTile
           v-for="(item, idx) in promoter"
@@ -19,7 +19,7 @@
           border
         />
       </div>
-      <h2>Team</h2>
+      <h2>Crew</h2>
       <div class="list four ov">
         <SwitchTile
           v-for="(item, idx) in team"
@@ -33,6 +33,23 @@
           backgroundImg
           border
         />
+      </div>
+      <div v-if="partners.length">
+        <h2>Partner</h2>
+        <div class="list four ov">
+          <SwitchTile
+            v-for="(item, idx) in partners"
+            :key="idx"
+            :name="item.name"
+            :imageBefore="item.imageBefore.path"
+            :imageAfter="item.imageAfter.path"
+            :imagePath="'logo/crew'"
+            :route="'CrewPage'"
+            :id="item.name"
+            backgroundImg
+            border
+          />
+        </div>
       </div>
     </div>
     <router-view></router-view>

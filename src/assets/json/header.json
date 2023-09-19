@@ -61,6 +61,16 @@
       },
       "big": true,
       "route": "crew"
+    },
+    "darkart": {
+      "active": true,
+      "name": "Darkart",
+      "alt": {
+        "en": "go to darkart",
+        "de": "Zur Darkart"
+      },
+      "big": true,
+      "route": "darkart"
     }
   },
   "socials": [

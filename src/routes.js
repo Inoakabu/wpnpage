@@ -5,16 +5,18 @@ import MainPage from './routes/route.main'
 import RoutePage from './routes/route'
 // Overview
 import BandOverview from './routes/route.overview.bands'
-import NewsOverview from './routes/route.overview.news'
+// import NewsOverview from './routes/route.overview.news'
 import InfoOverview from './routes/route.info'
+import DarkartOverView from './routes/route.overview.darkart'
 import ImpressumOverview from './routes/route.impressum'
 import PrivacyPolicy from './routes/route.privacy_policy'
 import Blog from './routes/blog.route.vue'
 import Crew from './routes/route.crew.overview.vue'
 // Singlepages
 import BandPage from './routes/route.band'
-import NewsPage from './routes/route.news'
-import CrewPage from './routes/route.crew.vue'
+// import NewsPage from './routes/route.news'
+import CrewPage from './routes/route.crew'
+import Artist from './routes/route.darkart'
 // Header.json for get the short urls
 import { navigation } from '@/assets/json/header.json'
 // language.json for langSwitch
@@ -101,6 +103,16 @@ export default new Router({
           path: 'crew/:id',
           name: 'CrewPage',
           component: CrewPage
+        },
+        {
+          path: `${navigation.darkart.route}`,
+          name: `${navigation.darkart.route}`,
+          component: DarkartOverView
+        },
+        {
+          path: 'artist/:id',
+          name: 'ArtistPage',
+          component: Artist
         },
       ]
     }
