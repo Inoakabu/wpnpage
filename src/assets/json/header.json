@@ -28,7 +28,7 @@
         "en": "go to blog",
         "de": "Zum Blog"
       },
-      "big": true,
+      "big": false,
       "route": "blog"
     },
     "info": {
@@ -48,7 +48,7 @@
         "en": "change to DMED Festival",
         "de": "zum DMED Festival"
       },
-      "big": true,
+      "big": false,
       "route": "DMED",
       "url": "https://demortemetdiabolum.de/"
     },
@@ -59,7 +59,7 @@
         "en": "go to crew",
         "de": "Zur Crew"
       },
-      "big": true,
+      "big": false,
       "route": "crew"
     },
     "darkart": {
@@ -69,7 +69,7 @@
         "en": "go to darkart",
         "de": "Zur Darkart"
       },
-      "big": true,
+      "big": false,
       "route": "darkart"
     }
   },

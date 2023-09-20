@@ -5,7 +5,7 @@
       <img
         style="w"
         class="tile-image"
-        :src="imageUrl ? imageUrl : imageSrc"
+        :src="imageSrc"
         :alt="`Bild von ${name}`"
       />
     </div>
@@ -49,10 +49,16 @@ export default {
       return this.data;
     },
     text() {
-      const result = this.crew.text.filter(
-        (item) => item.value.language === this.currentLang
-      );
-      return result[0].value.description;
+      if (this.crew.text) {
+        const result = this.crew.text.filter(
+          (item) => item.value.language === this.currentLang
+        );
+
+        if (result[0]) {
+          return result[0].value.description;
+        }
+      }
+      return "";
     },
     currentLang() {
       return this.$route.params.lang;
