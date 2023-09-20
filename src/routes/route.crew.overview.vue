@@ -109,6 +109,7 @@ export default {
         }
 
         if (item.assignment === "Partner") {
+          item.imageAfter = item.imageBefore;
           this.partners.push(item);
         }
       }
