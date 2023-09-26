@@ -1,18 +1,32 @@
 <template>
   <section class="band-page" v-if="crew">
     <h1 class="band-page-headline">{{ crew.name }}</h1>
-    <div class="tile-image--wrapper">
-      <img
-        style="w"
-        class="tile-image"
-        :src="imageSrc"
-        :alt="`Bild von ${name}`"
-      />
+    <div v-if="crew.assignment === 'Partner'">
+      <a :href="crew.social" target="_blank">
+        <div class="tile-image--wrapper">
+          <img
+            style="w"
+            class="tile-image"
+            :src="imageSrc"
+            :alt="`Bild von ${name}`"
+          />
+          <figcaption>{{ captionText }}</figcaption>
+        </div>
+      </a>
+    </div>
+    <div v-else>
+      <div class="tile-image--wrapper">
+        <img
+          style="w"
+          class="tile-image"
+          :src="imageSrc"
+          :alt="`Bild von ${name}`"
+        />
+      </div>
     </div>
     <p class="band-page-description">
       {{ text }}
     </p>
-    <!-- <youtube class="band-page-video" :link="band.video" /> -->
     <router-view></router-view>
   </section>
 </template>
@@ -59,6 +73,13 @@ export default {
         }
       }
       return "";
+    },
+    captionText() {
+      if (this.currentLang === "de") {
+        return "Bild klicken um zur Homepage zu kommen";
+      }
+
+      return "Click image to go to homepage";
     },
     currentLang() {
       return this.$route.params.lang;
