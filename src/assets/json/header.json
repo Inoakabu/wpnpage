@@ -41,17 +41,6 @@
       "big": false,
       "route": "info"
     },
-    "dmed": {
-      "active": true,
-      "name": "DMED",
-      "alt": {
-        "en": "change to DMED Festival",
-        "de": "zum DMED Festival"
-      },
-      "big": false,
-      "route": "DMED",
-      "url": "https://demortemetdiabolum.de/"
-    },
     "crew": {
       "active": true,
       "name": "Team",
@@ -71,6 +60,17 @@
       },
       "big": false,
       "route": "darkart"
+    },
+    "dmed": {
+      "active": true,
+      "name": "DMED",
+      "alt": {
+        "en": "change to DMED Festival",
+        "de": "zum DMED Festival"
+      },
+      "big": false,
+      "route": "DMED",
+      "url": "https://demortemetdiabolum.de/"
     }
   },
   "socials": [

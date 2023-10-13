@@ -22,16 +22,18 @@
         :alt="`Bild von ${name}`"
       />
     </div>
+    <h2>Galerie</h2>
+    <compPictureSlider :input="pictures" />
     <router-view></router-view>
   </section>
 </template>
 
 <script>
 import social from "@/components/social/comp.social-tag";
-const cockpit = require("../assets/conf/cpAPI.json");
-// eslint-disable-next-line import/first
 import fetcher from "../helpers/fetcher/fetcher";
+import compPictureSlider from "../components/carousel/comp.pictureSlider.vue";
 
+const cockpit = require("../assets/conf/cpAPI.json");
 const collURL =
   JSON.stringify(cockpit.call.collURL).replace(/"/g, "") +
   "darkart" +
@@ -40,10 +42,11 @@ const collURL =
 
 export default {
   name: "Artist",
-  components: { social },
+  components: { social, compPictureSlider },
   data() {
     return {
       data: [],
+      pictures: [],
       image: "",
     };
   },
@@ -71,15 +74,26 @@ export default {
     },
   },
   methods: {
-    getData: function () {
-      fetcher(collURL).then((res) => {
+    async getData() {
+      await fetcher(collURL).then((res) => {
         const result = res.entries.filter((item) => {
           return item.name === this.name;
         })[0];
 
         this.image = result.image.path;
         this.data = result;
+
+        this.sculpArray(result);
       });
+    },
+    sculpArray(data) {
+      const result = [];
+
+      for (let image of data.pictures) {
+        result.push(image);
+      }
+
+      this.pictures = result;
     },
   },
   created: function () {

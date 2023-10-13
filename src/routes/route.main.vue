@@ -4,6 +4,7 @@
     <runningorderComp v-if="active === this.isActive.runningorder" />
     <bandsComp v-if="active === this.isActive.bands" />
     <!-- <newsComp v-if="active === this.isActive.news"/> -->
+    <impressions />
     <instaComp v-if="active === this.isActive.instagram" />
     <history v-if="active === this.isActive.history" />
   </main>
@@ -16,6 +17,7 @@ import bandsComp from "../components/bands/comp.band.list";
 import instaComp from "../components/social/comp.instagram.list";
 import history from "../components/history/comp.history";
 import runningorderComp from "../components/runningorder/comp.runningorder";
+import impressions from "./route.impressions.vue";
 
 import mainShow from "../assets/json/main.json";
 
@@ -28,6 +30,7 @@ export default {
     // newsComp,
     instaComp,
     history,
+    impressions,
   },
   data() {
     return {
