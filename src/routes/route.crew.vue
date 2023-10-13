@@ -76,10 +76,10 @@ export default {
     },
     captionText() {
       if (this.currentLang === "de") {
-        return "Bild klicken um zur Homepage zu kommen";
+        return "Bild klicken, um die Homepage zu öffnen.";
       }
 
-      return "Click image to go to homepage";
+      return "Click on the image to open the homepage.";
     },
     currentLang() {
       return this.$route.params.lang;
