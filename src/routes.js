@@ -9,6 +9,7 @@ import BandOverview from './routes/route.overview.bands'
 import InfoOverview from './routes/route.info'
 import DarkartOverView from './routes/route.overview.darkart'
 import ImpressumOverview from './routes/route.impressum'
+import PressOverview from './routes/route.press.vue'
 import PrivacyPolicy from './routes/route.privacy_policy'
 import Blog from './routes/blog.route.vue'
 import Crew from './routes/route.crew.overview.vue'
@@ -108,6 +109,11 @@ export default new Router({
           path: `${navigation.darkart.route}`,
           name: `${navigation.darkart.route}`,
           component: DarkartOverView
+        },
+        {
+          path: `${navigation.press.route}`,
+          name: `${navigation.press.route}`,
+          component: PressOverview
         },
         {
           path: 'artist/:id',

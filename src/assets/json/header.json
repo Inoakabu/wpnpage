@@ -61,6 +61,16 @@
       "big": false,
       "route": "darkart"
     },
+    "press": {
+      "active": true,
+      "name": "Presse",
+      "alt": {
+        "en": "go to press site",
+        "de": "Zu Presseartikeln"
+      },
+      "big": false,
+      "route": "press"
+    },
     "dmed": {
       "active": true,
       "name": "DMED",
