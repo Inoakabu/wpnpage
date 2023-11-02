@@ -13,30 +13,17 @@
         {{ item.name }}
       </router-link>
     </div>
-    <div class="social-bar">
-      <social
-        v-for="item in socials"
-        :key="item.name"
-        :url="item.url"
-        :name="item.name"
-      />
-    </div>
-    <langSwitch />
   </nav>
 </template>
 
 <script>
-import { navigation, socials } from "@/assets/json/header.json";
-import social from "@/components/social/comp.social-tag";
-import langSwitch from "../lang/langSwitch";
+import { navigation } from "@/assets/json/header.json";
 
 export default {
   name: "Navigation",
-  components: { social, langSwitch },
   data() {
     return {
       navigation: navigation,
-      socials: socials,
     };
   },
   computed: {
@@ -77,7 +64,7 @@ export default {
 }
 
 .nav-item:hover {
-  color: var(--motiv);
+  color: var(--main);
 }
 
 .nav-item--big {

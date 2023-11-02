@@ -1,16 +1,12 @@
 <template>
   <div class="card">
-    <div class="card-wrapper">
-      <div class="img">
-        <img class="image" :src="image" />
-      </div>
-      <div class="content">
-        <h1 class="press-headline">{{ headline }}</h1>
-        <p class="text">{{ text }}</p>
-        <a :href="link" target="_blank"
-          ><div class="link-text">{{ linkText }}</div></a
-        >
-      </div>
+    <div class="card__image">
+      <img :src="image" />
+    </div>
+    <div class="card__content">
+      <h1 class="content__headline">{{ headline }}</h1>
+      <p class="content__text">{{ text }}</p>
+      <a class="content__link" :href="link" target="_blank">{{ linkText }}</a>
     </div>
   </div>
 </template>
@@ -26,11 +22,11 @@ export default {
   },
   computed: {
     linkText() {
-      if (this.currentLang) {
-        return "Hier klicken, um den Artikel zu öffnen.";
+      if (this.currentLang === "de") {
+        return "Zum Artikel.";
       }
 
-      return "Click here to open the article.";
+      return "To the article.";
     },
     currentLang() {
       return this.$route.params.lang;
@@ -41,53 +37,59 @@ export default {
 
 <style>
 .card {
-  padding: 10px;
-}
-
-.content {
-  margin-left: 5px;
-}
-
-.card-wrapper {
   display: flex;
   flex-direction: row;
   background-color: #1e1e1e;
   mix-blend-mode: screen;
+  gap: 2rem;
+  padding: 1rem;
 }
 
-.link-text {
-  text-align: justify;
-  padding: 5px 5px 5px 5px;
-  flex: 70%;
-  font-weight: 600;
-  font-size: 20px;
-  letter-spacing: 0;
-  line-height: normal;
-  text-decoration: underline;
-  white-space: nowrap;
+.card__content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
 }
 
-.text {
-  padding: 5px 5px 5px 5px;
-  font-weight: 400;
-  font-size: 20px;
-  letter-spacing: 0;
-  line-height: normal;
+.content__headline,
+.content__text {
+  margin: 0;
 }
 
-.press-headline {
-  text-align: justify;
-  padding: 5px 5px 5px 5px;
+.content__headline {
+  font-size: 1.75rem;
+  line-height: 1.3;
   font-weight: 800;
-  font-size: 20px;
-  line-height: normal;
-  white-space: nowrap;
 }
 
-.image {
-  flex: 30%;
-  width: 20rem;
+.content__text {
+  font-size: 1.2rem;
+  line-height: 1.3;
+  max-width: 90%;
+}
+
+.content__link {
+  font-size: 1.2rem;
+}
+
+.content__link:hover {
+  text-decoration: underline;
+}
+
+.card__image img {
+  width: 16.5rem;
   object-fit: cover;
   aspect-ratio: 1/1;
+}
+
+@media (max-width: 768px) {
+  .card {
+    flex-direction: column;
+  }
+
+  .card__image img {
+    width: 100%;
+  }
 }
 </style>

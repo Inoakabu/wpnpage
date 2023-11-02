@@ -1,10 +1,14 @@
 <template>
   <section class="pressSection">
-    <div v-if="!this.data.length">Keine Presse Posts vorhanden</div>
-    <div v-else v-for="(year, idx) in years" :key="idx">
+    <div v-for="(year, idx) in years" :key="idx">
       <h1 class="yearHead">{{ year }}</h1>
-      <div v-for="(articel, idx) in articels(year)" :key="idx">
+      <div
+        class="press__articles"
+        v-for="(articel, idx) in articels(year)"
+        :key="idx"
+      >
         <compCard
+          class="press__article"
           :image="imageSrc(articel.image.path)"
           :headline="articel.name"
           :text="description(articel)"
@@ -53,13 +57,6 @@ export default {
     currentLang() {
       return this.$route.params.lang;
     },
-    captionText() {
-      if (this.currentLang === "de") {
-        return "Bild klicken, um den Artikel zu öffnen.";
-      }
-
-      return "Click on the image to open the article.";
-    },
   },
   methods: {
     getData() {
@@ -68,7 +65,7 @@ export default {
           return e.festival === "wpn";
         });
 
-        this.setYearArray(res.entries);
+        this.setYearArray(this.data);
       });
     },
     imageSrc(image) {
@@ -109,11 +106,11 @@ export default {
 
 <style>
 .yearHead {
-  padding-bottom: 3rem;
-}
-.pressSection {
+  padding: 3rem;
   text-align: center;
-  padding: 2rem;
-  padding-top: 3rem;
+}
+
+.press__articles .press__article {
+  margin-bottom: 1rem;
 }
 </style>
