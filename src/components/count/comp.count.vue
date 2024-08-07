@@ -27,7 +27,7 @@ export default {
   data() {
     return {
       currentDate: Date.parse(new Date(this.endDate)) - Date.parse(new Date()),
-      endDate: "April 26, 2024 01:00:00",
+      endDate: "May 2, 2025 01:00:00",
       content: content.countdown,
     };
   },

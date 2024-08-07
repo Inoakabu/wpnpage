@@ -125,11 +125,11 @@ export default {
 }
 
 :root {
-  --main: #4a2771;
-  --typo: #cdc6ba;
+  --main: #c3987a;
+  --typo: #d7d3db;
   --typoHover: ;
-  --motiv: #c3987a;
-  --background: #270d39;
+  --motiv: #2a5961;
+  --background: #2a5961;
   --alert: #9b0025;
 }
 
