@@ -2,10 +2,13 @@
   <section class="bands">
     <h2>Running Order</h2>
     <div class="runningorder">
-      <img class="col" src="../../assets/images/runningorder/RO_Friday.jpg" alt="">
-      <img class="col" src="../../assets/images/runningorder/RO_Saturday.jpg" alt="">
+      <img
+        class="col"
+        src="../../assets/images/runningorder/ro_complete.jpg"
+        alt=""
+      />
+      <!-- <img class="col" src="../../assets/images/runningorder/RO_Saturday.jpg" alt=""> -->
     </div>
-    
   </section>
 </template>
 
@@ -13,18 +16,19 @@
 // import runningorderListComp from '../runningorder/comp.runningorder.list'
 export default {
   // components: {
-  //   runningorderListComp
-  // }
-  data () {
-    return {
-      roFriday: require('../../assets/images/runningorder/RO_Friday.jpg'),
-      roSaturday: require('../../assets/images/runningorder/RO_Saturday.jpg')
-    }
-  }
-}
+  // runningorderListComp
+  // },
+  data() {
+    return {};
+  },
+};
 </script>
 
 <style>
+.runningorder {
+  display: flex;
+  justify-content: center;
+}
 .col {
   float: left;
   width: 50%;
@@ -32,7 +36,7 @@ export default {
 /* Clear floats after the columns */
 .runningorder:after {
   content: "";
-  display: table;
+  display: block;
   clear: both;
 }
 @media screen and (max-width: 600px) {
